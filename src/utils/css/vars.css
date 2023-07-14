@@ -1,0 +1,58 @@
+/* Variables
+/* ---------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@300;400;500;700;900&display=swap');
+
+:root {
+
+    /* Colours */
+    /* --color-primary: #3eb0ef; */
+    /* --color-base: #131313; */
+    /* --color-border: #ddd; */
+    /* --color-bg: #f8f8f8; */
+    --color-primary: #4fd6ff;
+    --color-base: #3b3b3b;
+    --color-sub-base: rgb(122, 122, 122);
+    --color-border: #d2d2d7;
+    --color-white: #ffffff;
+    --color-bg-bright: #1d1d1f;
+    --color-bg-dark: #000;
+
+    --color-spare1: #66bbff;
+    --color-spare2: #c9c9c9;
+    --color-spare3: #63636e;
+    --color-spare4: #252429;
+    
+    /* Apple Dark Appearance System Color*/
+    --color-apple-blue: rgb(10,132,255);
+    --color-apple-brown: rgb(172,142,104);
+    --color-apple-gray: rgb(152,152,157);
+    --color-apple-green: rgb(50,215,75);
+    --color-apple-orange: rgb(255,159,10);
+    --color-apple-pink: rgb(255,55,95);
+    --color-apple-purple: rgb(191,90,242);
+    --color-apple-red: rgb(255,69,58);
+    --color-apple-yellow: rgb(255,214,10);
+
+    /* Fonts */
+    --font-sans-serif: "Yantramanav", Helvetica, Arial, sans-serif;
+    --font-serif: "Yantramanav", Helvetica, Arial, sans-serif;
+    --font-mono: "Yantramanav", Helvetica, Arial, sans-serif;
+    --font-light: 300;
+    --font-normal: 400;
+    --font-bold: 700;
+    --font-heavy: 900;
+
+    /* Breakpoints */
+    --xlarge: 1680px;
+    --large: 1280px;
+    --medium: 980px;
+    --small: 740px;
+    --xsmall: 480px;
+
+    /* Sizes */
+    --height: 4rem;
+    --margin: 2rem;
+    --radius: 0.5rem;
+
+}
