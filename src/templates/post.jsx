@@ -10,7 +10,7 @@ export default function PageTemplate({ data, children }) {
   return (
     <Layout>
       <h1>{data.mdx.frontmatter.title}</h1>
-      <MDXProvider components={shortcodes}>
+      <MDXProvider className="post-content-body" components={shortcodes}>
         {children}
       </MDXProvider>
     </Layout>

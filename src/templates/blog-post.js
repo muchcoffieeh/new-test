@@ -58,7 +58,7 @@ class BlogPostTemplate extends React.Component {
             className="post-content-body"
             dangerouslySetInnerHTML={{ __html: post.html }}
           /> */}
-          <div>{ children }</div>
+          {/* <div>{ children }</div> */}
 
           <footer className="post-content-footer">
             {/* There are two options for how we display the byline/author-info.
