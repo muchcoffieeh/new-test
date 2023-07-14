@@ -1,20 +1,20 @@
 import React, { Component } from "react";
 import { Link } from "gatsby"
 
-export default props => (
+export default ({post, postClass}) => (
   <article
     className={`post-card ${
-      props.postClass
-    } ${props.node.frontmatter.thumbnail ? `with-image` : `no-image`}`}
+      postClass
+    } ${post.frontmatter.thumbnail ? `with-image` : `no-image`}`}
     style={
-      props.node.frontmatter.thumbnail && {
+      post.frontmatter.thumbnail && {
         backgroundImage: `url(${
-          props.node.frontmatter.thumbnail.childImageSharp.fluid.src
+          post.frontmatter.thumbnail.childImageSharp.fluid.src
         })`,
       }
     }
   >
-  <ContentWithImage props={props}/>
+  <ContentWithImage title={post.frontmatter.title} slug={post.frontmatter.slug}/>
       {/* {
         props.node.frontmatter.thumbnail
           ?(<ContentWithImage props={props}/>)
@@ -59,16 +59,30 @@ export default props => (
 //   }
 // }
 
-const ContentWithImage = ({props}) => {
+const ContentWithImage = ({slug, title}) => {
   return (
-    <Link to={props.node.frontmatter.slug} className="post-card-link">
+    <Link to={`content${slug}`} className="post-card-link">
       <div className="post-card-content">
         <div className="post-card-overlay">
           <h3 className="post-card-title">
-            {props.node.frontmatter.title || props.node.frontmatter.slug}
+            {title || slug}
           </h3>
         </div>
       </div>
     </Link>
   );
 }
+
+// DESTRUCTURING
+// const post = {
+//   frontmatter: {
+//     title: "sometitle",
+//     slug: "/slug"
+//   }
+// }
+
+// console.log(post.frontmatter.title)
+
+// const { frontmatter: { title, slug } } = post
+
+// console.log(title, slug)

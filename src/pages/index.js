@@ -48,13 +48,13 @@ const BlogIndex = () => {
           </h4>
         </header>
         {<div className="post-feed">
-          {posts.map(node => {
+          {posts.map(post => {
             postCounter++
             return (
               <PostCard
-                key={node.id}
+                key={post.id}
                 count={postCounter}
-                node={node}
+                post={post}
                 postClass={`post`}
               />
             )
