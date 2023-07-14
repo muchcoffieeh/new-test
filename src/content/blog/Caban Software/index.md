@@ -4,6 +4,7 @@ date: "2019-02-06"
 tags: [All, Applications]
 thumbnail: ./caban_thumb.jpg
 description: "ROLE: DESIGN RESEARCH, UX/UI DESIGN"
+slug: /csems
 ---
 
 Caban Systems designs and manufactures lithium-ion energy storage systems for backup and off-grid telecom applications. The energy storage systems allow for remote monitoring and control.

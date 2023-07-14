@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Link } from "gatsby"
-import Tags from "./tag"
 
 export default props => (
   <article
@@ -60,22 +59,16 @@ export default props => (
 //   }
 // }
 
-class ContentWithImage extends Component {
-  render() {
-    const{props}=this.props;
-    return (
-      <Link to={props.node.fields.slug} className="post-card-link">
-        <div className="post-card-content">
-        {/* <h3 className="post-card-title">
-              {props.node.frontmatter.title || props.node.fields.slug}
-            </h3> */}
-          <div className="post-card-overlay">
-            <h3 className="post-card-title">
-              {props.node.frontmatter.title || props.node.fields.slug}
-            </h3>
-          </div>
+const ContentWithImage = ({props}) => {
+  return (
+    <Link to={props.node.frontmatter.slug} className="post-card-link">
+      <div className="post-card-content">
+        <div className="post-card-overlay">
+          <h3 className="post-card-title">
+            {props.node.frontmatter.title || props.node.frontmatter.slug}
+          </h3>
         </div>
-      </Link>
-    );
-  }
+      </div>
+    </Link>
+  );
 }

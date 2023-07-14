@@ -141,7 +141,7 @@ class PrivateBlogPostTemplate extends React.Component {
 export default PrivateBlogPostTemplate
 
 export const pageQuery = graphql`
-  query PrivateBlogPostBySlug($slug: String!) {
+  query PrivateBlogPostBySlug($id: String!) {
     site {
       siteMetadata {
         title
