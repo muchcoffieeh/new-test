@@ -6,11 +6,38 @@ import PostCard from "../components/postCard"
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
 
-const BlogIndex = ({ data }, location) => {
-  const siteTitle = data.site.siteMetadata.title
-
+const BlogIndex = () => {
+  const data = useStaticQuery(graphql`
+  query HeaderQuery {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    allMdx {
+    nodes {
+      id
+      frontmatter {
+        title
+        slug
+        date
+        thumbnail {
+          childImageSharp {
+            fluid {
+              src
+            }
+          }
+        }
+      }
+    }
+  }
+  }
+`)
+  console.log( data.allMdx.nodes)
+  const posts = data.allMdx.nodes
+  let postCounter = 0
   return (
-    <Layout title={siteTitle}>
+    <Layout title={data.site.siteMetadata.title}>
       <h1>Hi people</h1>
       <header className="page-head">
           <img className="mainLogo" src={`sx-logo.png`} />
@@ -20,19 +47,19 @@ const BlogIndex = ({ data }, location) => {
             {data.site.siteMetadata.description}
           </h4>
         </header>
-        {/* <div className="post-feed">
-          {posts.map(({ node }) => {
+        {<div className="post-feed">
+          {posts.map(node => {
             postCounter++
             return (
               <PostCard
-                key={node.fields.slug}
+                key={node.id}
                 count={postCounter}
                 node={node}
                 postClass={`post`}
               />
             )
           })}
-        </div> */}
+        </div> }
     </Layout>
   )
 }
