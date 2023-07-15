@@ -2,6 +2,7 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import { MDXProvider } from "@mdx-js/react"
 import Layout from "../components/layout"
+import Toc from '../components/toc'
 
 const shortcodes = { Link } // Provide common components here
 
@@ -10,6 +11,7 @@ export default function PageTemplate({ data, children }) {
   console.log(data)
   return (
     <Layout>
+      <Toc post={post.tableOfContents} />
       <article
           className={`post-content ${post.frontmatter.thumbnail || `no-image`}`}
         >

@@ -1,7 +1,9 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+
 import Layout from "../components/layout"
 import PostCard from "../components/postCard"
+import Image from "../components/image"
 
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
@@ -12,6 +14,7 @@ const BlogIndex = () => {
     site {
       siteMetadata {
         title
+        description
       }
     }
     allMdx {
@@ -38,9 +41,9 @@ const BlogIndex = () => {
   let postCounter = 0
   return (
     <Layout title={data.site.siteMetadata.title}>
-      <h1>Hi people</h1>
       <header className="page-head">
-          <img className="mainLogo" src={`sx-logo.png`} />
+          {/* <img className="mainLogo" src={`sx-logo.png`} /> */}
+          <Image />
           <h1 className="page-head-title">Designed By Serena</h1>
 
           <h4 style={{ margin: "0.1em 0", fontSize: "1.4em" }}>
