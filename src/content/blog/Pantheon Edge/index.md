@@ -3,7 +3,7 @@ title: Pantheon Edge
 slug: /pantheon-edge
 date: "2020-04-01"
 tags: [All, Applications]
-templateKey: private-blog-post
+templateKey: "private-post"
 thumbnail: ./thumb.jpg
 description: "ROLE: PRODUCT CONCEPTUALIZATION & DESIGN, UX RESEARCH"
 ---
@@ -56,7 +56,7 @@ The initial interviews with select customers confirmed their preference for indi
 In light of this, I conducted another round of interviews, this time with specific members of the edge implementation team. I tailored the questions to uncover their approach in setting up customer configurations and concluded with a direct inquiry into their preferred edge configuration to site relationship. The results were more nuanced than anticipated.
 The interviews unveiled a more complex landscape. It became apparent that the preferred configuration involved a combination of governing multiple sites with a single edge configuration, while still allowing each site to have multiple configurations. Recognizing the technical and user experience complexities associated with this approach, I collaborated with my tech lead to assess its feasibility.
 
-<div className="kg-card kg-image-card kg-width-wider">
+<div className="kg-card kg-image-card kg-width-full">
 
 ![Screenshots](./site-config-edited.jpeg)
 
@@ -64,7 +64,7 @@ The interviews unveiled a more complex landscape. It became apparent that the pr
 
 After careful consideration, we determined that implementing this configuration would be excessively intricate both in terms of technical execution and designing a user-friendly product experience. Instead, we decided to prioritize a more straightforward approach initially, with the vision of eventually realizing the advanced configuration for customers willing to pay a premium. To accommodate this future state, we made the decision to have edge configurations controlling multiple sites and a site has one configuration.
 
-### Execution
+### Co-Design Workshops
 
 With the groundwork laid and key decisions made, it was time to delve into the user experience design of the self-service product. To gain a deeper understanding of the implementation process, I conducted investigative sessions with several members of the edge implementation team. Through these sessions, I presented them with hypothetical customer requests, carefully observing and documenting their implementation approaches. This formed the basis for further design exploration.
 Following the investigative sessions, I sought a comprehensive perspective. I facilitated a series of co-design sessions involving cross-functional teams – sales engineering, edge engineering, and implementation team. These sessions aimed to achieve a full 360-degree view of the product from perceived value to actual value delivery. I organized two sessions with the larger group of 15 participants, fostering collaborative discussions through hands-on exercises.
@@ -83,6 +83,8 @@ Taking that key insight and many others, I continued with 4-7 co-design sessions
 ![Screenshots](./working-task-flow-features.jpg)
 
 </div>
+
+### Design Process
 
 I iterated on the designs in low fidelity, maintaining nearly daily check-ins with my product manager and tech lead for feedback to ensure alignment.
 
