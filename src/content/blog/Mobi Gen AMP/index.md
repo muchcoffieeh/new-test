@@ -4,7 +4,7 @@ slug: /mobi-gen-amp
 date: "2018-01-05"
 tags: [All, Applications]
 thumbnail: ./MobiGenAMP_thumb.jpg
-description: "ROLE: DESIGN RESEARCH, UI/UX DESIGN, PRODUCT MANAGEMENT"
+description: "ROLE: SOLE DESIGNER, USER RESEARCH, PRODUCT MANAGEMENT"
 ---
 
 FreeWire Technologies builds cloud-connected battery systems for on-site power – the cleaner alternative to a traditional diesel generator. AMP (Asset Management Platform) compliments the battery systems and allows for remote control and monitoring.
@@ -63,7 +63,7 @@ We put together a spreadsheet of available values, lag time, and conditions to c
 
 </div>
 
-### Execution
+### User Flow Iteration
 
 I created wireframes and clickable prototypes. I did a series of user testing and iterated on the user flow. The development of the app was to be done by our trusted offshore team. I packaged up the user flow, a styling guide, and a pdf summarizing our findings on user personas and use case scenarios.
 

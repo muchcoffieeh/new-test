@@ -3,7 +3,8 @@ nav {
     top: 50vh;
     right: 1vw;
     margin-left: 36px;
-    max-width: 250px;
+    max-width: 200px;
+    min-width: 150px;
   }
   
   ul.toc-list {
