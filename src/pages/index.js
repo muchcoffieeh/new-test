@@ -4,10 +4,10 @@ import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import PostCard from "../components/postCard"
 import { StaticImage } from "gatsby-plugin-image"
-// import Image from "../components/image"
 
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
+import "../utils/css/components/indexPage.css"
 
 const BlogIndex = () => {
   const data = useStaticQuery(graphql`
@@ -59,6 +59,44 @@ const BlogIndex = () => {
             Product Designer. Product Thinker. Passion for emerging tech.
           </h4>
         </header>
+        <div>
+        <div className="groups-container">
+  <div className="group-container">
+    <div className="group-content">
+      <h2>Collaboration</h2>
+      <p>dfalkdjglkadjgl</p>
+    </div>
+    <div className="group-image">
+      <img src="your-image-src" alt="Your Image" />
+    </div>
+  </div>
+
+  <div className="group-container reverse">
+    <div className="group-image">
+      <img src="your-image-src" alt="Your Image" />
+    </div>
+    <div className="group-content">
+      <h2>Systems Thinking</h2>
+      <p>dfalkdjglkadjgl</p>
+    </div>
+  </div>
+
+  <div className="group-container">
+    <div className="group-content">
+      <h2>Efficient Processes</h2>
+      <p>dfalkdjglkadjgl</p>
+    </div>
+    <div className="group-image">
+      <img src="your-image-src" alt="Your Image" />
+    </div>
+  </div>
+</div>
+
+
+
+          <a href="https://www.linkedin.com/in/serenaxu/">See How I Operate</a>
+        </div>
+        <hr></hr>
         {<div className="post-feed">
           {posts.map(post => {
             postCounter++

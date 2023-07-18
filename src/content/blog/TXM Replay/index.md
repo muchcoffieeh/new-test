@@ -70,6 +70,8 @@ I brainstormed potential solutions and sketched them out. I scheduled additional
 
 </div>
 
+### User Flow Mapping
+
 We narrowed it down to the key features that would best address the challenges. Knowing that we may be releasing the product iteratively, I asked them to rank the importance of each pain point. From there, I mapped out the user task flow.
 
 <div className="kg-card kg-image-card kg-width-wide">
@@ -98,7 +100,7 @@ I visualized my ideas in low fidelity and tested them with the referees and coac
 
 </div>
 
-### FINAL DESIGNS
+### Final Designs
 
 Referees only have to select from cameras where the play is in clear view. They isolate the key layers by viewing the entire footage with a grayed-out background.
 
