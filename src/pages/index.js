@@ -66,15 +66,33 @@ const BlogIndex = () => {
       <h2>Collaboration</h2>
       <p>dfalkdjglkadjgl</p>
     </div>
+    <div className="vert-divider"></div>
     <div className="group-image">
-      <img src="your-image-src" alt="Your Image" />
+      <StaticImage
+        src="../images/systems-icon.png"
+        loading="eager"
+        width={100}
+        quality={95}
+        formats={["auto", "webp", "avif"]}
+        alt=""
+        style={{ marginBottom: `var(--space-3)` }}
+      />
     </div>
   </div>
 
   <div className="group-container reverse">
     <div className="group-image">
-      <img src="your-image-src" alt="Your Image" />
+      <StaticImage
+        src="../images/systems-icon.png"
+        loading="eager"
+        width={100}
+        quality={95}
+        formats={["auto", "webp", "avif"]}
+        alt=""
+        style={{ marginBottom: `var(--space-3)` }}
+      />
     </div>
+    <div className="vert-divider"></div>
     <div className="group-content">
       <h2>Systems Thinking</h2>
       <p>dfalkdjglkadjgl</p>
@@ -86,8 +104,17 @@ const BlogIndex = () => {
       <h2>Efficient Processes</h2>
       <p>dfalkdjglkadjgl</p>
     </div>
+    <div className="vert-divider"></div>
     <div className="group-image">
-      <img src="your-image-src" alt="Your Image" />
+        <StaticImage
+          src="../images/systems-icon.png"
+          loading="eager"
+          width={100}
+          quality={95}
+          formats={["auto", "webp", "avif"]}
+          alt=""
+          style={{ marginBottom: `var(--space-3)` }}
+        />
     </div>
   </div>
 </div>
