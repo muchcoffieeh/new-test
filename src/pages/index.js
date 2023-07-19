@@ -42,11 +42,11 @@ const BlogIndex = () => {
   let postCounter = 0
   return (
     <Layout title={data.site.siteMetadata.title}>
-      <header className="page-head">
+      <header className="page-head" data-sal="fade">
           <StaticImage
             src="../images/sx-logo.png"
             loading="eager"
-            width={150}
+            width={250}
             quality={95}
             formats={["auto", "webp", "avif"]}
             alt=""
@@ -56,13 +56,18 @@ const BlogIndex = () => {
 
           <h4 style={{ margin: "0.1em 0", fontSize: "1.4em" }}>
             {/* {data.site.siteMetadata.description} */}
-            Product Designer. Product Thinker. Passion for emerging tech.
+            Delightful experiences designed strategically.
           </h4>
         </header>
         <div>
         <div className="groups-container">
   <div className="group-container">
-    <div className="group-content">
+    <div className="group-content"
+      data-sal="slide-left"
+      data-sal-delay="950"
+      data-sal-duration="100000000000000s"
+      data-sal-easing="ease"
+    >
       <div className="vert-divider"></div>
       <h2>Systems Thinking</h2>
       <p>I lean in and deeply analyze the complicated webs of relationships between technical components, people, pain points, and market factors to inform my design decisions.</p>
@@ -98,7 +103,12 @@ const BlogIndex = () => {
       />
     </div>
     
-    <div className="group-content right">
+    <div className="group-content right"
+      data-sal="slide-right"
+      data-sal-delay="300"
+      data-sal-duration="10000000s"
+      data-sal-easing="ease"
+    >
     <div className="vert-divider right"></div>
       <h2>Collaboration</h2>
       <p>Collaboration with cross-functional teams is my go-to for generating ideas and insights that give way to delightful customer experiences.</p>
@@ -111,7 +121,12 @@ const BlogIndex = () => {
   </div>
 
   <div className="group-container">
-    <div className="group-content">
+    <div className="group-content"
+      data-sal="slide-left"
+      data-sal-delay="300"
+      data-sal-duration="10000000s"
+      data-sal-easing="ease"
+    >
     <div className="vert-divider"></div>
       <h2>Process Efficiency</h2>
       <p>Operate with a tried and true framework of research, conceptualize, and execute to deliver on key objectives while adjusting for the unique characteristics and constraints of each project.</p>
