@@ -111,6 +111,7 @@ img {
   max-width: 100%;
 }
 html {
+  scroll-behavior: smooth; /* smooth scrolling for entire document including internal anchors */
   box-sizing: border-box;
   font-family: sans-serif;
 

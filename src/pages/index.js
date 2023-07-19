@@ -142,6 +142,7 @@ const BlogIndex = () => {
           </div>
         </div>
         <hr></hr>
+        <div id="case-studies">
         <h2 className="section-h2">Case Studies</h2>
         {<div className="post-feed">
           {posts.map(post => {
@@ -156,6 +157,7 @@ const BlogIndex = () => {
             )
           })}
         </div> }
+        </div>
     </Layout>
   )
 }
