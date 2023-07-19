@@ -1,4 +1,4 @@
-import * as React from "react"
+import React, { useEffect, useState } from "react";
 import { useStaticQuery, graphql } from "gatsby"
 
 import Layout from "../components/layout"
@@ -37,11 +37,41 @@ const BlogIndex = () => {
   }
   }
 `)
-  console.log( data.allMdx.nodes)
+  // console.log( data.allMdx.nodes)
   const posts = data.allMdx.nodes
   let postCounter = 0
+
+  const [currentColor, setCurrentColor] = useState("color-default");
+
+  useEffect(() => {
+    // Add color classes to body based on scroll position
+    const handleScroll = () => {
+      const panels = document.querySelectorAll(".panel");
+      const scroll = window.scrollY + window.innerHeight / 3;
+
+      panels.forEach((panel) => {
+        const panelTop = panel.offsetTop;
+        const panelBottom = panelTop + panel.offsetHeight;
+
+        if (scroll >= panelTop && scroll < panelBottom) {
+          const newColor = panel.dataset.color;
+          setCurrentColor(`color-${newColor}`);
+        }
+      });
+    };
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
+    <div className={currentColor}>
     <Layout title={data.site.siteMetadata.title}>
+      
       <header className="page-head" data-sal="fade">
           <StaticImage
             src="../images/sx-logo.png"
@@ -60,7 +90,7 @@ const BlogIndex = () => {
           </h4>
         </header>
         <div>
-        <div className="groups-container">
+        <div className="groups-container panel" data-color="white">
   <div className="group-container">
     <div className="group-content"
       data-sal="slide-left"
@@ -152,12 +182,12 @@ const BlogIndex = () => {
 </div>
 
 
-          <div className="groups-a">
+          <div className="groups-a panel" data-color="violet">
             <a href="https://www.linkedin.com/in/serenaxu/">See How I Operate</a>
           </div>
         </div>
         <hr></hr>
-        <div id="case-studies">
+        <div id="case-studies" className="panel" data-color="white">
         <h2 className="section-h2">Case Studies</h2>
         {<div className="post-feed">
           {posts.map(post => {
@@ -173,7 +203,9 @@ const BlogIndex = () => {
           })}
         </div> }
         </div>
+        
     </Layout>
+    </div>
   )
 }
 
