@@ -90,15 +90,16 @@ const BlogIndex = () => {
       <StaticImage
         src="../images/systems-icon.png"
         loading="eager"
-        width={100}
+        width={120}
         quality={95}
         formats={["auto", "webp", "avif"]}
         alt=""
         style={{ marginBottom: `var(--space-3)` }}
       />
     </div>
-    <div className="vert-divider"></div>
-    <div className="group-content">
+    
+    <div className="group-content right">
+    <div className="vert-divider right"></div>
       <h2>Collaboration</h2>
       <p>Collaboration with cross-functional teams is my go-to for generating ideas and insights that give way to delightful customer experiences.</p>
       <ul className="ul-reverse">
@@ -111,6 +112,7 @@ const BlogIndex = () => {
 
   <div className="group-container">
     <div className="group-content">
+    <div className="vert-divider"></div>
       <h2>Process Efficiency</h2>
       <p>Operate with a tried and true framework of research, conceptualize, and execute to deliver on key objectives while adjusting for the unique characteristics and constraints of each project.</p>
       <ul>
@@ -119,12 +121,12 @@ const BlogIndex = () => {
         <li>Prototype Testing</li>
       </ul>
     </div>
-    <div className="vert-divider"></div>
+    
     <div className="group-image">
         <StaticImage
           src="../images/systems-icon.png"
           loading="eager"
-          width={100}
+          width={120}
           quality={95}
           formats={["auto", "webp", "avif"]}
           alt=""

@@ -1,5 +1,6 @@
 ---
 title: Mobi Gen Interface Design
+slug: /mobi-interface
 date: "2019-04-02"
 tags: [All, Applications]
 thumbnail: ./HMI-thumb.jpg
