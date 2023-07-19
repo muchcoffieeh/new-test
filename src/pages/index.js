@@ -183,11 +183,13 @@ const BlogIndex = () => {
 
 
           <div className="groups-a panel" data-color="violet">
+            <button>
             <a href="https://www.linkedin.com/in/serenaxu/">See How I Operate</a>
+            </button>
           </div>
         </div>
         <hr></hr>
-        <div id="case-studies" className="panel" data-color="white">
+        <div id="case-studies" className="studies-div panel" data-color="white">
         <h2 className="section-h2">Case Studies</h2>
         {<div className="post-feed">
           {posts.map(post => {

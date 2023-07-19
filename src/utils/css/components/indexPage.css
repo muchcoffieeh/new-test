@@ -47,8 +47,34 @@
     text-align: center;
     /* padding-top: 25px; */
     font-size: 25px;
-    padding: 20%;
+    padding-top: 20%;
+    padding-bottom: 5%;
   }
+
+  .groups-a button {
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    height: 2.5em;
+    width: 10em;
+    border-radius: 18px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .groups-a button:hover {
+    background-color: white;
+    color: var(--color-primary);
+  }
+
+  .groups-a a:hover{
+    text-decoration: none;
+    color: var(--color-primary);
+  }
+
   
   .group-content {
     position: relative;
@@ -56,6 +82,10 @@
     order: 1;
     padding-left: 45px;
     width: 75%;
+  }
+
+  .studies-div{
+    padding-top: 12%;
   }
 
   .vert-divider{
@@ -153,7 +183,8 @@
 }
 
 .color-violet {
-  background-color: var(--color-primary);
+  /* background-color: var(--color-primary); */
+  background-color: #4e8595;
 }
 
 .color-white {
