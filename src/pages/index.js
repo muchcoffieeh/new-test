@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useStaticQuery, graphql } from "gatsby"
+import Modal from 'react-modal';
 
 import Layout from "../components/layout"
 import PostCard from "../components/postCard"
@@ -8,6 +9,8 @@ import { StaticImage } from "gatsby-plugin-image"
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
 import "../utils/css/components/indexPage.css"
+
+Modal.setAppElement("#___gatsby");
 
 const BlogIndex = () => {
   const data = useStaticQuery(graphql`
@@ -42,6 +45,7 @@ const BlogIndex = () => {
   let postCounter = 0
 
   const [currentColor, setCurrentColor] = useState("color-default");
+  const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
     // Add color classes to body based on scroll position
@@ -65,8 +69,16 @@ const BlogIndex = () => {
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      };
+    }, []);
+
+    const openModal = () => {
+      setShowModal(true);
     };
-  }, []);
+
+    const closeModal = () => {
+      setShowModal(false);
+    };
 
   return (
     <div className={currentColor}>
@@ -182,11 +194,19 @@ const BlogIndex = () => {
 </div>
 
 
-          <div className="groups-a panel" data-color="violet">
-            <button>
-            <a href="https://www.linkedin.com/in/serenaxu/">See How I Operate</a>
-            </button>
-          </div>
+<div className="groups-a panel" data-color="violet">
+              <button onClick={openModal}>See How I Operate</button>
+              <Modal
+                isOpen={showModal}
+                onRequestClose={closeModal}
+                contentLabel="Modal"
+                className="modal-content"
+                overlayClassName="modal-overlay"
+              >
+                <button onClick={closeModal}>Close Modal</button>
+                <div style={{backgroundColor: "red", width: "400px", height: "400px", position: "fixed"}}>hellooooo</div>
+              </Modal>
+            </div>
         </div>
         <hr></hr>
         <div id="case-studies" className="studies-div panel" data-color="white">
