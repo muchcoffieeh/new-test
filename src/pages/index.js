@@ -219,8 +219,9 @@ const BlogIndex = () => {
                 <button onClick={closeModal}>X</button>
                 <div className="modal-scrollable-content">
                   <div className="modal-h2-div">
-                <h2>Process Framework</h2>
-                </div>
+                    <h2>Process Framework</h2>
+                  </div>
+                  <p>…patience while the lovely diagram loads….</p>
                 <StaticImage
                   src="../images/test-process.jpg"
                   loading="eager"

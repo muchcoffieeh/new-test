@@ -317,6 +317,13 @@
   margin: 0;
 }
 
+.modal-scrollable-content p{
+  position: fixed;
+  top: 250px;
+  left: 200px;
+  font-size: 1.3em;
+}
+
 .modal-content button {
   position: fixed;
     top: 30px;
