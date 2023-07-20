@@ -35,23 +35,13 @@ export default function PrivatePageTemplate({ data, children }) {
         <>
           <Toc post={post.tableOfContents} />
           <article className={`post-content ${post.frontmatter.thumbnail || `no-image`}`}>
-            <div
-              data-sal="slide-right"
-              data-sal-delay="100"
-              data-sal-duration="300000ms"
-              data-sal-easing="ease-out-cubic"
-            >
+            <div>
               <header className="post-content-header">
                 <h2 className="post-content-title">{data.mdx.frontmatter.title}</h2>
               </header>
             </div>
 
-            <div
-              data-sal="slide-left"
-              data-sal-delay="100"
-              data-sal-duration="300000ms"
-              data-sal-easing="ease-out-cubic"
-            >
+            <div>
               {post.frontmatter.description && (
                 <h4 className="post-content-excerpt">{post.frontmatter.description}</h4>
               )}
@@ -65,13 +55,16 @@ export default function PrivatePageTemplate({ data, children }) {
           </article>
         </>
       ) : (
+        <div className="pw-form">
+            <h2>Enter the password. Please.</h2>
         <form onSubmit={handleSubmit}>
           <label>
             Password:
             <input type="password" value={password} onChange={handlePasswordChange} />
           </label>
-          <button type="submit">Submit</button>
+          <button className="pw-button" type="submit">Submit</button>
         </form>
+        </div>
       )}
     </Layout>
   )

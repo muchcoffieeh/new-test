@@ -17,7 +17,7 @@
     flex-wrap: wrap;
   }
 
-  .group-container p, ul{
+  .group-container p, .group-container ul{
     font-size: 1.2em;
     color: #5c5c5c;
     margin-bottom: 10px;

@@ -69,10 +69,22 @@ body {
   margin: auto;
 }
 
+.pw-form label{
+  font-size: 1.2em;
+}
+
 .pw-button {
+  margin-top: 1rem;
   background-color: black;
   color: white;
   border: 0;
+  font-size: 1.2em;
+}
+
+.pw-button:hover {
+  font-style: italic;
+  font-weight: 700;
+  color: white !important;
 }
 
 .page-head {
