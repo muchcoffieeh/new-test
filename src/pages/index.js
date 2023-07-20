@@ -72,6 +72,19 @@ const BlogIndex = () => {
       };
     }, []);
 
+    // useEffect(() => {
+    //   // Lock scrolling when the modal is open
+    //   const handleLockScrolling = () => {
+    //     document.body.style.overflow = showModal ? "hidden" : "auto";
+    //   };
+  
+    //   handleLockScrolling();
+  
+    //   return () => {
+    //     document.body.style.overflow = "auto"; // Revert to default when unmounting
+    //   };
+    // }, [showModal]);
+
     const openModal = () => {
       setShowModal(true);
     };
@@ -81,7 +94,7 @@ const BlogIndex = () => {
     };
 
   return (
-    <div className={currentColor}>
+    <div className={currentColor} data-color="default">
     <Layout title={data.site.siteMetadata.title}>
       
       <header className="page-head" data-sal="fade">
@@ -94,11 +107,11 @@ const BlogIndex = () => {
             alt=""
             style={{ marginBottom: `var(--space-3)` }}
           />
-          <h1 className="page-head-title">Designed By Serena</h1>
+          <h1 className="page-head-title">Delightful experiences designed strategically.</h1>
 
           <h4 style={{ margin: "0.1em 0", fontSize: "1.4em" }}>
             {/* {data.site.siteMetadata.description} */}
-            Delightful experiences designed strategically.
+            I'm a versatile and strategic designer, especially skilled at connecting the dots to find clarity in ambiguous/amorphous situations. With a deep set of skills ranging from visual design to frontend development, I craft intuitive and impactful experiences for users.
           </h4>
         </header>
         <div>
@@ -171,7 +184,7 @@ const BlogIndex = () => {
     >
     <div className="vert-divider"></div>
       <h2>Process Efficiency</h2>
-      <p>Operate with a tried and true framework of research, conceptualize, and execute to deliver on key objectives while adjusting for the unique characteristics and constraints of each project.</p>
+      <p>I operate with a tried and true framework of research, conceptualize, and execute to deliver on key objectives while adjusting for the unique characteristics and constraints of each project.</p>
       <ul>
         <li>Product Requirements</li>
         <li>User Flow Iteration</li>
@@ -193,9 +206,9 @@ const BlogIndex = () => {
   </div>
 </div>
 
-
+{/* <button class="my-btn my-btn-class-48">Button 48</button> */}
 <div className="groups-a panel" data-color="violet">
-              <button onClick={openModal}>See How I Operate</button>
+              <button className="openModal-button" onClick={openModal}>See How I Operate</button>
               <Modal
                 isOpen={showModal}
                 onRequestClose={closeModal}
@@ -203,14 +216,27 @@ const BlogIndex = () => {
                 className="modal-content"
                 overlayClassName="modal-overlay"
               >
-                <button onClick={closeModal}>Close Modal</button>
-                <div style={{backgroundColor: "red", width: "400px", height: "400px", position: "fixed"}}>hellooooo</div>
+                <button onClick={closeModal}>X</button>
+                <div className="modal-scrollable-content">
+                <StaticImage
+                  src="../images/test-process.jpg"
+                  loading="eager"
+                  width={4800}
+                  quality={100}
+                  formats={["auto", "webp", "avif"]}
+                  alt=""
+                  style={{ marginBottom: `var(--space-3)` }}
+                />
+                </div>
               </Modal>
             </div>
         </div>
         <hr></hr>
         <div id="case-studies" className="studies-div panel" data-color="white">
-        <h2 className="section-h2">Case Studies</h2>
+          <div className="other-sections">
+            <h2 className="section-h2">Case Studies</h2>
+            <h4>The following are examples of my work. These case studies highlight the process I follow to make an impact while being efficient. You'll see how I tailor my approach to match the uniqueness of each project and the tight delivery timelines some required.</h4>
+          </div>
         {<div className="post-feed">
           {posts.map(post => {
             postCounter++

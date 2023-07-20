@@ -51,7 +51,7 @@
     padding-bottom: 5%;
   }
 
-  .groups-a button {
+  /* .groups-a button {
     border: 1px solid white;
     background-color: transparent;
     color: white;
@@ -68,9 +68,67 @@
   .groups-a button:hover {
     background-color: white;
     color: var(--color-primary);
-  }
+  } */
 
-  .groups-a a:hover{
+  .groups-a button { 
+    padding: 1rem 3rem; 
+    height: 80px;
+    text-align: center; 
+    background: rgb(235, 235, 235); 
+    border: 2px solid rgb(255, 255, 255); 
+    color: rgb(255, 255, 255); 
+    font-size: 1em; 
+    font-weight: 300; 
+  
+    text-decoration: none; 
+    transition: all 0.2s ease 0s; cursor: pointer; 
+    display: inline-block; vertical-align: middle; 
+    transform: translateZ(0px); 
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 1px; 
+    backface-visibility: hidden; position: relative; overflow: hidden; 
+  }
+  .groups-a button::before { content: ""; position: absolute; 
+    z-index: -1; left: 50%; right: 50%; bottom: 0px; 
+    background: rgb(50, 51, 48); 
+    color: rgb(50, 51, 48) !important;
+    height: 4px; 
+    transition-property: left, right; 
+    transition-duration: 0.3s; 
+    transition-timing-function: ease-out; 
+  }
+  .groups-a button:hover::before { left: 0px; right: 0px; }
+  .groups-a button:active::before { left: 0px; right: 0px; }
+
+  /* .my-btn-class-48 { 
+    padding: 1rem 3rem; 
+    text-align: center; 
+    background: rgb(221, 221, 221); 
+    border: 2px solid rgb(50, 51, 48); 
+    color: rgb(50, 51, 48); 
+    
+    font-family: "Open Sans", sans-serif; 
+    font-size: 1.2em; 
+    font-weight: 300; 
+  
+    text-decoration: none; 
+    transition: all 0.2s ease 0s; cursor: pointer; 
+    display: inline-block; vertical-align: middle; 
+    transform: translateZ(0px); 
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 1px; 
+    backface-visibility: hidden; position: relative; overflow: hidden; 
+  }
+  .my-btn-class-48::before { content: ""; position: absolute; 
+    z-index: -1; left: 50%; right: 50%; bottom: 0px; 
+    background: rgb(50, 51, 48); 
+    height: 4px; 
+    transition-property: left, right; 
+    transition-duration: 0.3s; 
+    transition-timing-function: ease-out; 
+  }
+  .my-btn-class-48:hover::before { left: 0px; right: 0px; }
+  .my-btn-class-48:active::before { left: 0px; right: 0px; } */
+
+  .openModal-button:hover{
     text-decoration: none;
     color: var(--color-primary);
   }
@@ -162,24 +220,40 @@
     margin-left: 20px;
   }
 
-  .section-h2{
+  .other-sections{
     text-align: center;
+    width: 60%;
+    margin: auto;
+  }
+
+  .other-sections h2{
+    color: black;
     font-size: 3rem;
     font-weight: 700;
+  }
+
+  .other-sections h4{
+    font-size: 1.4em;
   }
 
   @media (max-width: 1200px) {
     .groups-container {
       width: 100%;
     }
-  }  
+  } 
+  
+  @media (max-width: 1000px) {
+    .other-sections {
+      width: 100%;
+    }
+  } 
 
 
 /* ---------- change colors */
 
 /* Colors */
 .color-default {
-  background-color: #a3daeb;
+  background-color: #eefeff;
 }
 
 .color-violet {
@@ -213,17 +287,37 @@
 }
 
 .modal-content {
+  position: relative;
   background-color: #fff;
   border-radius: 8px;
   padding: 20px;
-  max-width: 600px;
-  width: 90%;
-  max-height: 80vh;
-  overflow-y: auto;
+  width: 95%;
+  height: 95vh;
+  max-height: 95vh;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+.modal-scrollable-content {
+  margin-top: 50px;
+  width: 2500px;
 }
 
 .modal-content button {
-  margin-top: 16px;
+  position: fixed;
+    top: 60px;
+    right: 50px;
+    float: right; 
+    color: var(--color-primary) !important;
+    font-weight: 700;
+    border: 2px solid var(--color-primary);
+    width: 40px;
+    padding: 0;
+}
+
+
+.openModal-button{
+  /* color: var(--color-primary) !important; */
 }
 
 
