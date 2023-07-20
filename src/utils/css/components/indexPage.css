@@ -96,7 +96,9 @@
     transition-duration: 0.3s; 
     transition-timing-function: ease-out; 
   }
-  .groups-a button:hover::before { left: 0px; right: 0px; }
+  .groups-a button:hover::before { left: 0px; 
+    font-weight: 700;
+    right: 0px; }
   .groups-a button:active::before { left: 0px; right: 0px; }
 
   /* .my-btn-class-48 { 
@@ -299,15 +301,27 @@
 }
 
 .modal-scrollable-content {
-  margin-top: 50px;
+  margin-top: 30px;
   width: 2500px;
+}
+
+.modal-h2-div{
+  background-color: black;
+}
+
+.modal-scrollable-content h2{
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+  padding-left: 30px;
+  margin: 0;
 }
 
 .modal-content button {
   position: fixed;
-    top: 60px;
-    right: 50px;
-    float: right; 
+    top: 30px;
+    right: 45px;
+    float: right;
     color: var(--color-primary) !important;
     font-weight: 700;
     border: 2px solid var(--color-primary);
