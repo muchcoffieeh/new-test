@@ -102,7 +102,7 @@ const BlogIndex = () => {
             src="../images/sx-logo.png"
             loading="eager"
             width={250}
-            quality={95}
+            quality={80}
             formats={["auto", "webp", "avif"]}
             alt=""
             style={{ marginBottom: `var(--space-3)` }}
@@ -148,7 +148,7 @@ const BlogIndex = () => {
   <div className="group-container reverse">
     <div className="group-image">
       <StaticImage
-        src="../images/systems-icon.png"
+        src="../images/collaboration.png"
         loading="eager"
         width={120}
         quality={95}
@@ -194,7 +194,7 @@ const BlogIndex = () => {
     
     <div className="group-image">
         <StaticImage
-          src="../images/systems-icon.png"
+          src="../images/process.png"
           loading="eager"
           width={120}
           quality={95}
@@ -225,8 +225,8 @@ const BlogIndex = () => {
                 <StaticImage
                   src="../images/test-process.jpg"
                   loading="eager"
-                  width={4800}
-                  quality={100}
+                  width={4000}
+                  quality={80}
                   formats={["auto", "webp", "avif"]}
                   alt=""
                   style={{ marginBottom: `var(--space-3)` }}

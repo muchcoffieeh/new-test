@@ -47,8 +47,8 @@
     text-align: center;
     /* padding-top: 25px; */
     font-size: 25px;
-    padding-top: 20%;
-    padding-bottom: 5%;
+    padding-bottom: 15vh;
+    padding-top: 40vh;
   }
 
   /* .groups-a button {
@@ -76,7 +76,7 @@
     text-align: center; 
     background: rgb(235, 235, 235); 
     border: 2px solid rgb(255, 255, 255); 
-    color: rgb(255, 255, 255); 
+    color: rgb(50, 51, 48) !important;
     font-size: 1em; 
     font-weight: 300; 
   

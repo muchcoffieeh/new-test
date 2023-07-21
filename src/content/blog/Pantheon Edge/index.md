@@ -1,7 +1,7 @@
 ---
 title: Pantheon Edge
 slug: /pantheon-edge
-date: "2020-04-01"
+date: "2023-01-01"
 tags: [All, Applications]
 templateKey: "private-post"
 thumbnail: ./thumb.jpg
@@ -9,7 +9,15 @@ description: "ROLE: PRODUCT CONCEPTUALIZATION & DESIGN, UX RESEARCH"
 ---
 
 In today's digital landscape, high-traffic websites are increasingly leveraging not only content delivery networks (CDNs) but also custom edge logic. This plays a crucial role in enhancing website performance, security, and reliability, enabling seamless delivery to millions of daily visitors, and efficiently handling sudden spikes in traffic.
-Pantheon, a platform for managing high-performance websites, currently offers a suite of tools for customizing edge logic. However, this is all behind a curtain as it is a fully-managed service. This current solution poses several significant issues:
+Pantheon, a platform for managing high-performance websites, currently offers a suite of tools for customizing edge logic. 
+
+<div className="kg-card kg-image-card kg-width-wide">
+
+![Screenshots](./Configs-dashboard.jpg)
+
+</div>
+
+However, this is all behind a curtain as it is a fully-managed service. The rendering above is the intended direction we're headed. The current managed solution poses several significant issues:
 Business perspective
 
 - High operational costs and inefficiencies from the required heavy manual intervention.
@@ -18,12 +26,6 @@ Business perspective
 - Long lead-times. Every time customers needed to make changes, they were required to submit a ticket, leading to a time-consuming and resource-intensive process.
 - No visibility. The lack of transparency created inconvenience and made it challenging for customers to understand the impact and value of their requested changes.
   The tech lead, product manager, and I went to work to realize the vision of turning the fully-managed service into self-service product.
-
-<div className="kg-card kg-image-card kg-width-wide">
-
-![Screenshots](./splash_screen-edited.jpeg)
-
-</div>
 
 ### Research for Key Decisions
 
