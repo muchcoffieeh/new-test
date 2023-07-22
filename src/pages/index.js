@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useStaticQuery, graphql } from "gatsby"
 import Modal from 'react-modal';
+import { Link } from "gatsby";
 
 import Layout from "../components/layout"
-import PostCard from "../components/postCard"
+// import PostCard from "../components/postCard"
 import { StaticImage } from "gatsby-plugin-image"
-import Subpage1 from "../subpages/subpage-many";
 
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
@@ -256,22 +256,98 @@ const BlogIndex = () => {
         
         <div id="case-studies" className="studies-div panel" data-color="white">
           <div className="other-sections">
-            <h2 className="section-h2">Case Studies</h2>
-            <h4>The following are examples of my work. These case studies highlight the process I follow to make an impact while being efficient. You'll see how I tailor my approach to match the uniqueness of each project and the tight delivery timelines some required.</h4>
+            <h2 className="section-h2">My Work</h2>
+            <h4>The following are selected examples of my work with various organizations. I've chosen these to highlight the process I follow to make an impact while being efficient. You'll see how I tailor my approach to match the uniqueness of each project, the stage of the organization, and the tight delivery timelines some required.</h4>
           </div>
-        {<div className="post-feed">
-          {posts.map(post => {
-            postCounter++
-            return (
-              <PostCard
-                key={post.id}
-                count={postCounter}
-                post={post}
-                postClass={`post`}
+
+        <Link to="/pantheon-work" className="subpage-link">
+          <div className="subpage-content">
+            <div className="subpage-img">
+              <StaticImage
+                src="../images/pantheon-comp.jpg"
+                loading="eager"
+                width={600}
+                quality={95}
+                formats={["auto", "webp", "avif"]}
+                alt=""
+                style={{ marginBottom: `var(--space-3)` }}
               />
-            )
-          })}
-        </div> }
+            </div>
+
+            <div className="subpage-container">
+              <h2>Pantheon Platform</h2>
+              <h4>Pantheon powers the open web, running sites in the cloud for customers including Stitch Fix, Okta, Home Depot, Pernod Ricard, and The Barack Obama Foundation.</h4>
+              <p>I’m currently designing developer experiences and leading design on the Core Site Services team.</p>
+            </div>
+          </div>
+        </Link>
+
+        <Link to="/txm-work" className="subpage-link">
+          <div className="subpage-content">
+            <div className="subpage-img">
+              <StaticImage
+                src="../images/txm-comp.jpg"
+                loading="eager"
+                width={600}
+                quality={95}
+                formats={["auto", "webp", "avif"]}
+                alt=""
+                style={{ marginBottom: `var(--space-3)` }}
+              />
+            </div>
+
+            <div className="subpage-container">
+              <h2>Tempus Ex</h2>
+              <h4>Fully-integrated ultrafast electric vehicle charging solutions that free customers from the limitations of the electric grid.</h4>
+              <p>Design for optimizing host pricing strategies and overall app experience. This was also my transition from marketing into product design.</p>
+            </div>
+          </div>
+        </Link>
+
+        <Link to="/freewire-tech-work" className="subpage-link">
+          <div className="subpage-content">
+            <div className="subpage-img">
+              <StaticImage
+                src="../images/freewire-comp.jpg"
+                loading="eager"
+                width={600}
+                quality={95}
+                formats={["auto", "webp", "avif"]}
+                alt=""
+                style={{ marginBottom: `var(--space-3)` }}
+              />
+            </div>
+
+            <div className="subpage-container">
+              <h2>FreeWire Technologies</h2>
+              <h4>Fully-integrated ultrafast electric vehicle charging solutions that free customers from the limitations of the electric grid.</h4>
+              <p>Design for optimizing host pricing strategies and overall app experience. This was also my transition from marketing into product design.</p>
+            </div>
+          </div>
+        </Link>
+
+        <Link to="/freewire-tech-work" className="subpage-link">
+          <div className="subpage-content">
+            <div className="subpage-img">
+              <StaticImage
+                src="../images/aaf-comp.jpg"
+                loading="eager"
+                width={600}
+                quality={95}
+                formats={["auto", "webp", "avif"]}
+                alt=""
+                style={{ marginBottom: `var(--space-3)` }}
+              />
+            </div>
+
+            <div className="subpage-container">
+              <h2>Alliance of American Football</h2>
+              <h4>Fully-integrated ultrafast electric vehicle charging solutions that free customers from the limitations of the electric grid.</h4>
+              <p>Design for optimizing host pricing strategies and overall app experience. This was also my transition from marketing into product design.</p>
+            </div>
+          </div>
+        </Link>
+
         </div>
         
     </Layout>

@@ -337,9 +337,32 @@
 }
 
 
-.openModal-button{
-  /* color: var(--color-primary) !important; */
+/* ------------subpage stuff ------------*/
+.subpage-link {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: inherit;
 }
+
+.subpage-content {
+  display: flex;
+  align-items: center;
+  padding: 2em 3em;
+}
+
+.subpage-img {
+  flex: 1;
+  margin-right: 3em;
+  width: 30%;
+}
+
+.subpage-container {
+  flex: 2;
+  /* Add any additional styles for the subpage-container here */
+}
+
+
 
 
 
