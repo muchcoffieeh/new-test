@@ -133,3 +133,40 @@ We successfully reached the targeted milestone of creating a full prototype to v
 ![Screenshots](./mid-fi-mobile3.jpg)
 
 </div>
+
+### Concept Validation
+
+It was time to validate the MVP product concept with customers. The prototype was tested with selected customers and external participants that closely resembled our customers. The participants were asked to complete a series of tasks and we documented their success, points of friction, and any open feedback they gave through out the process. I distilled the results into a comprehensive report to inform my team and cross-functional partners. Nobody likes long slide decks so I strategically crafted a slide deck that peeled back like an onion (or a good Twitter thread). The first section of just 8 slides covered the key insights, respective details and recommendations, and a quick context of the research methodology. 
+
+<div className="kg-card kg-image-card kg-width-full kg-desktop">
+
+![report](./presentation1.jpg)
+
+</div>
+
+For anyone with the bandwidth to dive in, the details of the study were pulled into the appendix of 17 slides to include 
+- Focused hypotheses mapped to execution outcomes
+- Feedback by customer 
+- visibility into the testing and participant recruitment process
+
+<div className="kg-card kg-image-card kg-width-full kg-desktop">
+
+![report](./presentation2.jpg)
+
+</div>
+
+<div className="kg-card kg-image-card kg-width-med kg-desktop">
+
+![report](./presentation3.jpg)
+
+</div>
+
+And finally, I closed the appendix with a hierarchy chart of documentation on this work for all my cross-functional partners to navigate to the ones they needed to progress their part.
+
+<div className="kg-card kg-image-card kg-width-med kg-desktop">
+
+![report](./presentation4.jpg)
+
+</div>
+
+Thank you for reading this super long case study.
