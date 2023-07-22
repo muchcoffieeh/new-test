@@ -338,11 +338,36 @@
 
 
 /* ------------subpage stuff ------------*/
+/* ------- normal ---- */
 .subpage-link {
   display: block;
   padding: 10px;
   text-decoration: none;
   color: inherit;
+  background: black;
+}
+
+.subpage-link:hover{
+  text-decoration: none;
+  transition: all 0.4s ease;
+  transform: translate3D(0, -1px, 0) scale(1.03);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.subpage-link h2{
+  color: white !important;
+  font-weight: 500;
+}
+
+.subpage-link h4{
+  font-size: 1.4em;
+  color: var(--color-sub-base);
+}
+
+.subpage-link p{
+  font-size: 1.2em;
+  color: var(--color-white);
+  font-weight: 500;
 }
 
 .subpage-content {
@@ -359,7 +384,51 @@
 
 .subpage-container {
   flex: 2;
-  /* Add any additional styles for the subpage-container here */
+}
+
+/* ------ reverse -------- */
+.subpage-link.reverse{
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: inherit;
+  background: white;
+}
+
+.subpage-link.reverse:hover{
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.subpage-link.reverse h2{
+  color: black !important;
+  font-weight: 500;
+}
+
+.subpage-link.reverse h4{
+  font-size: 1.4em;
+  color: var(--color-base);
+}
+
+.subpage-link.reverse p{
+  font-size: 1.2em;
+  color: var(--color-bg-dark);
+  font-weight: 500;
+}
+
+.subpage-content.reverse{
+  display: flex;
+  align-items: center;
+  padding: 2em 3em;
+}
+
+.subpage-img.reverse{
+  flex: 1;
+  margin-right: 3em;
+  width: 30%;
+}
+
+.subpage-container.reverse{
+  flex: 2;
 }
 
 

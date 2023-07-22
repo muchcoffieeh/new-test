@@ -260,7 +260,12 @@ const BlogIndex = () => {
             <h4>The following are selected examples of my work with various organizations. I've chosen these to highlight the process I follow to make an impact while being efficient. You'll see how I tailor my approach to match the uniqueness of each project, the stage of the organization, and the tight delivery timelines some required.</h4>
           </div>
 
-        <Link to="/pantheon-work" className="subpage-link">
+
+
+        </div>
+        
+    </Layout>
+    <Link to="/pantheon-work" className="subpage-link">
           <div className="subpage-content">
             <div className="subpage-img">
               <StaticImage
@@ -282,9 +287,9 @@ const BlogIndex = () => {
           </div>
         </Link>
 
-        <Link to="/txm-work" className="subpage-link">
-          <div className="subpage-content">
-            <div className="subpage-img">
+        <Link to="/txm-work" className="subpage-link reverse">
+          <div className="subpage-content reverse">
+            <div className="subpage-img reverse">
               <StaticImage
                 src="../images/txm-comp.jpg"
                 loading="eager"
@@ -296,7 +301,7 @@ const BlogIndex = () => {
               />
             </div>
 
-            <div className="subpage-container">
+            <div className="subpage-container reverse">
               <h2>Tempus Ex</h2>
               <h4>Fully-integrated ultrafast electric vehicle charging solutions that free customers from the limitations of the electric grid.</h4>
               <p>Design for optimizing host pricing strategies and overall app experience. This was also my transition from marketing into product design.</p>
@@ -326,9 +331,9 @@ const BlogIndex = () => {
           </div>
         </Link>
 
-        <Link to="/freewire-tech-work" className="subpage-link">
-          <div className="subpage-content">
-            <div className="subpage-img">
+        <Link to="/aaf-work" className="subpage-link reverse">
+          <div className="subpage-content reverse">
+            <div className="subpage-img reverse">
               <StaticImage
                 src="../images/aaf-comp.jpg"
                 loading="eager"
@@ -340,17 +345,13 @@ const BlogIndex = () => {
               />
             </div>
 
-            <div className="subpage-container">
+            <div className="subpage-container reverse">
               <h2>Alliance of American Football</h2>
               <h4>Fully-integrated ultrafast electric vehicle charging solutions that free customers from the limitations of the electric grid.</h4>
               <p>Design for optimizing host pricing strategies and overall app experience. This was also my transition from marketing into product design.</p>
             </div>
           </div>
         </Link>
-
-        </div>
-        
-    </Layout>
     </div>
   )
 }
