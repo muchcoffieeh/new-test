@@ -1,0 +1,40 @@
+nav {
+    position: fixed;
+    top: 50vh;
+    right: 1vw;
+    margin-left: 36px;
+    max-width: 200px;
+    min-width: 150px;
+  }
+  
+  ul.toc-list {
+    border-left: 1px solid #363636;
+    padding-left: 1em;
+  }
+  
+  ul.toc-list > li {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+    font-size: 17px;
+  }
+  
+  ul.toc-list > li > a {
+    color: #8f8f8f;
+    text-decoration: none;
+    border-bottom: 0;
+    transition: 1s all ease-in-out;
+  }
+  
+  ul.toc-list > li.is-current > a {
+    color: black;
+    font-weight: 400;
+    ;
+  }
+  
+  /* Hide Table of Content when screen is smaller than 1440px */
+  @media only screen and (max-width: 1200px) {
+    nav {
+      display: none;
+    }
+  }

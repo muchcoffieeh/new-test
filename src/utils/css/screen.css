@@ -26,9 +26,10 @@ production stylesheet in assets/built/screen.css using gulp dev
 body {
   /* font-family: 'Muli', sans-serif; */
   font-family: var(--font-sans-serif);
-  background: var(--color-bg);
-  transition: background 0.3s ease-out;
+  /* background: var(--color-bg); */
+  transition: background-color 0.3s ease-out;
   transition-delay: 0.25;
+  color: #6e6e6e;
 }
 
 .img {
@@ -68,10 +69,22 @@ body {
   margin: auto;
 }
 
+.pw-form label{
+  font-size: 1.2em;
+}
+
 .pw-button {
+  margin-top: 1rem;
   background-color: black;
   color: white;
   border: 0;
+  font-size: 1.2em;
+}
+
+.pw-button:hover {
+  font-style: italic;
+  font-weight: 700;
+  color: white !important;
 }
 
 .page-head {
@@ -83,6 +96,10 @@ body {
   max-width: 70%;
   margin: auto;
   text-align: center;
+}
+
+.page-head h4{
+  width: 85%;
 }
 
 .error-head {
@@ -111,7 +128,7 @@ body {
 }
 
 .page-head-title {
-  margin: 0;
+  margin: 1em 0 0.5em 0;
   color: var(--color-base);
 }
 @media (max-width: 500px) {
@@ -161,6 +178,8 @@ body {
 
 .site-head-left {
   position: relative;
+  top: 0;
+  right: 5px;
   z-index: 100;
   display: flex;
   align-items: center;
@@ -576,7 +595,16 @@ body {
   /* .post-card.no-image .post-card-date, */
   .post-card.no-image .post-card-body,
   .post-card.no-image .post-card-readmore {
-    display: none;
+    display: none; 
+  }
+
+  .page-head{
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .page-head h4{
+    width: 100%;
   }
 }
 @media (max-width: 700px) {
