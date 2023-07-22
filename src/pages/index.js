@@ -116,95 +116,112 @@ const BlogIndex = () => {
         </header>
         <div>
         <div className="groups-container panel" data-color="white">
-  <div className="group-container">
-    <div className="group-content"
-      data-sal="slide-left"
-      data-sal-delay="950"
-      data-sal-duration="100000000000000s"
-      data-sal-easing="ease"
-    >
-      <div className="vert-divider"></div>
-      <h2>Systems Thinking</h2>
-      <p>I lean in and deeply analyze the complicated webs of relationships between technical components, people, pain points, and market factors to inform my design decisions.</p>
-      <ul>
-        <li>Market Research</li>
-        <li>Competitive/Comparative Analysis</li>
-        <li>Persona Classification/Definition</li>
-      </ul>
-    </div>
-    <div className="group-image">
-      <StaticImage
-        src="../images/systems-icon.png"
-        loading="eager"
-        width={120}
-        quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt=""
-        style={{ marginBottom: `var(--space-3)` }}
-      />
-    </div>
-  </div>
+          {/* --------------1st grp starts------------------ */}
+          <div className="group-container">
+            <div className="group-content"
+              data-sal="slide-left"
+              data-sal-delay="950"
+              data-sal-duration="100000000000000s"
+              data-sal-easing="ease"
+            >
+              <div className="vert-divider"></div>
+              <h2>Systems Thinking</h2>
+              <p>I lean in and deeply analyze the complicated webs of relationships between technical components, people, pain points, and market factors to inform my design decisions.</p>
+              <ul>
+                <li>Market Research</li>
+                <li>Competitive/Comparative Analysis</li>
+                <li>Persona Classification/Definition</li>
+              </ul>
+            </div>
+            <div className="group-image"
+              data-sal="slide-right"
+              data-sal-delay="950"
+              data-sal-duration="100000000000000s"
+              data-sal-easing="ease"
+            >
+              <StaticImage
+                src="../images/systems-icon.png"
+                loading="eager"
+                width={120}
+                quality={95}
+                formats={["auto", "webp", "avif"]}
+                alt=""
+                style={{ marginBottom: `var(--space-3)` }}
+              />
+            </div>
+          </div>
+          {/* --------------2nd grp starts------------------ */}
+          <div className="group-container reverse">
+            <div className="group-image"
+              data-sal="slide-left"
+              data-sal-delay="400"
+              data-sal-duration="100000000000000s"
+              data-sal-easing="ease"
+            >
+              <StaticImage
+                src="../images/collaboration.png"
+                loading="eager"
+                width={120}
+                quality={95}
+                formats={["auto", "webp", "avif"]}
+                alt=""
+                style={{ marginBottom: `var(--space-3)` }}
+              />
+            </div>
+            
+            <div className="group-content right"
+              data-sal="slide-right"
+              data-sal-delay="300"
+              data-sal-duration="10000000s"
+              data-sal-easing="ease"
+            >
+            <div className="vert-divider right"></div>
+              <h2>Collaboration</h2>
+              <p>Collaboration with cross-functional teams is my go-to for generating ideas and insights that give way to delightful customer experiences.</p>
+              <ul className="ul-reverse">
+                <li>Moderated/Unmoderated Interviews</li>
+                <li>Participatory Design Workshops</li>
+                <li>Information Architecture</li>
+              </ul>
+            </div>
+          </div>
 
-  <div className="group-container reverse">
-    <div className="group-image">
-      <StaticImage
-        src="../images/collaboration.png"
-        loading="eager"
-        width={120}
-        quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt=""
-        style={{ marginBottom: `var(--space-3)` }}
-      />
-    </div>
-    
-    <div className="group-content right"
-      data-sal="slide-right"
-      data-sal-delay="300"
-      data-sal-duration="10000000s"
-      data-sal-easing="ease"
-    >
-    <div className="vert-divider right"></div>
-      <h2>Collaboration</h2>
-      <p>Collaboration with cross-functional teams is my go-to for generating ideas and insights that give way to delightful customer experiences.</p>
-      <ul className="ul-reverse">
-        <li>Moderated/Unmoderated Interviews</li>
-        <li>Participatory Design Workshops</li>
-        <li>Information Architecture</li>
-      </ul>
-    </div>
-  </div>
-
-  <div className="group-container">
-    <div className="group-content"
-      data-sal="slide-left"
-      data-sal-delay="300"
-      data-sal-duration="10000000s"
-      data-sal-easing="ease"
-    >
-    <div className="vert-divider"></div>
-      <h2>Process Efficiency</h2>
-      <p>I operate with a tried and true framework of research, conceptualize, and execute to deliver on key objectives while adjusting for the unique characteristics and constraints of each project.</p>
-      <ul>
-        <li>Product Requirements</li>
-        <li>User Flow Iteration</li>
-        <li>Prototype Testing</li>
-      </ul>
-    </div>
-    
-    <div className="group-image">
-        <StaticImage
-          src="../images/process.png"
-          loading="eager"
-          width={120}
-          quality={95}
-          formats={["auto", "webp", "avif"]}
-          alt=""
-          style={{ marginBottom: `var(--space-3)` }}
-        />
-    </div>
-  </div>
-</div>
+          {/* --------------3rd grp starts------------------ */}
+          <div className="group-container">
+            <div className="group-content"
+              data-sal="slide-left"
+              data-sal-delay="300"
+              data-sal-duration="10000000s"
+              data-sal-easing="ease"
+            >
+            <div className="vert-divider"></div>
+              <h2>Process Efficiency</h2>
+              <p>I operate with a tried and true framework of research, conceptualize, and execute to deliver on key objectives while adjusting for the unique characteristics and constraints of each project.</p>
+              <ul>
+                <li>Product Requirements</li>
+                <li>User Flow Iteration</li>
+                <li>Prototype Testing</li>
+              </ul>
+            </div>
+            
+            <div className="group-image"
+              data-sal="slide-right"
+              data-sal-delay="400"
+              data-sal-duration="100000000000000s"
+              data-sal-easing="ease"
+            >
+                <StaticImage
+                  src="../images/process.png"
+                  loading="eager"
+                  width={120}
+                  quality={95}
+                  formats={["auto", "webp", "avif"]}
+                  alt=""
+                  style={{ marginBottom: `var(--space-3)` }}
+                />
+            </div>
+          </div>
+        </div>
 
 {/* <button class="my-btn my-btn-class-48">Button 48</button> */}
 <div className="groups-a panel" data-color="violet">
