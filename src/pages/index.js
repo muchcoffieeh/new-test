@@ -21,7 +21,7 @@ const BlogIndex = () => {
         description
       }
     }
-    allMdx {
+    allMdx(sort: {frontmatter: {date: DESC}}) {
     nodes {
       id
       frontmatter {
