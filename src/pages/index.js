@@ -5,6 +5,7 @@ import Modal from 'react-modal';
 import Layout from "../components/layout"
 import PostCard from "../components/postCard"
 import { StaticImage } from "gatsby-plugin-image"
+import Subpage1 from "../subpages/subpage-many";
 
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
@@ -98,22 +99,22 @@ const BlogIndex = () => {
     <Layout title={data.site.siteMetadata.title}>
       
       <header className="page-head" data-sal="fade">
-          <StaticImage
-            src="../images/sx-logo.png"
-            loading="eager"
-            width={250}
-            quality={80}
-            formats={["auto", "webp", "avif"]}
-            alt=""
-            style={{ marginBottom: `var(--space-3)` }}
-          />
-          <h1 className="page-head-title">Delightful experiences designed strategically.</h1>
+        <StaticImage
+          src="../images/sx-logo.png"
+          loading="eager"
+          width={250}
+          quality={80}
+          formats={["auto", "webp", "avif"]}
+          alt=""
+          style={{ marginBottom: `var(--space-3)` }}
+        />
+        <h1 className="page-head-title">Delightful experiences designed strategically.</h1>
 
-          <h4 style={{ margin: "0.1em 0", fontSize: "1.4em" }}>
-            {/* {data.site.siteMetadata.description} */}
-            I'm a versatile and strategic designer, especially skilled at connecting the dots to find clarity in ambiguous/amorphous situations. With a deep set of skills ranging from visual design to frontend development, I craft intuitive and impactful experiences for users.
-          </h4>
-        </header>
+        <h4 style={{ margin: "0.1em 0", fontSize: "1.4em" }}>
+          {/* {data.site.siteMetadata.description} */}
+          I'm a versatile and strategic designer, especially skilled at connecting the dots to find clarity in ambiguous/amorphous situations. With a deep set of skills ranging from visual design to frontend development, I craft intuitive and impactful experiences for users.
+        </h4>
+      </header>
         <div>
         <div className="groups-container panel" data-color="white">
           {/* --------------1st grp starts------------------ */}
@@ -223,8 +224,7 @@ const BlogIndex = () => {
           </div>
         </div>
 
-{/* <button class="my-btn my-btn-class-48">Button 48</button> */}
-<div className="groups-a panel" data-color="violet">
+        <div className="groups-a panel" data-color="violet">
               <button className="openModal-button" onClick={openModal}>See How I Operate</button>
               <Modal
                 isOpen={showModal}
@@ -253,6 +253,7 @@ const BlogIndex = () => {
             </div>
         </div>
         <hr></hr>
+        
         <div id="case-studies" className="studies-div panel" data-color="white">
           <div className="other-sections">
             <h2 className="section-h2">Case Studies</h2>
