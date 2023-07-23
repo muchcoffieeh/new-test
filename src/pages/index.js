@@ -281,7 +281,7 @@ const BlogIndex = () => {
 
             <div className="subpage-container">
               <h2>Pantheon Platform</h2>
-              <h4>Pantheon powers the open web, running sites in the cloud for customers including Stitch Fix, Okta, Home Depot, Pernod Ricard, and The Barack Obama Foundation.</h4>
+              <h4>Pantheon powers the open web, running sites in the cloud for customers including Stitch Fix, Okta, Home Depot, Pernod Ricard, and The Barack Obama Foundation. Pantheon’s cloud native software makes it easy to securely manage a single website or thousands of websites across multiple teams in one platform.</h4>
               <p>I’m currently designing developer experiences and leading design on the Core Site Services team.</p>
             </div>
           </div>
@@ -303,8 +303,8 @@ const BlogIndex = () => {
 
             <div className="subpage-container reverse">
               <h2>Tempus Ex</h2>
-              <h4>Fully-integrated ultrafast electric vehicle charging solutions that free customers from the limitations of the electric grid.</h4>
-              <p>Design for optimizing host pricing strategies and overall app experience. This was also my transition from marketing into product design.</p>
+              <h4>Merging sports, video, and data with innovation and accessibility, Tempus Ex technology enables the creation of new interactive experiences around live events. Tempus Ex partners with the National Football League, premier global sports leagues, and broadcasters to deliver cutting-edge sports experience solutions.</h4>
+              <p>I was rapidly translating product ideas into dynamic visual prototypes and collaborating closely with a small and nimble engineering team to deliver functional proof-of-concepts.</p>
             </div>
           </div>
         </Link>
@@ -325,8 +325,8 @@ const BlogIndex = () => {
 
             <div className="subpage-container">
               <h2>FreeWire Technologies</h2>
-              <h4>Fully-integrated ultrafast electric vehicle charging solutions that free customers from the limitations of the electric grid.</h4>
-              <p>Design for optimizing host pricing strategies and overall app experience. This was also my transition from marketing into product design.</p>
+              <h4>FreeWire is an industry leader in battery-integrated ultrafast electric vehicle (EV) charging and energy management solutions solving grid infrastructure constraints by designing and manufacturing scalable clean power, driving the global transition to electrified transportation.</h4>
+              <p>I designed innovative digital solutions that seamlessly complemented the cutting-edge battery-integrated ultrafast EV charging and energy management offerings. In my tenure with FreeWire, I successfully transitioned from marketing to product design.</p>
             </div>
           </div>
         </Link>
@@ -347,8 +347,8 @@ const BlogIndex = () => {
 
             <div className="subpage-container reverse">
               <h2>Alliance of American Football</h2>
-              <h4>Fully-integrated ultrafast electric vehicle charging solutions that free customers from the limitations of the electric grid.</h4>
-              <p>Design for optimizing host pricing strategies and overall app experience. This was also my transition from marketing into product design.</p>
+              <h4>The Alliance of American Football (AAF) was a professional spring league founded by Charlie Ebersol and Bill Polan. The AAF closed in April 2019 but its lasting legacy lies in pioneering advanced sport tech, including real-time data streaming, wearables for players, and a live fantasy app with interactive features, revolutionizing the fan experience.</h4>
+              <p>As the design lead for the web platform at AAF, I focused on crafting interactive experiences and enhancing fan engagement both during games and in-between, redefining the sports viewing experience.</p>
             </div>
           </div>
         </Link>
