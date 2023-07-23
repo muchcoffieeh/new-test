@@ -12,6 +12,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           id
           frontmatter {
             slug
+            category
             templateKey
           }
           internal {
@@ -40,7 +41,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         // component: privatePageTemplate,
         // context: { id: node.id },
 
-        path: `content${node.frontmatter.slug}`,
+        path: `${node.frontmatter.category}/content${node.frontmatter.slug}`,
         // Provide the path to the MDX content file so webpack can pick it up and transform it into JSX
         component: `${privatePostTemplate}?__contentFilePath=${node.internal.contentFilePath}`,
         // You can use the values in this context in
@@ -53,7 +54,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         // component: pageTemplate,
         // context: { id: node.id },
 
-        path: `content${node.frontmatter.slug}`,
+        path: `${node.frontmatter.category}/content${node.frontmatter.slug}`,
         // Provide the path to the MDX content file so webpack can pick it up and transform it into JSX
         component: `${postTemplate}?__contentFilePath=${node.internal.contentFilePath}`,
         // You can use the values in this context in

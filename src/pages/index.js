@@ -331,7 +331,7 @@ const BlogIndex = () => {
           </div>
         </Link>
 
-        <Link to="/aaf-work" className="subpage-link reverse">
+        <Link to="/aaf-work/content/aaf-web" className="subpage-link reverse">
           <div className="subpage-content reverse">
             <div className="subpage-img reverse">
               <StaticImage

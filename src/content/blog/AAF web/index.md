@@ -3,6 +3,7 @@ title: Alliance of American Football Web Platform
 slug: /aaf-web
 date: "2019-05-08"
 tags: [All, Applications]
+category: "aaf-work"
 thumbnail: ./game-time_web.jpg
 description: "ROLE: UX/UI DESIGN, MANAGED DEVELOPMENT"
 ---

@@ -7,7 +7,7 @@ import "../utils/css/screen.css"
 
 const SubpageA = ({ data }) => {
   const postsInCategoryA = data.allMdx.nodes.filter(
-    (post) => post.frontmatter.category === "tempusex"
+    (post) => post.frontmatter.category === "txm-work"
   );
 
   let postCounter = 0;

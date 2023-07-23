@@ -3,6 +3,7 @@ title: TXM Instant Replay
 slug: /txm-instant-replay
 date: "2019-03-08"
 tags: [All, Applications]
+category: "txm-work"
 description: "ROLE: UX/UI DESIGN, MANAGED DEVELOPMENT"
 thumbnail: ./replay-thumb.jpg
 ---
