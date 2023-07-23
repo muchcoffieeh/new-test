@@ -3,8 +3,7 @@ title: Pantheon Edge
 slug: /pantheon-edge
 date: "2023-01-01"
 tags: [All, Applications]
-templateKey: "private-post"
-category: "pantheon"
+category: "pantheon-work"
 thumbnail: ./thumb.jpg
 description: "ROLE: PRODUCT CONCEPTUALIZATION & DESIGN, UX RESEARCH"
 ---
