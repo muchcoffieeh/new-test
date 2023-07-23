@@ -11,7 +11,7 @@ export default function PrivatePageTemplate({ data, children }) {
   const [password, setPassword] = useState("")
   const [isPasswordCorrect, setIsPasswordCorrect] = useState(false)
 
-  console.log("the children", children)
+  // console.log("the children", children)
 
   const handlePasswordChange = event => {
     setPassword(event.target.value)

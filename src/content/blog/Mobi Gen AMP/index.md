@@ -3,7 +3,7 @@ title: Mobi Gen AMP
 slug: /mobi-gen-amp
 date: "2018-01-05"
 tags: [All, Applications]
-category: "freewire"
+category: "freewire-tech-work"
 thumbnail: ./MobiGenAMP_thumb.jpg
 description: "ROLE: SOLE DESIGNER, USER RESEARCH, PRODUCT MANAGEMENT"
 ---

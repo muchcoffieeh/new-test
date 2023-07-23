@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react"
 import { graphql } from "gatsby";
 import PostCard from "../components/PostCard";
 
@@ -12,9 +12,30 @@ const SubpageA = ({ data }) => {
 
   let postCounter = 0;
 
+  const [password, setPassword] = useState("")
+  const [isPasswordCorrect, setIsPasswordCorrect] = useState(false)
+
+  const handlePasswordChange = event => {
+    setPassword(event.target.value)
+  }
+
+  const handleSubmit = event => {
+    event.preventDefault()
+
+    // Check if the entered password is correct
+    if (password === "canoes10") {
+      setIsPasswordCorrect(true)
+    } else {
+      alert("Wrong password. Please try again.")
+      setIsPasswordCorrect(false)
+    }
+  }
+
   return (
     <div>
-      <header className="page-head" data-sal="fade">
+      {isPasswordCorrect ? (
+        <>
+      <header className="page-head">
         <h1 className="page-head-title">Tempus Ex</h1>
 
         <h4 style={{ margin: "0.1em 0", fontSize: "1.4em" }}>
@@ -35,6 +56,19 @@ const SubpageA = ({ data }) => {
           );
         })}
       </div>
+      </>
+      ) : (
+        <div className="pw-form">
+            <h2>Enter the password. Please.</h2>
+        <form onSubmit={handleSubmit}>
+          <label>
+            Password:
+            <input type="password" value={password} onChange={handlePasswordChange} />
+          </label>
+          <button className="pw-button" type="submit">Submit</button>
+        </form>
+        </div>
+      )}
     </div>
   );
 };

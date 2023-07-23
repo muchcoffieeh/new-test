@@ -2,7 +2,7 @@
 title: Mobi Gen Interface Design
 slug: /mobi-interface
 date: "2019-04-02"
-category: "freewire"
+category: "freewire-tech-work"
 thumbnail: ./HMI-thumb.jpg
 description: "ROLE: UX/UI DESIGN, DESIGN AND PROJECT MANAGEMENT"
 ---
