@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { graphql } from "gatsby";
-import PostCard from "../components/PostCard";
+import PostCard from "../components/postCard.js";
 
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
@@ -40,7 +40,7 @@ const SubpageA = ({ data }) => {
 
         <h4 style={{ margin: "0.1em 0", fontSize: "1.4em" }}>
 
-        Fully-integrated ultrafast electric vehicle charging solutions that free customers from the limitations of the electric grid.        </h4>
+        Merging sports, video, and data with innovation and accessibility, Tempus Ex technology enables the creation of new interactive experiences around live events. Tempus Ex partners with the National Football League, premier global sports leagues, and broadcasters to deliver cutting-edge sports experience solutions.</h4>
       </header>
 
       <div className="post-feed">

@@ -430,7 +430,7 @@ body {
   margin: 2rem;
   flex: 1 1 25%;
   display: flex;
-  height: 23vw;
+  height: 25vw;
   /* background: linear-gradient(135deg, #1f1f1f 0%, #111 100%) center center; */
   /* based #1d1d1f */
   background: linear-gradient(135deg, #242426 0%, #161618 100%) center center;

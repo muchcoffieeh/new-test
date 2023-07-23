@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { graphql } from "gatsby";
-import PostCard from "../components/PostCard";
+import PostCard from "../components/postCard.js";
 
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
@@ -40,7 +40,7 @@ const SubpageA = ({ data }) => {
 
         <h4 style={{ margin: "0.1em 0", fontSize: "1.4em" }}>
 
-        Fully-integrated ultrafast electric vehicle charging solutions that free customers from the limitations of the electric grid.        </h4>
+        Pantheon powers the open web, running sites in the cloud for customers including Stitch Fix, Okta, Home Depot, Pernod Ricard, and The Barack Obama Foundation. Pantheon’s cloud native software makes it easy to securely manage a single website or thousands of websites across multiple teams in one platform.</h4>
       </header>
 
       <div className="post-feed">

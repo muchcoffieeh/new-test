@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { graphql } from "gatsby";
-import PostCard from "../components/PostCard";
+import PostCard from "../components/postCard.js";
 
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
@@ -40,7 +40,7 @@ const SubpageA = ({ data }) => {
 
         <h4 style={{ margin: "0.1em 0", fontSize: "1.4em" }}>
 
-        Fully-integrated ultrafast electric vehicle charging solutions that free customers from the limitations of the electric grid.        </h4>
+        FreeWire is an industry leader in battery-integrated ultrafast electric vehicle (EV) charging and energy management solutions solving grid infrastructure constraints by designing and manufacturing scalable clean power, driving the global transition to electrified transportation.</h4>
       </header>
 
       <div className="post-feed">

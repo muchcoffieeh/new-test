@@ -4,6 +4,7 @@ slug: /pantheon-edge
 date: "2023-01-01"
 tags: [All, Applications]
 category: "pantheon-work"
+templateKey: "public-post"
 thumbnail: ./thumb.jpg
 description: "ROLE: PRODUCT CONCEPTUALIZATION & DESIGN, UX RESEARCH"
 ---
