@@ -98,11 +98,11 @@ const BlogIndex = () => {
     <div className={currentColor} data-color="default">
     <Layout title={data.site.siteMetadata.title}>
       
-      <header className="page-head" data-sal="fade">
+      <header className="page-head">
         <StaticImage
           src="../images/sx-logo.png"
           loading="eager"
-          width={250}
+          width={400}
           quality={80}
           formats={["auto", "webp", "avif"]}
           alt=""
@@ -115,7 +115,7 @@ const BlogIndex = () => {
           I'm a versatile and strategic designer, especially skilled at connecting the dots to find clarity in ambiguous/amorphous situations. With a deep set of skills ranging from visual design to frontend development, I craft intuitive and impactful experiences for users.
         </h4>
       </header>
-        <div>
+        <div id="my-process">
         <div className="groups-container panel" data-color="white">
           {/* --------------1st grp starts------------------ */}
           <div className="group-container">

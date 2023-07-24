@@ -94,6 +94,7 @@ body {
   justify-content: center;
   padding: 3vw 0;
   max-width: 70%;
+  height: 100vh;
   margin: auto;
   text-align: center;
 }
@@ -174,6 +175,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.nav-container{
+  position: relative;
 }
 
 .site-head-left {
