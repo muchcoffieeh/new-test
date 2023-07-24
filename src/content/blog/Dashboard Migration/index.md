@@ -9,6 +9,12 @@ thumbnail: ./thumb.jpg
 description: "ROLE: PRODUCT DELIVERY, UX/UI"
 ---
 
+<div className="kg-card kg-image-card kg-width-med">
+
+![sreen](./dashboard-migrate.jpg)
+
+</div>
+
 ### Coming Soon!
 
 Navigate back. Please.
