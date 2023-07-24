@@ -101,7 +101,7 @@ const BlogIndex = () => {
       
       <Header />
         <div id="my-process">
-        <div className="groups-container panel" data-color="white">
+        <div className="groups-container panel" data-color="whiteblue">
           {/* --------------1st grp starts------------------ */}
           <div className="group-container">
             <div className="group-content"
