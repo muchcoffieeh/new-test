@@ -79,5 +79,11 @@ module.exports = {
       exitEventName: "sal:out", // Exit event name
     },
   },
+  {
+    resolve: 'gatsby-plugin-manifest',
+    options: {
+      icon: 'src/images/sx-logo.png',
+    },
+  },
 ]
 };
