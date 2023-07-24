@@ -3,7 +3,7 @@ import { StaticImage } from "gatsby-plugin-image";
 
 const Header = () => {
   return (
-    <header className="page-head">
+    <header className="page-head-main">
         <div
         data-sal="slide-up" // Add the data-sal attribute with the animation name
         data-sal-delay="200" // Add optional data-sal-delay and data-sal-easing attributes
