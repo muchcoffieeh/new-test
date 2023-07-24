@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import PostCard from "../components/postCard.js";
 
 import "../utils/normalize.css"
@@ -39,8 +39,12 @@ const SubpageA = ({ data }) => {
         <h1 className="page-head-title">Tempus Ex</h1>
 
         <h4 style={{ margin: "0.1em 0", fontSize: "1.4em" }}>
-
-        Merging sports, video, and data with innovation and accessibility, Tempus Ex technology enables the creation of new interactive experiences around live events. Tempus Ex partners with the National Football League, premier global sports leagues, and broadcasters to deliver cutting-edge sports experience solutions.</h4>
+          Merging sports, video, and data with innovation and accessibility, Tempus Ex technology enables the creation of new interactive experiences around live events. Tempus Ex partners with the National Football League, premier global sports leagues, and broadcasters to deliver cutting-edge sports experience solutions.</h4>
+          <Link to={"https://tempus-ex.com/"} className="sub-comp-link"
+          target="_blank" // This will open the link in a new window/tab>
+          >
+          Visit Tempus Ex Website
+        </Link>
       </header>
 
       <div className="post-feed">

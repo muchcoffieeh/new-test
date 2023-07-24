@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import PostCard from "../components/postCard.js";
 
 import "../utils/normalize.css"
@@ -39,11 +39,15 @@ const SubpageA = ({ data }) => {
         <h1 className="page-head-title">FreeWire Technologies</h1>
 
         <h4 style={{ margin: "0.1em 0", fontSize: "1.4em" }}>
-
-        FreeWire is an industry leader in battery-integrated ultrafast electric vehicle (EV) charging and energy management solutions solving grid infrastructure constraints by designing and manufacturing scalable clean power, driving the global transition to electrified transportation.</h4>
+          FreeWire is an industry leader in battery-integrated ultrafast electric vehicle (EV) charging and energy management solutions solving grid infrastructure constraints by designing and manufacturing scalable clean power, driving the global transition to electrified transportation.</h4>
+        <Link to={"https://freewiretech.com/"} className="sub-comp-link"
+          target="_blank" // This will open the link in a new window/tab>
+          >
+          Visit FreeWire Website
+        </Link>
       </header>
 
-      <div className="post-feed">
+      <div className="post-feed three">
         {postsInCategoryA.map((post) => {
           postCounter++;
           return (

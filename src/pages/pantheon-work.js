@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import PostCard from "../components/postCard.js";
 
 import "../utils/normalize.css"
@@ -39,8 +39,13 @@ const SubpageA = ({ data }) => {
         <h1 className="page-head-title">Pantheon Platform</h1>
 
         <h4 style={{ margin: "0.1em 0", fontSize: "1.4em" }}>
-
-        Pantheon powers the open web, running sites in the cloud for customers including Stitch Fix, Okta, Home Depot, Pernod Ricard, and The Barack Obama Foundation. Pantheon’s cloud native software makes it easy to securely manage a single website or thousands of websites across multiple teams in one platform.</h4>
+          Pantheon powers the open web, running sites in the cloud for customers including Stitch Fix, Okta, Home Depot, Pernod Ricard, and The Barack Obama Foundation. Pantheon’s cloud native software makes it easy to securely manage a single website or thousands of websites across multiple teams in one platform.</h4>
+        
+          <Link to={"https://pantheon.io/"} className="sub-comp-link"
+          target="_blank" // This will open the link in a new window/tab>
+          >
+          Visit Pantheon Website
+        </Link>
       </header>
 
       <div className="post-feed">

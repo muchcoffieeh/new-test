@@ -425,6 +425,10 @@ body {
   padding: 0 15%;
 }
 
+.post-feed.three{
+  padding: 0 3%;
+}
+
 .post-card {
   position: relative;
   margin: 2rem;
@@ -908,4 +912,11 @@ body {
   max-width: 70%;
   margin: auto;
   text-align: center;
+}
+
+.sub-comp-link{
+  margin-top: 1.5em;
+  font-size: 1.3em;
+  font-weight: 700;
+  color: var(--color-primary);
 }
