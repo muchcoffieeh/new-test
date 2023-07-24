@@ -1,0 +1,34 @@
+.page-head {
+    /* Set the initial position for the header elements */
+    opacity: 0;
+    transform: translateY(300px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  /* Animate the header elements into view when the page loads */
+  .page-head.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Apply animation delays to each element to offset their timings */
+  .page-head-title {
+    animation: slideUp 0.8s ease 0.1s forwards;
+  }
+  
+  .page-head h4 {
+    animation: slideUp 0.8s ease 0.2s forwards;
+  }
+  
+  .page-head img {
+    animation: slideUp 0.8s ease 0s forwards;
+  }
+  
+  /* Define the keyframe animation */
+  @keyframes slideUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

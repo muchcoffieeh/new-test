@@ -6,6 +6,7 @@ import { Link } from "gatsby";
 import Layout from "../components/layout"
 // import PostCard from "../components/postCard"
 import { StaticImage } from "gatsby-plugin-image"
+import Header from "../components/header.js";
 
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
@@ -98,23 +99,7 @@ const BlogIndex = () => {
     <div className={currentColor} data-color="default">
     <Layout title={data.site.siteMetadata.title}>
       
-      <header className="page-head">
-        <StaticImage
-          src="../images/sx-logo.png"
-          loading="eager"
-          width={400}
-          quality={80}
-          formats={["auto", "webp", "avif"]}
-          alt=""
-          style={{ marginBottom: `var(--space-3)` }}
-        />
-        <h1 className="page-head-title">Delightful experiences designed strategically.</h1>
-
-        <h4 style={{ margin: "0.1em 0", fontSize: "1.4em" }}>
-          {/* {data.site.siteMetadata.description} */}
-          I'm a versatile and strategic designer, especially skilled at connecting the dots to find clarity in ambiguous/amorphous situations. With a deep set of skills ranging from visual design to frontend development, I craft intuitive and impactful experiences for users.
-        </h4>
-      </header>
+      <Header />
         <div id="my-process">
         <div className="groups-container panel" data-color="white">
           {/* --------------1st grp starts------------------ */}
