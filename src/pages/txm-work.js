@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react"
 import { graphql, Link } from "gatsby";
 import PostCard from "../components/postCard.js";
 
-import "../utils/normalize.css";
-import "../utils/css/screen.css";
+import "../utils/normalize.css"
+import "../utils/css/screen.css"
 
 const SubpageA = ({ data }) => {
   const postsInCategoryA = data.allMdx.nodes.filter(
@@ -12,35 +12,37 @@ const SubpageA = ({ data }) => {
 
   let postCounter = 0;
 
-  // Use session storage to store the authentication status
+  const isBrowser = typeof window !== "undefined";
+
+  // Use local storage to store the authentication status
   const [isPasswordCorrect, setIsPasswordCorrect] = useState(
-    sessionStorage.getItem("isPasswordCorrect_txm") === "true"
+    isBrowser && localStorage.getItem("isPasswordCorrect_txm") === "true"
   );
 
-  const [password, setPassword] = useState("");
+  const [password, setPassword] = useState("")
 
   useEffect(() => {
-    if (isPasswordCorrect) {
-      // If the user is already authenticated, save the status to session storage
-      sessionStorage.setItem("isPasswordCorrect_txm", "true");
+    // Save the authentication status to local storage when it changes
+    if (isBrowser) {
+      localStorage.setItem("isPasswordCorrect_txm", isPasswordCorrect);
     }
-  }, [isPasswordCorrect]);
+  }, [isPasswordCorrect, isBrowser]);
 
-  const handlePasswordChange = (event) => {
-    setPassword(event.target.value);
-  };
+  const handlePasswordChange = event => {
+    setPassword(event.target.value)
+  }
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  const handleSubmit = event => {
+    event.preventDefault()
 
     // Check if the entered password is correct
     if (password === "canoes10") {
-      setIsPasswordCorrect(true);
+      setIsPasswordCorrect(true)
     } else {
-      alert("Wrong password. Please try again.");
-      setIsPasswordCorrect(false);
+      alert("Wrong password. Please try again.")
+      setIsPasswordCorrect(false)
     }
-  };
+  }
 
   return (
     <div>
