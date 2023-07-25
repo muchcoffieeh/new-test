@@ -100,7 +100,7 @@ const BlogIndex = () => {
     <Layout title={data.site.siteMetadata.title}>
       
       <Header />
-        <div id="my-process">
+        <div id="my-process" className="process-container">
         <div className="groups-container panel" data-color="whiteblue">
           {/* --------------1st grp starts------------------ */}
           <div className="group-container">

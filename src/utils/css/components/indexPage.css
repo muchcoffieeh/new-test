@@ -5,6 +5,16 @@
     margin: auto;
   }
 
+  .process-container{
+    display: block;
+  }
+
+  @media (max-width: 900px){
+    .process-container{
+      display: none;
+    }
+  }
+
   .groups-container a{
     text-align: center;
   }

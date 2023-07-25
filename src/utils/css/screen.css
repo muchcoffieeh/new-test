@@ -102,6 +102,12 @@ body {
   height: 100vh;
 }
 
+@media (max-width: 900px) {
+  .page-head-main {
+    max-width: 98%;
+  }
+}
+
 .page-head h4{
   width: 85%;
 }
