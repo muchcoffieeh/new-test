@@ -447,6 +447,28 @@ background: linear-gradient(15deg, rgba(255,255,255,1) 55%, rgba(240,252,255,1) 
   flex: 2;
 }
 
+@media (max-width: 800px) {
+  .subpage-content{
+    display: block;
+  }
+  .subpage-img, .subpage-container{
+    flex: none;
+  }
+  .subpage-img{
+    width: 100%;
+  }
+
+  .subpage-content.reverse{
+    display: block;
+  }
+  .subpage-img.reverse, .subpage-container.reverse{
+    flex: none;
+  }
+  .subpage-img.reverse{
+    width: 100%;
+  }
+}
+
 
 
 
