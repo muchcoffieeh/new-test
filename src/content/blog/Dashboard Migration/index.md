@@ -1,7 +1,7 @@
 ---
 title: Dashboard Migration - Coming soon!
 slug: /dashboard-migration
-date: "2022-01-01"
+date: "2023-01-01"
 tags: [All, Applications]
 category: "pantheon-work"
 templateKey: "public-post"
@@ -15,7 +15,7 @@ description: "ROLE: PRODUCT DELIVERY, UX/UI"
 
 </div>
 
-### Coming Soon!
+### Setup
 
 Navigate back. Please.
 
