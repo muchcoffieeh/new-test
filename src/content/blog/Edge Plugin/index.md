@@ -11,25 +11,25 @@ description: "ROLE: PRODUCT CONCEPTUALIZATION & DESIGN, UX RESEARCH"
 
 In today's digital landscape, high-traffic websites are increasingly leveraging not only content delivery networks (CDNs) but also custom logic to manipulate behavior at the edge. This plays a crucial role in enhancing website performance, security, and reliability, enabling seamless delivery to millions of daily visitors, and efficiently handling sudden spikes in traffic.
 
-### Setup
-
-Pantheon, the platform for managing high-performance websites, currently offers a suite of tools for customizing edge logic – Advanced Global CDN. However, this is a managed service that faced numerous operational challenges with growing support ticket backlogs. To alleviate this, we needed a short-term solution for self-service capabilities, as the platform didn't communicate with Advanced Global CDN, requiring users to rely on support tickets for changes.
-
 <div className="kg-card kg-image-card kg-width-med">
 
 ![sreenshot](./dashboard-migrate.jpg)
 
 </div>
 
+### Setup
+
+Pantheon, the platform for managing high-performance websites, currently offers a suite of tools for customizing edge logic – Advanced Global CDN. However, this is a managed service that faced numerous operational challenges with growing support ticket backlogs. To alleviate this, we needed a short-term solution for self-service capabilities, as the platform didn't communicate with Advanced Global CDN, requiring users to rely on support tickets for changes.
+
 ### Challenge
 
-The implementation of a self-service Advanced Global CDN through the main Pantheon dashboard presented a multifaceted challenge. Advanced Global CDN operated as an entirely separate system, rendering the platform unaware of which customers were utilizing Advanced Global CDN services. Consequently, integrating direct dashboard control for edge features proved unattainable, necessitating users to rely on support tickets for any changes to their site's edge behavior.
+The implementation of a self-service Advanced Global CDN through the main Pantheon dashboard presented a multifaceted challenge. Advanced Global CDN operated as an entirely separate system, rendering the platform unaware of which customers were utilizing Advanced Global CDN services. Consequently, integrating direct dashboard control for edge features proved unattainable, necessitating users to rely on support tickets for even the smallest change to their site's edge behavior.
 
 A critical blocker in addressing this challenge was the ongoing development of a microservice by the engineering team, intended to serve as the source of truth for customers' access to different services. While this solution promised to establish the necessary connection, it was projected to require considerable time for completion, leaving us in urgent need of a shorter-term remedy to alleviate the mounting backlog of Advanced Global CDN support tickets.
 
 <div className="kg-card kg-image-card kg-width-med">
 
-![microservice-diagram](./dashboard-migrate.jpg)
+![microservice-diagram](./microservices.jpg)
 
 </div>
 
@@ -40,28 +40,42 @@ Collaborating with the product manager and tech lead, we proposed building a Wor
 In determining the feasibility of the Advanced Global CDN Self-Service Plugin, we embarked on a meticulous evaluation process to address crucial considerations.
 <div className="kg-card kg-image-card kg-width-med">
 
-![plugin-before](./dashboard-migrate.jpg)
+![plugin-before](./old-plugin.jpg)
 
 </div>
 
 #### Functionality Selection
-To identify the discrete functionalities to include in the plugin, we aimed to understand the features most heavily used by customers. However, we encountered limitations with the logic written in configurations stored with our CDN vendor. As a result, we narrowed down the functionalities to those achievable using a dictionary or Access Control List (ACL) format. This narrowed our list down to
+To identify the discrete functionalities to include in the plugin, we aimed to understand the features most heavily used by customers. However, we encountered limitations with the logic written in configurations stored with our CDN vendor. As a result, we first narrowed down the functionalities to those achievable using a dictionary or Access Control List (ACL) format for making the assessment of customer impact. 
+
+<div className="kg-card kg-image-card kg-width-med">
+
+![standardization-diagram](./feature-impact-effort.jpg)
+
+</div>
+
+This narrowed our list down to
 URL redirects
-IP blocking/allowing
-geo blocking/allowing
-forwarding edge logs.
+- IP blocking/allowing
+- Geo blocking/allowing
+- Forwarding edge logs
 
 #### Eligibility Criteria
 Next, we needed to determine which customers would be eligible to leverage the plugin. We focused on customers whose configurations utilized one of the four features we could reveal within the plugin. For some customers, usage of these features existed outside the dictionary/ACL format due to being early adopters when implementations were different. To accommodate them, a standardization process was essential, converting their features into the dictionary/ACL format compatible with the plugin. Through this assessment, we identified a substantial number of existing eligible customers, with additional potential customers attainable through light standardization.
-<div className="kg-card kg-image-card kg-width-med">
+<div className="kg-card kg-image-card kg-width-wide">
 
-![standardization-diagram](./dashboard-migrate.jpg)
+![standardization-diagram](./config-framework.jpg)
 
 </div>
 
 ### Design Process
-For the plugin's design, we adopted a pragmatic approach, acknowledging its interim nature. We conducted in-depth UX comparative analysis to identify effective patterns utilized in similar solutions. 
-(IA comparisons)
+For the plugin's design, we adopted a pragmatic approach, acknowledging its interim nature. We conducted in-depth UX comparative analysis to identify effective patterns utilized in similar solutions. (see image below - taken from our information architecture and UI interactions examination)
+
+<div className="kg-card kg-image-card kg-width-full">
+
+![standardization-diagram](./IA_interactions.jpg)
+
+</div>
+
 Leveraging these insights, we meticulously designed and iteratively tested prototypes, receiving overwhelmingly positive feedback from users. The user responses reinforced our confidence that deploying the plugin would significantly reduce support tickets by enabling customers to efficiently self-serve through the plugin's intuitive interface.
 
 ### Scalability Challenges
