@@ -64,7 +64,7 @@ const SubpageA = ({ data }) => {
             </Link>
           </header>
 
-          <div className="post-feed">
+          <div className="post-feed three">
             {postsInCategoryA.map((post) => {
               postCounter++;
               return (

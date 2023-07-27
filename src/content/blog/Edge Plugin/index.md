@@ -13,7 +13,7 @@ In today's digital landscape, high-traffic websites are increasingly leveraging 
 
 <div className="kg-card kg-image-card kg-width-med">
 
-![sreenshot](./dashboard-migrate.jpg)
+![sreenshot](./portal-entry.jpg)
 
 </div>
 
@@ -84,13 +84,11 @@ As the implementation phase approached, we encountered crucial challenges regard
 Additionally, we discovered that porting control into the plugin would eliminate the version control provided by our CDN vendor, potentially leading to misconfigurations and increased support tickets. This posed a significant risk to the project's primary objective of streamlining user interactions and minimizing reliance on support for Advanced Global CDN changes.
 
 ### Decision and Way Forward
-Given the identified challenges and their potential implications, we transparently presented the benefits and risks associated with the Advanced Global CDN Self-Service Plugin to our product leadership. 
-<div className="kg-card kg-image-card kg-width-med">
+Given the identified challenges and their potential implications, we transparently presented the benefits and risks associated with the AGCDN Self-Service Plugin to our product leadership. After a comprehensive evaluation, it was determined that the risks outweighed the advantages for the proposed implementation. While not proceeding to build out the plugin, the valuable design thinking and interaction patterns developed during this project will not go to waste. Instead, they will serve as a foundational groundwork and provide a jumpstart for the future productized version, which will be seamlessly integrated into the dashboard once the two essential microservices are completed.
+<div className="kg-card kg-image-card kg-width-full">
 
-![risk-reward-chart](./dashboard-migrate.jpg)
+![risk-reward-chart](./edge-plugin-screens.jpg)
 
 </div>
-
-After a comprehensive evaluation, it was determined that the risks outweighed the advantages for the proposed implementation. As a result, we decided not to proceed with the plugin, choosing instead to prioritize the long-term engineering solution that would seamlessly integrate Advanced Global CDN functionalities into the platform.
 
 
