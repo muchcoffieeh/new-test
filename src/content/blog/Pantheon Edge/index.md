@@ -1,7 +1,7 @@
 ---
 title: Pantheon Edge
 slug: /pantheon-edge
-date: "2023-04-01"
+date: "2021-04-01"
 tags: [All, Applications]
 category: "pantheon-work"
 templateKey: "public-post"
