@@ -1,7 +1,7 @@
 ---
 title: Edge Plugin
 slug: /edge-plugin
-date: "2023-02-01"
+date: "2022-02-01"
 tags: [All, Applications]
 category: "pantheon-work"
 templateKey: "public-post"

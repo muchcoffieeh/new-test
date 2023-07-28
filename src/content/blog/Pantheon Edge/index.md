@@ -1,7 +1,7 @@
 ---
 title: Pantheon Edge
 slug: /pantheon-edge
-date: "2023-03-01"
+date: "2023-04-01"
 tags: [All, Applications]
 category: "pantheon-work"
 templateKey: "public-post"
@@ -12,7 +12,19 @@ description: "ROLE: PRODUCT CONCEPTUALIZATION & DESIGN, UX RESEARCH"
 In today's digital landscape, high-traffic websites are increasingly leveraging not only content delivery networks (CDNs) but also custom edge logic. This plays a crucial role in enhancing website performance, security, and reliability, enabling seamless delivery to millions of daily visitors, and efficiently handling sudden spikes in traffic.
 Pantheon, a platform for managing high-performance websites, currently offers a suite of tools for customizing edge logic. 
 
-<div className="kg-card kg-image-card kg-width-wide">
+<div className="kg-card kg-image-card kg-width-full kg-desktop">
+
+![Screenshots](./AGCDN-config-screens.jpg)
+
+</div>
+
+<div className="kg-card kg-image-card kg-width-full kg-mobile">
+
+![Screenshots](./AGCDN-config-details.jpg)
+
+</div>
+
+<div className="kg-card kg-image-card kg-width-full kg-mobile">
 
 ![Screenshots](./Configs-dashboard.jpg)
 
@@ -137,28 +149,44 @@ We successfully reached the targeted milestone of creating a full prototype to v
 
 ### Concept Validation
 
-It was time to validate the MVP product concept with customers. The prototype was tested with selected customers and external participants that closely resembled our customers. The participants were asked to complete a series of tasks and we documented their success, points of friction, and any open feedback they gave through out the process. I distilled the results into a comprehensive report to inform my team and cross-functional partners. Nobody likes long slide decks so I strategically crafted a slide deck that peeled back like an onion (or a good Twitter thread). The first section of just 8 slides covered the key insights, respective details and recommendations, and a quick context of the research methodology. 
+It was time to validate the MVP product concept with customers. The prototype was tested with selected customers and external participants that closely resembled our customers. The participants were asked to complete a series of tasks and we documented their success, points of friction, and any open feedback they gave through out the process. I distilled the results into a comprehensive report to inform my team and cross-functional partners. Nobody likes long slide decks so I strategically crafted a slide deck that peeled back like an onion (or a good Twitter thread). The first section of just 8 slides covered the key insights, respective details and recommendations, and a quick context of the research methodology.
 
-<div className="kg-card kg-image-card kg-width-full kg-desktop">
+### Results
 
-![report](./presentation1.jpg)
+<div className="kg-card kg-image-card kg-width-med">
 
-</div>
-
-For anyone with the bandwidth to dive in, the details of the study were pulled into the appendix of 17 slides to include 
-- Focused hypotheses mapped to execution outcomes
-- Feedback by customer 
-- visibility into the testing and participant recruitment process
-
-<div className="kg-card kg-image-card kg-width-full kg-desktop">
-
-![report](./presentation2.jpg)
+![report](./presentation-main1.jpg)
 
 </div>
 
-<div className="kg-card kg-image-card kg-width-med kg-desktop">
+Respective details and recommendations + quick context of the research methodology: 
 
-![report](./presentation3.jpg)
+<div className="kg-card kg-image-card kg-width-full kg-desktop">
+
+![report](./presentation-main2.jpg)
+
+</div>
+
+### Supporting Details
+
+For anyone with the bandwidth to dive in, the details of the study were pulled into the appendix of 17 slides. I wanted to be transparent that our team was fishing for invalidation or validation for specific hypotheses and a plan of action for each:
+<div className="kg-card kg-image-card kg-width-med">
+
+![report](./presentation-append1.jpg)
+
+</div>
+
+I also wanted to shed light on feedback and insights given by individual customers and provide visibility into the customer participant recruitment process – enable teammates reviewing my report to better qualify the feedback and insights.
+
+<div className="kg-card kg-image-card kg-width-full kg-desktop">
+
+![report](./presentation-append2.jpg)
+
+</div>
+
+<div className="kg-card kg-image-card kg-width-full kg-mobile">
+
+![report](./presentation-append2.jpg)
 
 </div>
 
