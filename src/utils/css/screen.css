@@ -90,12 +90,12 @@ body {
 .page-head, .page-head-main {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   padding: 3vw 0;
   max-width: 70%;
   margin: auto;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .page-head-main{
@@ -139,8 +139,18 @@ body {
 
 .page-head-title {
   margin: 1em 0 0.5em 0;
-  color: var(--color-base);
+  font-size: 26px;
+  color: var(--color-spare3);
 }
+
+.page-head-title.line{
+  margin-top: 0;
+}
+
+.highlight-word{
+  color: var(--color-spare1);
+}
+
 @media (max-width: 500px) {
   .page-head-title {
     font-size: 2rem;

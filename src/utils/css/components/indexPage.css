@@ -233,15 +233,27 @@
   }
 
   .other-sections{
-    text-align: center;
-    width: 60%;
+    text-align: left;
+    width: 65%;
     margin: auto;
+    margin-bottom: 3em;
   }
 
   .other-sections h2{
-    color: black;
-    font-size: 3rem;
+    font-size: 22px;
+    width: 75%;
+    margin-bottom: 1em;
+  color: var(--color-spare3);
+  }
+
+  .other-sections p{
+    font-size: 18px;
     font-weight: 700;
+  }
+
+  .cta-link{
+    color: var(--color-spare4);
+    font-style: italic;
   }
 
   .other-sections h4{
@@ -400,6 +412,12 @@ background: linear-gradient(15deg, rgba(255,255,255,1) 55%, rgba(240,252,255,1) 
 
 .subpage-container {
   flex: 2;
+}
+
+.hr-divide{
+  border: 2px solid var(--color-spare1);
+  width: 35%;
+  margin: 1.2em 0;
 }
 
 /* ------ reverse -------- */

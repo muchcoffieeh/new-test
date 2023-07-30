@@ -1,6 +1,10 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 
+import "../utils/normalize.css"
+import "../utils/css/screen.css"
+import "../utils/css/components/header.css"
+
 const Header = () => {
   return (
     <header className="page-head-main">
@@ -21,22 +25,22 @@ const Header = () => {
         />
         </div>
       
-      <h1 className="page-head-title"
+      <h2 className="page-head-title"
         data-sal="slide-up"
         data-sal-delay="800"
         data-sal-duration="600"
         data-sal-easing="ease"
-      >Delightful experiences designed strategically.</h1>
+      >Hi there. I'm <strong className="highlight-word">Serena.</strong></h2>
 
-      <h4 style={{ margin: "0.1em 0", fontSize: "1.4em" }}
+      <h2 className="page-head-title line"
         data-sal="slide-up"
         data-sal-delay="900"
         data-sal-duration="300"
         data-sal-easing="ease"
       >
         {/* {data.site.siteMetadata.description} */}
-        I'm a versatile and strategic designer, especially skilled at connecting the dots to find clarity in ambiguous/amorphous situations. With a deep set of skills ranging from visual design to frontend development, I craft intuitive and impactful experiences for users.
-      </h4>
+        I’m a <strong className="highlight-word">designer</strong> working on infrastructure and developer experiences.
+      </h2>
     </header>
   );
 };
