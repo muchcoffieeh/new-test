@@ -1,10 +1,6 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 
-import "../utils/normalize.css"
-import "../utils/css/screen.css"
-import "../utils/css/components/header.css"
-
 const Header = () => {
   return (
     <header className="page-head-main">

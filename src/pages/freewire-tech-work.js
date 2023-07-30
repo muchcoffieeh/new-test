@@ -49,7 +49,7 @@ const SubpageA = ({ data }) => {
       {isPasswordCorrect ? (
         <>
           <header className="page-head">
-        <h1 className="page-head-title">FreeWire Technologies</h1>
+        <h1 className="comp-head-title">FreeWire Technologies</h1>
 
         <h4 style={{ margin: "0.1em 0", fontSize: "1.4em" }}>
           FreeWire is an industry leader in battery-integrated ultrafast electric vehicle (EV) charging and energy management solutions solving grid infrastructure constraints by designing and manufacturing scalable clean power, driving the global transition to electrified transportation.</h4>

@@ -49,7 +49,7 @@ const SubpageA = ({ data }) => {
       {isPasswordCorrect ? (
         <>
           <header className="page-head">
-            <h1 className="page-head-title">Pantheon Platform</h1>
+            <h1 className="comp-head-title">Pantheon Platform</h1>
 
             <h4 style={{ margin: "0.1em 0", fontSize: "1.4em" }}>
               Pantheon powers the open web, running sites in the cloud for customers including Stitch Fix, Okta, Home Depot, Pernod Ricard, and The Barack Obama Foundation. Pantheon’s cloud native software makes it easy to securely manage a single website or thousands of websites across multiple teams in one platform.

@@ -52,7 +52,7 @@ body {
 
 .site-wrapper {
   padding: 3vw;
-  min-height: 100vh;
+  min-height: 80vh;
 }
 @media (max-width: 850px) {
   .site-wrapper {
@@ -139,7 +139,8 @@ body {
 
 .page-head-title {
   margin: 1em 0 0.5em 0;
-  font-size: 26px;
+  font-size: 24px;
+  font-weight: 400;
   color: var(--color-spare3);
 }
 

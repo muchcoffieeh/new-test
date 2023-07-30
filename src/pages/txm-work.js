@@ -49,7 +49,7 @@ const SubpageA = ({ data }) => {
       {isPasswordCorrect ? (
         <>
           <header className="page-head">
-        <h1 className="page-head-title">Tempus Ex</h1>
+        <h1 className="comp-head-title">Tempus Ex</h1>
 
         <h4 style={{ margin: "0.1em 0", fontSize: "1.4em" }}>
           Merging sports, video, and data with innovation and accessibility, Tempus Ex technology enables the creation of new interactive experiences around live events. Tempus Ex partners with the National Football League, premier global sports leagues, and broadcasters to deliver cutting-edge sports experience solutions.</h4>
