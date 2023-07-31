@@ -1,7 +1,7 @@
 ---
 title: Dashboard Migration - Coming soon!
 slug: /dashboard-migration
-date: "2023-03-01"
+date: "2020-03-01"
 tags: [All, Applications]
 category: "pantheon-work"
 templateKey: "public-post"

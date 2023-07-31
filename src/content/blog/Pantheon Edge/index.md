@@ -1,7 +1,7 @@
 ---
 title: Pantheon Edge
 slug: /pantheon-edge
-date: "2021-04-01"
+date: "2023-04-01"
 tags: [All, Applications]
 category: "pantheon-work"
 templateKey: "public-post"
@@ -40,7 +40,7 @@ Business perspective
 - No visibility. The lack of transparency created inconvenience and made it challenging for customers to understand the impact and value of their requested changes.
   The tech lead, product manager, and I went to work to realize the vision of turning the fully-managed service into self-service product.
 
-### Research for Key Decisions
+### Research - Priority Features
 
 Starting off the design process, two critical decisions needed to be made that would shape the direction of the rest of the product:
 
@@ -48,18 +48,37 @@ Starting off the design process, two critical decisions needed to be made that w
 - Edge Configuration to Site Relationship: We had to decide whether edge logic should be controlled on a site-by-site basis or if a more holistic approach should govern multiple sites.
 
 To identify the most suitable initial features for our self-service product, I carefully considered various research approaches. Initially, conducting an audit of our customers' existing edge configurations seemed like the obvious choice. However, upon closer examination, it became clear that this approach would be an incredibly resource-intensive endeavor. The bespoke nature of the fully-managed service had resulted in diverse configurations, making it challenging to standardize and time-consuming to obtain the data to analyze. Conducting a comprehensive audit would require significant effort and resources from our already stretched edge implementation team.
-Recognizing the need for an alternative research method, I engaged in discussions with our team of edge implementation specialists. Despite the lack of an official immutable source of truth for customer feature usage, I discovered that each specialist had an exceptional memory of the customers they had helped implement. Leveraging this valuable insight, I devised a survey to capture their collective knowledge and insights. By consolidating the results, I was able to create likely combinations of features and test their viability.
-To supplement the information from the internal surveys, I screened for edge developers from the world wide web and conducted a study. Each participant received a questionnaire in which they were presented with a product offering edge features. I then asked them to choose which tools they needed immediately, needed later, or not at all.
+Recognizing the need for an alternative research method, I engaged in discussions with our team of edge implementation specialists. Despite the lack of an official immutable source of truth for customer feature usage, I discovered that each specialist had an exceptional memory of the customers they had helped implement. Leveraging this valuable insight, I devised a survey to capture their collective knowledge and insights. Each participant received a questionnaire in which they were presented with a product offering edge features. I then asked them to choose which tools they needed immediately, needed later, or not at all to serve their customer requests. By consolidating the results, I was able to create likely combinations of features and test their viability. 
 
-<div className="kg-card kg-image-card kg-width-small">
+<div className="kg-card kg-image-card kg-width-wide">
 
-![Screenshots](./features-ques.jpg)
+![internal-survey-analysis](./features-int-analysis.jpg)
+
+</div>
+To supplement the information from the internal surveys, I screened for edge developers from the world wide web and conducted a similar study.
+
+<div className="kg-card kg-image-card kg-width-wide">
+
+![external-survey-analysis](./features-ext-analysis.jpg)
 
 </div>
 
-The combined research approach provided valuable insights actionable enough to determine the combination of features that would most satisfy customer needs.
+There were some discrepancies. For example, domain masking was a highly desired feature to our internal implementation experts but most participants didn’t not select it for any use at all. I had to figure out how to weigh the 2 survey results – err towards the internal experts or external participants. 
 
-In order to determine the optimal edge configuration to site relationship, I engaged in a research process of gathering insights through interviews with both customers and members of the edge implementation team.
+> **Customers often do not know what they need – they will send a request for a simple redirect when they actually need some complex domain masking. It’s often up to us to decipher and translate their requests.**
+
+I wanted to capture more evidence to add more color on this matter for my team. I ran one more quick survey with the same group of external participants – a conjoint analysis that would surface the customer intent versus their intended implementation. 
+
+<div className="kg-card kg-image-card kg-width-wide">
+
+![conjoint-analysis](./features-conjoined-analysis.jpg)
+
+</div>
+
+Indeed it was just as our implementation experts described it – customers are very clear on their desired performance outcomes but would then conflate and misunderstand the features that would help them achieve such outcomes. It was then confidently decided that the features to be offered as part of the initial product release would weigh heavily towards the recommendations of our internal experts.  
+
+### Architectural Decisions
+As we proceeded towards execution, we needed to lock down key architectural decisions. In order to determine the optimal edge configuration to site relationship, I engaged in a research process of gathering insights through interviews with both customers and members of the edge implementation team.
 
 <div className="kg-card kg-image-card kg-width-xs">
 
