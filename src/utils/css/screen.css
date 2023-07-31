@@ -152,9 +152,12 @@ body {
   color: var(--color-spare1);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .page-head-title {
     font-size: 2rem;
+  }
+  .highlight-word{
+    color: var(--color-bg-dark);
   }
 }
 
