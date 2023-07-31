@@ -246,6 +246,12 @@
   color: var(--color-spare3);
   }
 
+  @media (max-width: 500px) {
+    .other-sections h2{
+      font-size: 1em;
+    }
+  }
+
   .other-sections p{
     font-size: 18px;
     font-weight: 700;
@@ -269,7 +275,11 @@
   
   @media (max-width: 1000px) {
     .other-sections {
-      width: 100%;
+      width: 90%;
+    }
+
+    .page-head-main img{
+      width: 250px;
     }
   } 
 
@@ -280,6 +290,13 @@
 .color-default {
   background: rgb(255,255,255);
 background: linear-gradient(15deg, rgba(255,255,255,1) 47%, rgba(240,252,255,1) 70%, rgba(0,213,255,1) 100%);
+}
+
+@media (max-width: 1000px) {
+  .color-default{
+    background: rgb(255,255,255);
+  background: linear-gradient(15deg, rgba(255,255,255,1) 55%, rgba(240,252,255,1) 77%, rgba(162,240,255,1) 100%);
+  }
 }
 
 .color-violet {

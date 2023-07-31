@@ -449,6 +449,12 @@ body {
   padding: 0 15%;
 }
 
+@media (max-width: 850px) {
+  .post-feed{
+    padding: 0 3%;
+  }
+}
+
 .post-feed.three{
   padding: 0 3%;
 }
@@ -628,8 +634,8 @@ body {
   }
 
   .page-head{
-    max-width: 100%;
-    width: 100%;
+    max-width: 90%;
+    width: 90%;
   }
 
   .page-head h4{

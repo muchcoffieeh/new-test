@@ -100,7 +100,7 @@ const BlogIndex = () => {
             </h2>
 
             <p>Got a project in mind? 
-              <Link to="/" className="cta-link"> Drop me a line!</Link></p>
+              <Link to="mailto:serena.s.xu@gmail.com" className="cta-link"> Drop me a line!</Link></p>
           </div>
         </div>
 
