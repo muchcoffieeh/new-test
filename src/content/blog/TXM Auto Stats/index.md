@@ -149,19 +149,19 @@ In addition to creating videos for simulated product action, guide documents wer
 
 Amid the product development, we needed to continue the engagement with our clients. I animated a video simulation of a live game and created a guide to help them better understand the elements on the console. Below are some select pages from the guide document.
 
-<div className="kg-card kg-image-card kg-width-wide">
+<div className="kg-card kg-image-card kg-width-full">
 
 ![Hotspots Doc](./sales_guide_1.jpg)
 
 </div>
 
-<div className="kg-card kg-image-card kg-width-wide">
+<div className="kg-card kg-image-card kg-width-full">
 
 ![Hotspots Doc](./sales_guide_2.jpg)
 
 </div>
 
-<div className="kg-card kg-image-card kg-width-wide">
+<div className="kg-card kg-image-card kg-width-full">
 
 ![Hotspots Doc](./sales_guide_3.jpg)
 
