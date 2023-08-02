@@ -1,5 +1,5 @@
 ---
-title: Dashboard Migration - Coming soon!
+title: Dashboard Migration
 slug: /dashboard-migration
 date: "2020-03-01"
 tags: [All, Applications]
@@ -9,13 +9,13 @@ thumbnail: ./thumb.jpg
 description: "ROLE: PRODUCT DELIVERY, UX/UI"
 ---
 
-<div className="kg-card kg-image-card kg-width-med">
+<div className="kg-card kg-image-card kg-width-full">
 
 ![sreen](./dashboard-migrate.jpg)
 
 </div>
 
-### Setup
+### Coming Soon!
 
 Navigate back. Please.
 
