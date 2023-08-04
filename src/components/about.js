@@ -8,7 +8,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
-import "../utils/css/components/indexPage.css"
+// import "../utils/css/components/indexPage.css"
 
 Modal.setAppElement("#___gatsby");
 
