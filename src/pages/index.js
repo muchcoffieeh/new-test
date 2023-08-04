@@ -186,7 +186,7 @@ const BlogIndex = () => {
 
             <div className="subpage-container reverse">
               <h2>Alliance of American Football</h2>
-              <h4>The Alliance of American Football (AAF) was a professional spring league founded by Charlie Ebersol and Bill Polan. The AAF closed in April 2019 but its lasting legacy lies in pioneering advanced sport tech, including real-time data streaming, wearables for players, and a live fantasy app with interactive features, revolutionizing the fan experience.</h4>
+              <h4>The Alliance of American Football  Polan. The AAF closed in April 2019 but its lasting legacy lies in pioneering advanced sport tech, including real-time data streaming, wearables for players, and a live fantasy app with interactive features, revolutionizing the fan experience.</h4>
               <p>As the design lead for the web platform at AAF, I focused on crafting interactive experiences and enhancing fan engagement both during games and in-between, redefining the sports viewing experience.</p>
             </div>
           </div>

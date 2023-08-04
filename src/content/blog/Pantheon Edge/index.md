@@ -88,11 +88,19 @@ As we proceeded towards execution, we needed to lock down key architectural deci
 
 The initial interviews with select customers confirmed their preference for individual site-level control of edge logic, which aligned with their immediate needs. However, I intuited that this approach might not be the most optimal solution for our product.
 In light of this, I conducted another round of interviews, this time with specific members of the edge implementation team. I tailored the questions to uncover their approach in setting up customer configurations and concluded with a direct inquiry into their preferred edge configuration to site relationship. The results were more nuanced than anticipated.
-The interviews unveiled a more complex landscape. It became apparent that the preferred configuration involved a combination of governing multiple sites with a single edge configuration, while still allowing each site to have multiple configurations. Recognizing the technical and user experience complexities associated with this approach, I collaborated with my tech lead to assess its feasibility.
+The interviews unveiled a more complex landscape. It became apparent that the preferred configuration involved a combination of governing multiple sites with a single edge configuration, while still allowing each site to have multiple configurations. Recognizing the technical and user experience complexities associated with this approach, I collaborated with my tech lead to assess its feasibility. We weighed the pros and cons of each architectural structure
 
 <div className="kg-card kg-image-card kg-width-full">
 
 ![Screenshots](./site-config-edited.jpeg)
+
+</div>
+
+and explore the IA stemming from each
+
+<div className="kg-card kg-image-card kg-width-wide">
+
+![Screenshots](./IA-explore.jpg)
 
 </div>
 
