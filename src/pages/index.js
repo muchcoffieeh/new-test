@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import "../utils/css/components/index.css"
 
@@ -6,6 +7,7 @@ const sections = [
   {
   title: "Pantheon Platform",
     image: "../images/pantheon-comp.jpg",
+    link: "/pantheon-work",
     text: {
       title: "Work",
       content: (
@@ -25,6 +27,7 @@ const sections = [
   {
     title: "Tempus Ex",
     image: "../images/txm-comp.jpg",
+    link: "/pantheon-work",
       text: {
         title: "Work",
         content: (
@@ -44,6 +47,7 @@ const sections = [
     {
       title: "FreeWire Technologies",
     image: "../images/freewire-comp.jpg",
+    link: "/pantheon-work",
         text: {
           title: "Work",
           content: (
@@ -62,6 +66,7 @@ const sections = [
       {
         title: "Alliance of American Football",
     image: "../images/aaf-comp.jpg",
+    link: "/aaf-work/content/aaf-web",
           text: {
             title: "Work",
             content: (
@@ -80,6 +85,30 @@ const sections = [
 ];
 
 const IndexPage = () => {
+  useEffect(() => {
+    // Disable scrolling on the index page
+    document.documentElement.style.overflowY = "hidden";
+    document.body.style.overflowY = "hidden";
+
+    // Re-enable scrolling when the component unmounts
+    return () => {
+      document.documentElement.style.overflowY = "auto";
+      document.body.style.overflowY = "auto";
+    };
+  }, []);
+
+  const [mainStyle, setMainStyle] = useState({ overflowY: "hidden" });
+
+  useEffect(() => {
+    // Disable scrolling on the index page
+    setMainStyle((prevStyle) => ({ ...prevStyle, overflowY: "hidden" }));
+
+    // Re-enable scrolling when the component unmounts
+    return () => {
+      setMainStyle((prevStyle) => ({ ...prevStyle, overflowY: "auto" }));
+    };
+  }, []);
+
   const [backgroundImage, setBackgroundImage] = useState("");
   const [heroText, setHeroText] = useState(sections[0].text);
   const [isHovering, setIsHovering] = useState(false);
@@ -111,13 +140,13 @@ const IndexPage = () => {
   };
 
   return (
-    <main>
+    <main style={mainStyle}>
       <div className="left-div">
         <div className="logo-container">
           <StaticImage
             src="../images/sx-logo.png"
             loading="eager"
-            width={200}
+            width={300}
             quality={80}
             formats={["auto", "webp", "avif"]}
             alt=""
@@ -127,13 +156,7 @@ const IndexPage = () => {
       </div>
 
       {/* <div className="right-div" style={{ backgroundImage: `url(${backgroundImage})` }}> */}
-      <div
-        className={`right-div ${isHovering ? "hover" : ""}`}
-        onMouseLeave={handleMouseLeave}
-        style={{
-          "--bg-image": backgroundImage,
-        }}
-      >
+      <div className="right-div" style={{ backgroundImage: `url(${backgroundImage})` }}>
         <div className="navigation-container">
           <h2 className="navigation-heading">MY WORK</h2>
           <nav className="vertical-nav">
@@ -142,9 +165,11 @@ const IndexPage = () => {
                 <li
                   key={index}
                   onMouseEnter={() => handleSectionHover(section.image, section.text)}
-                  onMouseLeave={handleMouseLeave} // Use the new event handler
+                  onMouseLeave={handleMouseLeave}
                 >
-                  <a href={`#section${index + 1}`}>{section.title}</a>
+                  <Link to={section.link} activeClassName="active"> {/* Use Gatsby Link component */}
+                    {section.title}
+                  </Link>
                 </li>
               ))}
             </ul>
