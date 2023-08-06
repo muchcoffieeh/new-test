@@ -92,10 +92,10 @@ body {
   flex-direction: column;
   /* align-items: center; */
   justify-content: center;
-  padding: 6vw 0 3vw 0;
-  max-width: 70%;
+  padding: 6vw;
+  max-width: 100%;
   margin: auto;
-  /* text-align: center; */
+  background: black;
 }
 
 .page-head-main{
@@ -109,7 +109,27 @@ body {
 }
 
 .page-head h4{
+  color: white;
   width: 85%;
+  font-size: 1.3em;
+}
+
+.div-comp-link{
+  text-align: center;
+  padding-top: 2em;
+}
+
+.div-comp-link a{
+  font-size: 1.4em;
+  color: black
+}
+
+.div-comp-link a:hover{
+  color: rgb(75, 213, 255);
+}
+
+.comp-head-title{
+  color: rgb(75, 213, 255);
 }
 
 .error-head {

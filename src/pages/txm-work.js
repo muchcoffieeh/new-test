@@ -89,13 +89,12 @@ const SubpageA = ({ data }) => {
 
         <h1 className="comp-head-title">Tempus Ex</h1>
 
-        <h4 style={{ margin: "0.1em 0", fontSize: "1.4em" }}>
+        <h4>
           Merging sports, video, and data with innovation and accessibility, Tempus Ex technology enables the creation of new interactive experiences around live events. Tempus Ex partners with the National Football League, premier global sports leagues, and broadcasters to deliver cutting-edge sports experience solutions.</h4>
-          <Link to={"https://tempus-ex.com/"} className="sub-comp-link"
-          target="_blank" // This will open the link in a new window/tab>
-          >
-          Visit Tempus Ex Website
-        </Link>
+          
+        <h4 style={{ fontWeight: "600" }}>
+          Below are my selected case studies from my time at Tempus Ex. Click on any of them to view.
+        </h4>
       </header>
 
           <div className="post-feed">
@@ -110,6 +109,16 @@ const SubpageA = ({ data }) => {
                 />
               );
             })}
+          </div>
+
+          <div className="div-comp-link">
+          <Link
+              to={"https://tempus-ex.com/"}
+              className="sub-comp-link"
+              target="_blank"
+            >
+              Visit Tempus Ex Website
+            </Link>
           </div>
         </>
       ) : (

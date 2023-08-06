@@ -89,13 +89,11 @@ const SubpageA = ({ data }) => {
             
         <h1 className="comp-head-title">FreeWire Technologies</h1>
 
-        <h4 style={{ margin: "0.1em 0", fontSize: "1.4em" }}>
+        <h4>
           FreeWire is an industry leader in battery-integrated ultrafast electric vehicle (EV) charging and energy management solutions solving grid infrastructure constraints by designing and manufacturing scalable clean power, driving the global transition to electrified transportation.</h4>
-        <Link to={"https://freewiretech.com/"} className="sub-comp-link"
-          target="_blank" // This will open the link in a new window/tab>
-          >
-          Visit FreeWire Website
-        </Link>
+          <h4 style={{ fontWeight: "600" }}>
+            Below are my selected case studies from my time at FreeWire Technologies. Click on any of them to view.
+            </h4>
       </header>
 
           <div className="post-feed three">
@@ -110,6 +108,16 @@ const SubpageA = ({ data }) => {
                 />
               );
             })}
+          </div>
+
+          <div className="div-comp-link">
+          <Link
+              to={"https://freewiretech.com/"}
+              className="sub-comp-link"
+              target="_blank"
+            >
+              Visit FreeWire Website
+            </Link>
           </div>
         </>
       ) : (

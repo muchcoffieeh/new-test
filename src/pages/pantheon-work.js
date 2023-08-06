@@ -89,17 +89,14 @@ const SubpageA = ({ data }) => {
             
             <h1 className="comp-head-title">Pantheon Platform</h1>
 
-            <h4 style={{ margin: "0.1em 0", fontSize: "1.4em" }}>
+            <h4>
               Pantheon powers the open web, running sites in the cloud for customers including Stitch Fix, Okta, Home Depot, Pernod Ricard, and The Barack Obama Foundation. Pantheon’s cloud native software makes it easy to securely manage a single website or thousands of websites across multiple teams in one platform.
             </h4>
 
-            <Link
-              to={"https://pantheon.io/"}
-              className="sub-comp-link"
-              target="_blank"
-            >
-              Visit Pantheon Website
-            </Link>
+            <h4 style={{ fontWeight: "600" }}>
+            Below are my selected case studies from my tenure at Pantheon so far. Click on any of them to view.
+            </h4>
+            
           </header>
 
           <div className="post-feed three">
@@ -114,6 +111,16 @@ const SubpageA = ({ data }) => {
                 />
               );
             })}
+          </div>
+
+          <div className="div-comp-link">
+          <Link
+              to={"https://pantheon.io/"}
+              className="sub-comp-link"
+              target="_blank"
+            >
+              Visit Pantheon Website
+            </Link>
           </div>
         </>
       ) : (
