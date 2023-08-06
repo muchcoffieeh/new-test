@@ -182,6 +182,10 @@ const IndexPage = () => {
             <h2>{isHovering ? heroText.title : defaultText.title}</h2>
             <p>{isHovering ? heroText.content : defaultText.content}</p>
             <p className="p-2">{isHovering ? heroText.desc : defaultText.desc}</p>
+
+            <p className="mobile-disc">
+              Still working on mobile-friendly. Come back to <span className="highlight-word">visit me on your desktop</span>. <span>&#128517;</span>
+            </p>
           </div>
         </div>
     </main>

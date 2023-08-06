@@ -178,14 +178,14 @@ html, body, div, main {
     .left-div {
       float: none;
       width: 100%;
-      height: 50vh;
+      /* height: 50vh; */
     }
-    .right-div{
+    /* .right-div{
       width: 100%;
       height: 50vh;
       justify-self: unset;
       flex-direction: unset;
-    }
+    } */
     .logo-container{
       width: 140px;
       height: auto;
@@ -193,6 +193,7 @@ html, body, div, main {
     .hero-left{
       padding-top: 140px;
       width: auto;
+      padding-right: 20px;
     }
     .hero-left h2{
       display: none;
