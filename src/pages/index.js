@@ -27,7 +27,7 @@ const sections = [
   {
     title: "Tempus Ex",
     image: "../images/txm-comp.jpg",
-    link: "/pantheon-work",
+    link: "/txm-work",
       text: {
         title: "Work",
         content: (
@@ -47,7 +47,7 @@ const sections = [
     {
       title: "FreeWire Technologies",
     image: "../images/freewire-comp.jpg",
-    link: "/pantheon-work",
+    link: "/freewire-tech-work",
         text: {
           title: "Work",
           content: (
@@ -128,7 +128,7 @@ const IndexPage = () => {
   };
 
   const handleSectionHover = (image, text) => {
-    setBackgroundImage(`url(${image})`); // Set the CSS background-image property with the URL
+    setBackgroundImage(image); // Set the CSS background-image property with the URL
     setHeroText(text);
     setIsHovering(true);
   };
