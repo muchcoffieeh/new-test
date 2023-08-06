@@ -9,7 +9,7 @@ const sections = [
     image: "../images/pantheon-comp.jpg",
     link: "/pantheon-work",
     text: {
-      title: "Work",
+      title: "WORK",
       content: (
         <>
           <span className="highlight-word">Pantheon</span> is enterprise SaaS for powering the open web – securely manage a single website or thousands of websites
@@ -29,7 +29,7 @@ const sections = [
     image: "../images/txm-comp.jpg",
     link: "/txm-work",
       text: {
-        title: "Work",
+        title: "WORK",
         content: (
           <>
             Merging sports, video, and data with innovation,
@@ -49,7 +49,7 @@ const sections = [
     image: "../images/freewire-comp.jpg",
     link: "/freewire-tech-work",
         text: {
-          title: "Work",
+          title: "WORK",
           content: (
             <>
             <span className="highlight-word">FreeWire </span>
@@ -68,7 +68,7 @@ const sections = [
     image: "../images/aaf-comp.jpg",
     link: "/aaf-work/content/aaf-web",
           text: {
-            title: "Work",
+            title: "WERK",
             content: (
               <>
                 The <span className="highlight-word"> Alliance of American Football </span> 
