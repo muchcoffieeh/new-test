@@ -270,6 +270,10 @@ body {
   opacity: 0.4;
 }
 
+.site-head-left.light a{
+  color: var(--color-sub-base);
+}
+
 .nav-current a,
 .site-head a:hover {
   text-decoration: none;
