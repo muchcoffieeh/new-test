@@ -64,9 +64,22 @@ body {
 }
 
 .pw-form {
-  width: 40%;
+  width: 100%;
   min-width: 320px;
   margin: auto;
+  background: black;
+  padding: 10em;
+  height: 100vh;
+}
+
+.form-contain{
+  width: 40%;
+  margin: auto;
+}
+
+.form-contain h2{
+  color: white;
+  font-size: 2.5em;
 }
 
 .pw-form label{
@@ -75,7 +88,7 @@ body {
 
 .pw-button {
   margin-top: 1rem;
-  background-color: black;
+  background-color: rgb(131, 131, 131);
   color: white;
   border: 0;
   font-size: 1.2em;

@@ -125,6 +125,7 @@ const SubpageA = ({ data }) => {
         </>
       ) : (
         <div className="pw-form">
+          <div className="form-contain">
           <h2>Enter the password. Please.</h2>
           <form onSubmit={handleSubmit}>
             <label>
@@ -139,6 +140,7 @@ const SubpageA = ({ data }) => {
               Submit
             </button>
           </form>
+          </div>
         </div>
       )}
     </div>

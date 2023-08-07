@@ -123,20 +123,22 @@ const SubpageA = ({ data }) => {
         </>
       ) : (
         <div className="pw-form">
-          <h2>Enter the password. Please.</h2>
-          <form onSubmit={handleSubmit}>
-            <label>
-              Password:
-              <input
-                type="password"
-                value={password}
-                onChange={handlePasswordChange}
-              />
-            </label>
-            <button className="pw-button" type="submit">
-              Submit
-            </button>
-          </form>
+          <div className="form-contain">
+            <h2>Just a bit of security. &#128274;</h2>
+            <form onSubmit={handleSubmit}>
+              <label>
+                Password:
+                <input
+                  type="password"
+                  value={password}
+                  onChange={handlePasswordChange}
+                />
+              </label>
+              <button className="pw-button" type="submit">
+                Submit
+              </button>
+            </form>
+          </div>
         </div>
       )}
     </div>

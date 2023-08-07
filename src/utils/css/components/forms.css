@@ -27,10 +27,10 @@ input[type="search"],
 input[type="url"],
 select,
 textarea {
-    background: var(--color-bg);
+    background: var(--color-base);
     border-radius: var(--radius);
     border: none;
-    border: solid 1px var(--color-border);
+    border-bottom: solid 2px var(--color-primary);
     color: inherit;
     display: block;
     outline: 0;
