@@ -30,12 +30,14 @@ Pantheon, a platform for managing high-performance websites, currently offers a 
 
 </div>
 
-However, this is all behind a curtain as it is a fully-managed service. The rendering above is the intended direction we're headed. The current managed solution poses several significant issues:
-Business perspective
+However, this is all behind a curtain as it is a fully-managed service. The rendering above is the intended direction we're headed. The current managed solution poses several significant issues.
+
+**Business perspective**
 
 - High operational costs and inefficiencies from the required heavy manual intervention.
 - Inefficient communication. Often, customers struggled to articulate their objectives clearly, leading to ambiguity and confusion in their requests. Consequently, our implementation specialists faced significant challenges in deciphering the overall objectives of the customers and developing tailored solutions. This lack of clarity not only consumed additional time and effort but also caused frustration for both our specialists and the customers. The inefficiency in understanding the customers' intent further amplified the problem, resulting in prolonged development cycles and suboptimal solutions.
-  Customer perspective
+
+**Customer perspective**
 - Long lead-times. Every time customers needed to make changes, they were required to submit a ticket, leading to a time-consuming and resource-intensive process.
 - No visibility. The lack of transparency created inconvenience and made it challenging for customers to understand the impact and value of their requested changes.
   The tech lead, product manager, and I went to work to realize the vision of turning the fully-managed service into self-service product.

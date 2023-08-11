@@ -149,6 +149,7 @@ const IndexPage = () => {
             width={300}
             quality={80}
             formats={["auto", "webp", "avif"]}
+            placeholder="blurred"
             alt=""
             style={{ marginBottom: `var(--space-3)` }}
           />
