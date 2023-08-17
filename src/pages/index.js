@@ -3,6 +3,8 @@ import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import "../utils/css/components/index.css"
 
+import defaultBackgroundGray from "../images/gray-comp.jpg"; // Update the path to your default background image
+
 const sections = [
   {
   title: "Pantheon Platform",
@@ -109,7 +111,7 @@ const IndexPage = () => {
     };
   }, []);
 
-  const [backgroundImage, setBackgroundImage] = useState("");
+  const [backgroundImage, setBackgroundImage] = useState(defaultBackgroundGray);
   const [heroText, setHeroText] = useState(sections[0].text);
   const [isHovering, setIsHovering] = useState(false);
   const defaultText = {
@@ -134,7 +136,7 @@ const IndexPage = () => {
   };
 
   const handleMouseLeave = () => {
-    setBackgroundImage(""); // Reset background image to empty string
+    setBackgroundImage(defaultBackgroundGray); // Reset background image to empty string
     setHeroText(defaultText);
     setIsHovering(false);
   };
