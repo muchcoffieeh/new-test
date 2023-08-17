@@ -8,6 +8,8 @@ description: "ROLE: UX/UI DESIGN, MANAGED DEVELOPMENT"
 thumbnail: ./replay-thumb.jpg
 ---
 
+import { getImage, GatsbyImage } from 'gatsby-plugin-image';
+
 Tempus Ex provides a data platform to serve real-time sports analytics, allowing professional leagues to implement automatic in-game stats, offer play-by-play betting for fans, and implement more efficient internal tools. The TXM Instant Replay provides an improved method enabling replay officials to conduct reviews on play calls in question.
 
 <div className="kg-card kg-image-card kg-width-full kg-desktop">

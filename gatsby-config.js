@@ -15,8 +15,9 @@ module.exports = {
           {
             resolve: 'gatsby-remark-images',
             options: {
-              maxWidth: 1200,
-              linkImagesToOriginal: false,
+              maxWidth: 2500,
+              linkImagesToOriginal: true,
+              quality: 100
             },
           },
           `gatsby-remark-autolink-headers`
@@ -31,7 +32,7 @@ module.exports = {
       defaults: {
         formats: [`auto`, `webp`],
         placeholder: `dominantColor`,
-        quality: 60,
+        quality: 100,
         breakpoints: [750, 1080, 1366, 1920],
         backgroundColor: `transparent`,
         blurredOptions: {},

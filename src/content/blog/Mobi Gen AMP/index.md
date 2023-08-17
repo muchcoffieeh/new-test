@@ -8,6 +8,8 @@ thumbnail: ./MobiGenAMP_thumb.jpg
 description: "ROLE: SOLE DESIGNER, USER RESEARCH, PRODUCT MANAGEMENT"
 ---
 
+import { getImage, GatsbyImage } from 'gatsby-plugin-image';
+
 FreeWire Technologies builds cloud-connected battery systems for on-site power – the cleaner alternative to a traditional diesel generator. AMP (Asset Management Platform) compliments the battery systems and allows for remote control and monitoring.
 
 ### The Setup

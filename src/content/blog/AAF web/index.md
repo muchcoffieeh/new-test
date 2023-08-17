@@ -8,6 +8,8 @@ thumbnail: ./game-time_web.jpg
 description: "ROLE: UX/UI DESIGN, MANAGED DEVELOPMENT"
 ---
 
+import { getImage, GatsbyImage } from 'gatsby-plugin-image';
+
 The Alliance of American Football was a professional league founded by Charlie Ebersol and Bill Polian. The AAF began the inaugural season on February 9, 2019. The league was scheduled to have a 10-week regular season and conclude with a championship game on April 27. After eight weeks of play, however, the league's football operations were suspended by controlling owner Thomas Dundon on April 2. The league offered fans an immersive digital experience where they could interact with the game on a play-by-play level. During gametime, the web platform offered fans the ab ability to view the game from the camera of their choice as well as a digitally simulated top-down view to track each player. Between games, the web platform offered standard features such as stats for players, teams, league, standings, and allowed fans to purchase tickets and merchandise.
 
 <div className="kg-card kg-image-card kg-width-full kg-desktop">

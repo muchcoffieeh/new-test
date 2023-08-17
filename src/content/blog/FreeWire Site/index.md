@@ -7,6 +7,8 @@ description: "ROLE: CREATIVE DIRECTION, MESSAGING, WEB DEVELOPMENT, VISUALS"
 thumbnail: ./thumbnail.jpg
 ---
 
+import { getImage, GatsbyImage } from 'gatsby-plugin-image';
+
 FreeWire Technologies builds cloud-connected battery systems for on-site power and battery-backed EV charging. I designed and built the company website from 2016 to early 2019. Design and implementaion was a one-woman task for me in these early days. Process documentation helped me eventually offload the maintenance of the site to an external consultancy agency.
 
 <div className="kg-card kg-image-card kg-width-wide">

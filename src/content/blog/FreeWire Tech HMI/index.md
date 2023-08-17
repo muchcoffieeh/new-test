@@ -7,6 +7,8 @@ thumbnail: ./HMI-thumb.jpg
 description: "ROLE: UX/UI DESIGN, DESIGN AND PROJECT MANAGEMENT"
 ---
 
+import { getImage, GatsbyImage } from 'gatsby-plugin-image';
+
 FreeWire Technologies builds cloud-connected battery systems for on-site power – the cleaner alternative to a traditional diesel generator. Operators control and monitor the battery system using the digital touchscreen on the back panel.
 
 ### The Setup
@@ -125,7 +127,7 @@ It was time to pare down the user interaction for what we could offer in the nex
 
 <div className="kg-card kg-image-card kg-width-xs">
 
-![clickable](./Mobi-clickable.gif)
+![clickable](/images/Mobi-clickable.gif)
 
 </div>
 

@@ -51,10 +51,10 @@ const Layout = props => {
           {children}
         </div>
       </main>
-      {/* <footer className="site-foot">
+      <footer className="site-foot">
         &copy; {new Date().getFullYear()} <Link to={`/`}>{title}</Link> &mdash;
         Designed By Serena{" "}
-      </footer> */}
+      </footer>
     </div>
   )
 }

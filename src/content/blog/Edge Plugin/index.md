@@ -9,6 +9,8 @@ thumbnail: ./thumb.jpg
 description: "ROLE: PRODUCT CONCEPTUALIZATION & DESIGN, UX RESEARCH"
 ---
 
+import { getImage, GatsbyImage } from 'gatsby-plugin-image';
+
 In today's digital landscape, high-traffic websites are increasingly leveraging not only content delivery networks (CDNs) but also custom logic to manipulate behavior at the edge. This plays a crucial role in enhancing website performance, security, and reliability, enabling seamless delivery to millions of daily visitors, and efficiently handling sudden spikes in traffic.
 
 <div className="kg-card kg-image-card kg-width-med">

@@ -158,8 +158,8 @@ export const query = graphql`
           category
           thumbnail {
             childImageSharp {
-              fluid {
-                src
+              fluid (maxWidth: 1000, quality: 100) {
+                ...GatsbyImageSharpFluid
               }
             }
           }

@@ -8,6 +8,8 @@ description: "ROLE: SOLE DESIGNER, MANAGED DEVELOPMENT"
 thumbnail: ./TXM_auto_thumb.jpg
 ---
 
+import { getImage, GatsbyImage } from 'gatsby-plugin-image';
+
 Tempus Ex provides a data platform to serve real-time sports analytics, allowing leagues to implement automatic in-game stats and offer play-by-play betting for their fans. The company is currently working with various major sports leagues and the technology is used in stadiums across America. I worked on the first version of the auto stats product that was piloted at Pro Bowl 2020.
 
 <div className="kg-card kg-image-card kg-width-full kg-desktop">
