@@ -15,9 +15,9 @@ In today's digital landscape, high-traffic websites are increasingly leveraging 
 Pantheon, a platform for managing high-performance websites, currently offers a suite of tools for customizing edge logic. 
 
 <div className="kg-card kg-image-card kg-width-full kg-desktop">
-
-![Screenshots](./AGCDN-config-screens.jpg)
-
+  <a href="/images/AGCDN-config-screens.jpg" target="_blank">
+    <img src="/images/AGCDN-config-screens.jpg" alt="Screenshots" />
+  </a>
 </div>
 
 <div className="kg-card kg-image-card kg-width-full kg-mobile">
@@ -32,7 +32,7 @@ Pantheon, a platform for managing high-performance websites, currently offers a 
 
 </div>
 
-However, this is all behind a curtain as it is a fully-managed service. The rendering above is the intended direction we're headed. The current managed solution poses several significant issues.
+However, this is all behind a curtain as it is a fully-managed service. The rendering above is from the self-service product we're moving towards. The current managed solution poses several significant issues.
 
 **Business perspective**
 
