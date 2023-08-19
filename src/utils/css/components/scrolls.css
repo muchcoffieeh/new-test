@@ -1,0 +1,47 @@
+/* src/styles/macbook-page.css */
+
+.macbook-page {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .macbook-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./macbook2.jpeg");
+    background-size: cover;
+    background-position: center center;
+    z-index: -1;
+  }
+  
+  .content-layer {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 50%;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    transition: top 0.3s ease-in-out;
+  }
+  
+  .scrolling-text {
+    position: sticky;
+    top: 10%;
+    left: 70%;
+    width: 30%;
+    padding: 1rem;
+    max-height: 80vh;
+    overflow-y: scroll;
+  }
+  
+
+  .scroll-text-div{
+    height: 600px;
+  }
+  
