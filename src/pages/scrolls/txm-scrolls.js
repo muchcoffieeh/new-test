@@ -1,48 +1,58 @@
 import React, { useState, useEffect } from "react";
-import "../../utils/css/components/scrolls.css"; 
+import "../../utils/css/components/scrolls.css";
 
 const MacBookPage = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [activeSection, setActiveSection] = useState(0);
 
-  const handleScroll = () => {
-    const scrollY = window.scrollY;
-    setScrollPosition(scrollY);
-    console.log("Active section:");
-
-    const sectionElements = document.querySelectorAll(".scroll-text-div");
-    sectionElements.forEach((section, index) => {
-      const sectionTop = section.offsetTop;
-      const sectionBottom = sectionTop + section.offsetHeight;
-
-    //   if (scrollY >= sectionTop && scrollY < sectionBottom) {
-    //     const sectionId = section.getAttribute("id"); // Get the ID of the current section
-    //     const sectionIndex = parseInt(sectionId.replace("scroll", "")) - 1; // Convert ID to index
-    //     console.log("Active section:", sectionId);
-    //     setActiveSection(sectionIndex);
-    //   }
-
-      if (scrollY >= 200) {
-        const sectionId = section.getAttribute("id"); // Get the ID of the current section
-        const sectionIndex = 1; // Convert ID to index
-        console.log("Active section:", sectionId);
-        setActiveSection(sectionIndex);
-      }
-    });
-  };
-
   useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      setScrollPosition(scrollY);
+    };
+
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
-  const images = [
-    "../../images/pantheon-comp.jpg", // Replace with actual image path
-    "../../images/txm-comp.jpg", // Replace with actual image path
-    "../../images/pan-comp.jpg"  // Replace with actual image path
+  const sections = [
+    {
+      image: "../../images/pantheon-comp.jpg",
+      text: "This is a scrolling text that will scroll alongside the MacBook.",
+    },
+    {
+      image: "../../images/txm-comp.jpg",
+      text: "This is another scrolling text that will scroll alongside the MacBook.",
+    },
+    {
+      image: "../../images/pan-comp.jpg",
+      text: "Yet another scrolling text that will scroll alongside the MacBook.",
+    },
   ];
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(parseInt(entry.target.getAttribute("data-index")));
+          }
+        });
+      },
+      { threshold: 0.5 } // Adjust the threshold as needed
+    );
+
+    const sectionElements = document.querySelectorAll(".scroll-text-div");
+    sectionElements.forEach((section, index) => {
+      observer.observe(section);
+    });
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
 
   return (
     <div className="macbook-page">
@@ -51,16 +61,17 @@ const MacBookPage = () => {
       </div>
       <div className="content-layer" style={{ top: `${scrollPosition * 0.5}px` }}>
         {/* Dynamic content layer */}
-        <img src={images[activeSection]} alt={`Image ${activeSection}`} />
+        <p>{sections[activeSection].text}</p>
+        <img src={sections[activeSection].image} alt={`Image ${activeSection}`} />
       </div>
       <div className="scrolling-text">
-        <div className="scroll-text-div" id="scroll1">
+        <div className="scroll-text-div" data-index={0}>
           <p>This is a scrolling text that will scroll alongside the MacBook.</p>
         </div>
-        <div className="scroll-text-div" id="scroll2">
+        <div className="scroll-text-div" data-index={1}>
           <p>This is another scrolling text that will scroll alongside the MacBook.</p>
         </div>
-        <div className="scroll-text-div" id="scroll3">
+        <div className="scroll-text-div" data-index={2}>
           <p>Yet another scrolling text that will scroll alongside the MacBook.</p>
         </div>
       </div>
