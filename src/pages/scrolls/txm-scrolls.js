@@ -20,15 +20,15 @@ const MacBookPage = () => {
   const sections = [
     {
       image: "../../images/pantheon-comp.jpg",
-      text: "This is a scrolling text that will scroll alongside the MacBook.",
+      text: " ",
     },
     {
       image: "../../images/txm-comp.jpg",
-      text: "This is another scrolling text that will scroll alongside the MacBook.",
+      text: " ",
     },
     {
       image: "../../images/pan-comp.jpg",
-      text: "Yet another scrolling text that will scroll alongside the MacBook.",
+      text: " ",
     },
   ];
 
@@ -57,7 +57,7 @@ const MacBookPage = () => {
   return (
     <div className="macbook-page">
       <div className="macbook-background">
-        {/* Background MacBook image */}
+        <img src="../../images/macbook.png" />
       </div>
       <div className="content-layer" style={{ top: `${scrollPosition * 0.5}px` }}>
         {/* Dynamic content layer */}

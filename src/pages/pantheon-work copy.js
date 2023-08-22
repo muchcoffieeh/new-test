@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from "react"
 import { graphql, Link } from "gatsby";
-import MacBookPage from "./scrolls/txm-scrolls.js";
+import PostCard from "../components/postCard.js";
 
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
 
 const SubpageA = ({ data }) => {
   const [toggleNav, setToggleNav] = React.useState(false)
-  const [isPastHeader, setIsPastHeader] = useState(false); 
   const postsInCategoryA = data.allMdx.nodes.filter(
     (post) => post.frontmatter.category === "pantheon-work"
   );
@@ -23,21 +22,11 @@ const SubpageA = ({ data }) => {
 
   const [password, setPassword] = useState("")
 
-  const handleScroll = () => {
-    const scrollY = window.scrollY;
-    console.log("scrolling", scrollY);
-    setIsPastHeader(scrollY > 55); // Update the state when scrolled past header
-  };
-
   useEffect(() => {
+    // Save the authentication status to local storage when it changes
     if (isBrowser) {
       localStorage.setItem("isPasswordCorrect_pan", isPasswordCorrect);
     }
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
   }, [isPasswordCorrect, isBrowser]);
 
   const handlePasswordChange = event => {
@@ -60,7 +49,7 @@ const SubpageA = ({ data }) => {
     <div>
       {isPasswordCorrect ? (
         <>
-          <header className="page-head full-vh">
+          <header className="page-head">
             <div className="site-head-container">
               <a
                 className="nav-burger"
@@ -109,7 +98,20 @@ const SubpageA = ({ data }) => {
             </h4>
             
           </header>
-          {isPastHeader && <MacBookPage />}
+
+          <div className="post-feed three">
+            {postsInCategoryA.map((post) => {
+              postCounter++;
+              return (
+                <PostCard
+                  key={post.id}
+                  count={postCounter}
+                  post={post}
+                  postClass={`post`}
+                />
+              );
+            })}
+          </div>
 
           <div className="div-comp-link">
           <Link
@@ -121,7 +123,6 @@ const SubpageA = ({ data }) => {
             </Link>
           </div>
         </>
-        
       ) : (
         <div className="pw-form">
           <div className="form-contain">
@@ -142,7 +143,6 @@ const SubpageA = ({ data }) => {
           </div>
         </div>
       )}
-
     </div>
   );
 };
