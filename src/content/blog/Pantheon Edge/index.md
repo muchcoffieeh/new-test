@@ -46,10 +46,8 @@ However, this is all behind a curtain as it is a fully-managed service. The rend
 
 ### Research - Priority Features
 
-Starting off the design process, two critical decisions needed to be made that would shape the direction of the rest of the product:
-
-- Initial Features: We needed to determine the optimal combination of initial features that would effectively address 60-80% of our customers' needs.
-- Edge Configuration to Site Relationship: We had to decide whether edge logic should be controlled on a site-by-site basis or if a more holistic approach should govern multiple sites.
+Starting off the design process, we needed to prioritize the features to deliver. 
+> **What is the optimal combination of initial features that would effectively address our customers' needs?**
 
 To identify the most suitable initial features for our self-service product, I carefully considered various research approaches. Initially, conducting an audit of our customers' existing edge configurations seemed like the obvious choice. However, upon closer examination, it became clear that this approach would be an incredibly resource-intensive endeavor. The bespoke nature of the fully-managed service had resulted in diverse configurations, making it challenging to standardize and time-consuming to obtain the data to analyze. Conducting a comprehensive audit would require significant effort and resources from our already stretched edge implementation team.
 Recognizing the need for an alternative research method, I engaged in discussions with our team of edge implementation specialists. Despite the lack of an official immutable source of truth for customer feature usage, I discovered that each specialist had an exceptional memory of the customers they had helped implement. Leveraging this valuable insight, I devised a survey to capture their collective knowledge and insights. Each participant received a questionnaire in which they were presented with a product offering edge features. I then asked them to choose which tools they needed immediately, needed later, or not at all to serve their customer requests. By consolidating the results, I was able to create likely combinations of features and test their viability. To supplement the information from the internal surveys, I screened for edge developers from the world wide web and conducted a similar study.
@@ -145,7 +143,9 @@ I iterated on the designs in low fidelity, maintaining nearly daily check-ins wi
 
 </div>
 
-We successfully reached the targeted milestone of creating a full prototype to validate our product concept. The prototype was identifiable as our Pantheon dashboard, striking a balance between similarity and mid-fidelity design. By omitting colors and other embellishments, to ensured that the focus remained on the functionality and core features of the product.
+We moved into mid-fidelity prototyping to increase the frequency of the feedback loops. These mid-fidelity prototypes wer identifiable as our Pantheon dashboard, striking a balance between similarity and mid-fidelity design. By omitting colors and other embellishments, to ensured that the focus remained on the functionality and core features of the product.
+
+The prototypes were tested with selected customers and external participants that closely resembled our customers. The participants were asked to complete a series of tasks and we documented their success, points of friction, and any open feedback they gave through out the process. 
 
 <div className="kg-card kg-image-card kg-width-med kg-desktop">
 
@@ -171,11 +171,8 @@ We successfully reached the targeted milestone of creating a full prototype to v
 
 </div>
 
-### Concept Validation
-
-It was time to validate the MVP product concept with customers. The prototype was tested with selected customers and external participants that closely resembled our customers. The participants were asked to complete a series of tasks and we documented their success, points of friction, and any open feedback they gave through out the process. I distilled the results into a comprehensive report to inform my team and cross-functional partners. Nobody likes long slide decks so I strategically crafted a slide deck that peeled back like an onion (or a good Twitter thread). The first section of just 8 slides covered the key insights, respective details and recommendations, and a quick context of the research methodology.
-
 ### Results
+I distilled the results from the final prototype testing into a comprehensive report to inform my team and cross-functional partners. Nobody likes long slide decks so I strategically crafted a slide deck that peeled back like an onion (or a good Twitter thread). The first section of just 8 slides covered the key insights, respective details and recommendations, and a quick context of the research methodology.
 
 <div className="kg-card kg-image-card kg-width-med">
 

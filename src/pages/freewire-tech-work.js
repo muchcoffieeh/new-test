@@ -69,7 +69,7 @@ const SubpageA = ({ data }) => {
               </a>
               <nav id="swup" className="site-head-left light">
                 <ul className="nav" role="menu">
-                  <li className="nav-home nav-current" role="menuitem">
+                  <li className="nav-home" role="menuitem">
                     <Link to={`/`}>Home</Link>
                   </li>
                   <li className="nav-about" role="menuitem">
