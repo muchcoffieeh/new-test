@@ -10,11 +10,11 @@ description: "ROLE: SOLE DESIGNER, USER RESEARCH, PRODUCT MANAGEMENT"
 
 import { getImage, GatsbyImage } from 'gatsby-plugin-image';
 
-FreeWire Technologies builds cloud-connected battery systems for on-site power – the cleaner alternative to a traditional diesel generator. AMP (Asset Management Platform) compliments the battery systems and allows for remote control and monitoring.
+FreeWire Technologies builds cloud-connected battery systems for on-site power – the cleaner alternative to a traditional diesel generator. AMP (Asset Management Platform) compliments the battery systems and allows for remote control and monitoring. AMP was one of 4 critical touchpoints of the Mobi Gen product experience.
 
 ### The Setup
 
-When the power is on, everyone on the construction site is going about their job and no one notices. All hell breaks loose if the power does go down. For the fleet manager, an outage is simply not acceptable. They need to know the status of their fleet of power delivery units at all times and at a glance. AMP was created to do just that. Managers can geo-track units, view individual unit operating details, and remotely control the functions of each unit deployed in the field.
+When the power is on, everyone on the construction or event site is going about their job and no one notices. All hell breaks loose if the power does go down. For the fleet manager, an outage is simply not acceptable. They need to know the status of their fleet of power delivery units at all times and at a glance. AMP was created to do just that. Managers can geo-track units, view individual unit operating details, and remotely control the functions of each unit deployed in the field.
 
 ### Business Case
 

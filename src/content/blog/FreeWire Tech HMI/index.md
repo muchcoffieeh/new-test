@@ -9,13 +9,15 @@ description: "ROLE: UX/UI DESIGN, DESIGN AND PROJECT MANAGEMENT"
 
 import { getImage, GatsbyImage } from 'gatsby-plugin-image';
 
-FreeWire Technologies builds cloud-connected battery systems for on-site power – the cleaner alternative to a traditional diesel generator. Operators control and monitor the battery system using the digital touchscreen on the back panel.
+FreeWire Technologies builds cloud-connected battery systems for on-site power – the cleaner alternative to a traditional diesel generator. Operators control and monitor the battery system using the digital touchscreen on the back panel. The digital touchscreen was one of 4 critical touchpoints of the Mobi Gen product experience.
 
 ### The Setup
 
-The Mobi Gen did not always have a digital touchscreen interface. Previously, it was s tiny LCD screen that only displayed the state of charge. The battery systems can be monitored remotely so we were able to see the lack of usage since the customers first purchased units. We suspected the cryptic screen may have something to do with it.
+The Mobi Gen did not always have a digital touchscreen interface. Previously, it was a tiny LCD screen that only displayed the state of charge. The battery systems are monitored remotely. We were able to see an insignificant number of battery cycles across all the units sold, indicating the lack of usage since the customers first purchased them. We suspected the cryptic screen has much to do with it.
 
-I led a team of 3 design consultants to tackle this challenge. The objective was clear: make it more user-friendly to ensure customer retention.
+> **The screen tells me nothing. I can't know or verify how much power this thing has left. That obviously makes setting up the power network harder for me but I have to use when my boss is telling me to try this out.**
+
+I led a team of 3 design consultants to tackle this challenge. The objective was clear but the path forward was murky: make it work get more usage.
 
 ### Preparation
 
@@ -47,9 +49,9 @@ We worked as a team to dive deeper into the use cases we were serving. We contac
 
 Our key insights:
 
-- Feedback – a battery system is unfamiliar to diesel generator operators so feedback for every user interaction is critical.
-- Familiarity – the closer the display can look and feel like controls/displays found on diesel generators, the better.
-- Status at-a-glance – operators like to monitor the asset from afar so key information should be legible from a distance.
+- **Feedback** – a battery system is unfamiliar to diesel generator operators so feedback for every user interaction is critical.
+- **Familiarity** – the information display and controls must look and feel like ones found on diesel generators. Feedback for user interactions must resemble ones from diesel generators.
+- **Status at-a-glance** – operators like to monitor the asset from afar so key information should be legible from a distance. Despite having a mobile app in hand, status displayed on the battery was preferred.
 
 We synthesized our findings. I presented them to our executive team to start determining engineering bandwidth allocation.
 
@@ -144,3 +146,7 @@ We arrived at the final back panel below. You’re probably noticing that the di
 ![Mobi Before-After](./before-after-mobile.jpg)
 
 </div>
+
+### Results
+
+In the months following the retrofitting of the battery units with the new digital display, we saw an increase of **34%** of the number of battery cycles. We followed up with each of the customers that participated in our design process and they reported a significant decrease in setup and teardown time – an estimated **30%**. My team was elated as these results but we know there is still room for improvement.
