@@ -94,13 +94,14 @@ After:
 
 ### Final Design
 
-<div className="kg-card kg-image-card kg-width-wide">
+<div className="kg-card kg-image-card kg-width-full">
 
 ![User Flow](./mobiGen-amp2view1.jpg)
 
 </div>
 
-<div className="kg-card kg-image-card kg-width-wide">
+
+<div className="kg-card kg-image-card kg-width-full">
 
 ![User Flow](./mobiGen-amp2view2.jpg)
 

@@ -36,21 +36,22 @@ However, this is all behind a curtain as it is a fully-managed service. The rend
 
 **Business perspective**
 
-- High operational costs and inefficiencies from the required heavy manual intervention.
-- Inefficient communication. Often, customers struggled to articulate their objectives clearly, leading to ambiguity and confusion in their requests. Consequently, our implementation specialists faced significant challenges in deciphering the overall objectives of the customers and developing tailored solutions. This lack of clarity not only consumed additional time and effort but also caused frustration for both our specialists and the customers. The inefficiency in understanding the customers' intent further amplified the problem, resulting in prolonged development cycles and suboptimal solutions.
+- High operational costs and inefficiencies from high-touch operations with manual components.
+- Inefficient communication. Without a point of reference, customers struggled to articulate their objectives clearly, leading to ambiguity in their requests and required additional conversations. 
 
 **Customer perspective**
 - Long lead-times. Every time customers needed to make changes, they were required to submit a ticket, leading to a time-consuming and resource-intensive process.
 - No visibility. The lack of transparency created inconvenience and made it challenging for customers to understand the impact and value of their requested changes.
-  The tech lead, product manager, and I went to work to realize the vision of turning the fully-managed service into self-service product.
+
+The tech lead, product leader, and I went to work to realize the vision of turning the fully-managed service into self-service product.
 
 ### Research - Priority Features
 
 Starting off the design process, we needed to prioritize the features to deliver. 
 > **What is the optimal combination of initial features that would effectively address our customers' needs?**
 
-To identify the most suitable initial features for our self-service product, I carefully considered various research approaches. Initially, conducting an audit of our customers' existing edge configurations seemed like the obvious choice. However, upon closer examination, it became clear that this approach would be an incredibly resource-intensive endeavor. The bespoke nature of the fully-managed service had resulted in diverse configurations, making it challenging to standardize and time-consuming to obtain the data to analyze. Conducting a comprehensive audit would require significant effort and resources from our already stretched edge implementation team.
-Recognizing the need for an alternative research method, I engaged in discussions with our team of edge implementation specialists. Despite the lack of an official immutable source of truth for customer feature usage, I discovered that each specialist had an exceptional memory of the customers they had helped implement. Leveraging this valuable insight, I devised a survey to capture their collective knowledge and insights. Each participant received a questionnaire in which they were presented with a product offering edge features. I then asked them to choose which tools they needed immediately, needed later, or not at all to serve their customer requests. By consolidating the results, I was able to create likely combinations of features and test their viability. To supplement the information from the internal surveys, I screened for edge developers from the world wide web and conducted a similar study.
+To identify the most suitable initial features for our self-service product, I considered various research approaches. While conducting an audit of our customers' existing edge configurations seemed like the choice to yield irrefutable results, we simply did not have the resources. The bespoke nature of the fully-managed service had resulted in diverse configurations across all our customers.Conducting a comprehensive audit would require significant effort and resources from our already stretched edge implementation team.
+Recognizing the need for an alternative research method, I engaged in discussions with our team of edge implementation specialists and discovered that they maintained a record to track the usage of individual features. It was not an immutable source of truth but provided a great strating point. I also discovered that each specialist had an exceptional memory of the customers they had helped implement. Leveraging this insight, I devised a survey to capture their collective knowledge and insights. Each participant received a questionnaire in which they were presented with a product offering edge features. I then asked them to choose which tools they needed immediately, needed later, or not at all to serve their customer requests. By consolidating the results, I was able to create likely combinations of features and test their viability. To supplement the information from the internal surveys, I screened for edge developers from the world wide web and conducted a similar study.
 
 <div className="kg-card kg-image-card kg-width-med">
 
@@ -73,7 +74,9 @@ I wanted to capture more evidence to add more color on this matter for my team. 
 Indeed it was just as our implementation experts described it – customers are very clear on their desired performance outcomes but would then conflate and misunderstand the features that would help them achieve such outcomes. It was then confidently decided that the features to be offered as part of the initial product release would weigh heavily towards the recommendations of our internal experts.  
 
 ### Architectural Decisions
-As we proceeded towards execution, we needed to lock down key architectural decisions. In order to determine the optimal edge configuration to site relationship, I engaged in a research process of gathering insights through interviews with both customers and members of the edge implementation team.
+As we proceeded towards execution, we needed to lock down key architectural decisions. 
+> **How do we structure the relationship between our platform entities and edge entities?**
+I took a two-pronged in my research effort – a series of interviews with customers and a revealing workshop with our edge implementation team. In the workshop, I presented simulated customer scenarios ready for implementation and ask them to relate the entities accordingly.
 
 <div className="kg-card kg-image-card kg-width-xs">
 
@@ -81,9 +84,8 @@ As we proceeded towards execution, we needed to lock down key architectural deci
 
 </div>
 
-The initial interviews with select customers confirmed their preference for individual site-level control of edge logic, which aligned with their immediate needs. However, I intuited that this approach might not be the most optimal solution for our product.
-In light of this, I conducted another round of interviews, this time with specific members of the edge implementation team. I tailored the questions to uncover their approach in setting up customer configurations and concluded with a direct inquiry into their preferred edge configuration to site relationship. The results were more nuanced than anticipated.
-The interviews unveiled a more complex landscape. It became apparent that the preferred configuration involved a combination of governing multiple sites with a single edge configuration, while still allowing each site to have multiple configurations. Recognizing the technical and user experience complexities associated with this approach, I collaborated with my tech lead to assess its feasibility. We weighed the pros and cons of each architectural structure
+The initial interviews with select customers confirmed their preference for individual site-level control of edge logic, which aligned with their immediate needs. However, interviews and the workshop with the edge implementation team revealed otherwise.
+They unveiled a more complex landscape – the preferred configuration involved a combination of governing multiple sites with a single edge configuration, while still allowing each site to have multiple configurations. I collaborated with my tech lead to assess this structural feasibility and other options. We weighed the pros and cons of each architectural structure
 
 <div className="kg-card kg-image-card kg-width-full">
 
@@ -99,15 +101,14 @@ and explore the IA stemming from each
 
 </div>
 
-After careful consideration, we determined that implementing this configuration would be excessively intricate both in terms of technical execution and designing a user-friendly product experience. Instead, we decided to prioritize a more straightforward approach initially, with the vision of eventually realizing the advanced configuration for customers willing to pay a premium. To accommodate this future state, we made the decision to have edge configurations controlling multiple sites and a site has one configuration.
+After careful consideration, we landed on an option that was initially straightforward but provided the flexibility for building into the more advanced structure later in the product roadmap. We made the decision to have edge configurations controlling multiple sites but each site can only be connected to one configuration.
 
 ### Co-Design Workshops
 
-With the groundwork laid and key decisions made, it was time to delve into the user experience design of the self-service product. To gain a deeper understanding of the implementation process, I conducted investigative sessions with several members of the edge implementation team. Through these sessions, I presented them with hypothetical customer requests, carefully observing and documenting their implementation approaches. This formed the basis for further design exploration.
-Following the investigative sessions, I sought a comprehensive perspective. I facilitated a series of co-design sessions involving cross-functional teams – sales engineering, edge engineering, and implementation team. These sessions aimed to achieve a full 360-degree view of the product from perceived value to actual value delivery. I organized two sessions with the larger group of 15 participants, fostering collaborative discussions through hands-on exercises.
-It was during these sessions that we had a significant realization – customers required more than just a self-service solution for these complex edge features. Recognizing the potential risks, such as a site going down due to improper edge implementation, we saw the importance of providing customers with a testing ground – a mechanism to instill confidence and assurance in their implementations.
+Following the results of the initial investigative sessions, it was time to delve into the user experience design. I facilitated a series of co-design sessions involving cross-functional teams – sales engineering, product engineering, and the edge implementation team. These sessions aimed to achieve a full 360-degree view of the product from perceived value to actual value delivery. I organized two sessions with the larger group of 15 participants, fostering collaborative discussions through hands-on exercises. 
+It was during these sessions that we had a significant realization Self-serviceable tools for changing web traffic behavior gave customers great power but also entails great risk. A site could go down entirely due to the unintended sequencing of edge rules. It was paramount to give customers a testing ground to instill confidence – a way to test, break, and fix stuff. This was the value proposition that would uniquely differentiate our offering. We designed the user experience around this value proposition.
 
-Taking that key insight and many others, I continued with 4-7 co-design sessions that included one key sales engineer, implementation specialist, and the tech lead from our edge engineering team. The flexibility and spontaneous nature of these sessions allowed for deeper exploration and generated breakthrough ideas that honed in on the optimal product experience.
+I continued with roughly 7 deeper co-design sessions that included one key sales engineer, implementation specialist, and the tech lead from our edge engineering team (lost count of session numbers). The flexibility and spontaneous nature of these sessions allowed for deeper exploration and generated breakthrough ideas that honed in on the optimal product experience.
 
 <div className="kg-card kg-image-card kg-width-full">
 
@@ -123,7 +124,7 @@ Taking that key insight and many others, I continued with 4-7 co-design sessions
 
 ### Design Process
 
-I iterated on the designs in low fidelity, maintaining nearly daily check-ins with my product manager and tech lead for feedback to ensure alignment.
+I iterated on the designs in low fidelity, maintaining nearly daily check-ins with my product leader and tech lead for feedback to ensure alignment. At this point, we also began to test with customers and external participants.
 
 <div className="kg-card kg-image-card kg-width-full kg-desktop">
 
@@ -145,7 +146,7 @@ I iterated on the designs in low fidelity, maintaining nearly daily check-ins wi
 
 We moved into mid-fidelity prototyping to increase the frequency of the feedback loops. These mid-fidelity prototypes wer identifiable as our Pantheon dashboard, striking a balance between similarity and mid-fidelity design. By omitting colors and other embellishments, to ensured that the focus remained on the functionality and core features of the product.
 
-The prototypes were tested with selected customers and external participants that closely resembled our customers. The participants were asked to complete a series of tasks and we documented their success, points of friction, and any open feedback they gave through out the process. 
+During prototype testing, participants were asked to complete a series of tasks and we documented their success, points of friction, and any open feedback they gave through out the process. 
 
 <div className="kg-card kg-image-card kg-width-med kg-desktop">
 
@@ -172,7 +173,7 @@ The prototypes were tested with selected customers and external participants tha
 </div>
 
 ### Results
-I distilled the results from the final prototype testing into a comprehensive report to inform my team and cross-functional partners. Nobody likes long slide decks so I strategically crafted a slide deck that peeled back like an onion (or a good Twitter thread). The first section of just 8 slides covered the key insights, respective details and recommendations, and a quick context of the research methodology.
+I distilled the results from the final prototype testing into a comprehensive report to inform my immediate team and cross-functional partners. Nobody likes long slide decks so I strategically crafted a slide deck that peeled back like an onion (or a good Twitter thread). The first section of just 8 slides covered the key insights, respective details and recommendations, and a quick context of the research methodology.
 
 <div className="kg-card kg-image-card kg-width-med">
 
