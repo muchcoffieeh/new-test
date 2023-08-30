@@ -95,17 +95,22 @@ Starting off the design process, we needed to prioritize the features to deliver
 > **What is the optimal combination of initial features that would effectively address our customers' needs?**
 
 To identify the most suitable initial features for our self-service product, I considered various research approaches. While conducting an audit of our customers' existing edge configurations seemed like the choice to yield irrefutable results, we simply did not have the resources. The bespoke nature of the fully-managed service had resulted in diverse configurations across all our customers.Conducting a comprehensive audit would require significant effort and resources from our already stretched edge implementation team.
-Recognizing the need for an alternative research method, I engaged in discussions with our team of edge implementation specialists and discovered that they maintained a record to track the usage of individual features. It was not an immutable source of truth but provided a great strating point. I also discovered that each specialist had an exceptional memory of the customers they had helped implement. Leveraging this insight, I devised a survey to capture their collective knowledge and insights. Each participant received a questionnaire in which they were presented with a product offering edge features. I then asked them to choose which tools they needed immediately, needed later, or not at all to serve their customer requests. By consolidating the results, I was able to create likely combinations of features and test their viability. To supplement the information from the internal surveys, I screened for edge developers from the world wide web and conducted a similar study.
+Recognizing the need for an alternative research method, I engaged in discussions with our team of edge implementation specialists and discovered that they maintained a record to track the usage of individual features. It was not an immutable source of truth but provided a great starting point. I also discovered that each specialist had an exceptional memory of the customers they had helped implement. Leveraging this insight, I devised a workshop to capture their collective knowledge and insights. Each participant was asked to bundle lean packages of what they determined to be high-priority features based on their implementation experiences. They were then asked to provide descriptions of the customer implementation case for any other features. 
 
-<div className="kg-card kg-image-card kg-width-med">
+<div className="kg-card kg-image-card kg-width-wide">
 
-![external-survey-analysis](./features-ext-analysis.jpg)
+![external-survey-analysis](./features-prioritize.jpg)
 
 </div>
 
+Combining results from the workshop and a questionnaire sent to external participants, my team and I were able to narrow down to the **top 3 features** to prioritize for the initial release.
+> - **URL Redirects**
+> - **Header Modification**
+> - **Access Rules**
+
 ### Governing Architecture
 As we proceeded towards execution, we needed to lock down key architectural decisions. 
-> **How do we structure the relationship between our platform entities and edge entities?**
+> How do we structure the relationship between our platform entities and edge entities?
 
 I took a two-pronged in my research effort – a series of interviews with customers and a revealing workshop with our edge implementation team. In the workshop, I presented simulated customer scenarios ready for implementation and ask them to relate the entities accordingly.
 
@@ -206,10 +211,22 @@ During prototype testing, participants were asked to complete a series of tasks 
 ### Results
 I distilled the results from the final prototype testing into a comprehensive report to inform my immediate team and cross-functional partners. Nobody likes long slide decks so I strategically crafted a slide deck that peeled back like an onion (or a good Twitter thread). The first section of just 8 slides covered the key insights, respective details and recommendations, and a quick context of the research methodology.
 
-<div className="kg-card kg-image-card kg-width-med">
-
-![report](./presentation-main1.jpg)
-
+<div className="mdx-file bullet-box-container">
+  <div className="bullet-box">
+    <h7>Excitement expressed when seeing edge features with pre-production environments</h7>
+    <div className="label-block">Unique Value Prop</div>
+    <p>Participants reacted extremely positively to seeing the capability, some even noting it as a unique differentiator from other edge tooling.</p>
+  </div>
+  <div className="bullet-box">
+    <h7>One edge configuration governing multiple sites is the most extensible structure </h7>
+    <div className="label-block">Governing Architecture</div>
+    <p>While participants took a moment to reorient their mental model, they successfully completed all tasks and remarked favorably on the reduction of redundancy. </p>
+  </div>
+  <div className="bullet-box">
+    <h7>Additional functionality is required – missing functionality will hinder adoption </h7>
+    <div className="label-block red">Prioritized Features</div>
+    <p>60% of participants noted they need more features and functionality for the edge suite to be usable. However, specific requests were wide-ranging.</p>
+  </div>
 </div>
 
 Respective details and recommendations + quick context of the research methodology: 

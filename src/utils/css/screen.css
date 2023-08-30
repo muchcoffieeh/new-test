@@ -1001,14 +1001,26 @@ body {
   border: var(--container-corvid-border-width,var(--brw,1px)) solid var(--container-corvid-border-color,rgba(var(--brd,var(--color_15)),var(--alpha-brd,1)));
   border-radius: var(--rd,5px);
   bottom: 0;
-  box-shadow: var(--shd,0 1px 4px rgba(26, 26, 26, 0.6));
+  box-shadow: var(--shd,0 3px 8px rgba(26, 26, 26, 0.35));
   flex: 1;
   position: relative;
   text-align: center;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.bullet-box:hover {
+  transform: scale(1.05);
+  background-color: #f0f0f0;
 }
 
 .bullet-box h6{
   margin: 0.5em 0;
+}
+
+.bullet-box h7{
+  font-weight: 600;
+  padding-bottom: 1em;
+  margin: 0 1em;
 }
 
 .bullet-box-container{
@@ -1044,6 +1056,25 @@ body {
 
 .customer-perspective .tag {
   background-color: #4bd5ff; /* Color for customer perspective */
+}
+
+.label-block{
+  background-color: rgb(232, 232, 232);
+  color: green;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 1em 0;
+  border: 2px solid rgb(202, 202, 202);
+  border-bottom: 5px solid green;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding: 5px 10px;
+  display: inline-block;
+}
+
+.label-block.red{
+  border-bottom: 3px solid red;
+  color: red;
 }
 
 .mdx-file.kg-width-full, .mdx-file.kg-width-wide{

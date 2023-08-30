@@ -50,7 +50,7 @@ For building out the Advanced Global CDN Self-Service Plugin, we needed to deter
 </div>
 
 #### Functionality Selection
-The first step was to identify the discrete functionalities to include in the plugin. Beyond understandinger the features most heavily used by customers, we had to knowledge a critical technical limitations with the way edge logic was written and stored with our CDN vendor. In unraveling select customer configurations with our edge implementation team, we discovered the main criteria for the feasbility of a feature to be revealed in the plugin. The achievable features were ones using purely a key value pair to achieve the intended edge behavior – a dictionary or ACL (access control list) format. 
+The first step was to identify the discrete functionalities to include in the plugin. Beyond understanding the features most heavily used by customers, we had to know critical technical limitations with the way edge logic was written and stored with our CDN vendor. In unraveling select customer configurations with our edge implementation team, we discovered the main criteria for the feasibility of a feature to be revealed in the plugin. The achievable features were ones using purely a key value pair to achieve the intended edge behavior – a dictionary or ACL (access control list) format. 
 
 <div className="kg-card kg-image-card kg-width-med">
 
