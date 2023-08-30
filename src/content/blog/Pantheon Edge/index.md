@@ -48,7 +48,7 @@ However, this is all behind a curtain as it is a fully-managed service. The demo
     <div className="tag">Business Perspective</div>
   </div>
   <div className="bullet-box customer-perspective">
-    <h6>Extremely Inconvenience</h6>
+    <h6>Extreme Inconvenience</h6>
     <p>High operational costs and inefficiencies from high-touch operations with manual components.</p>
     <div className="tag">Customer Perspective</div>
   </div>

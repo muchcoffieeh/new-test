@@ -11,17 +11,15 @@ description: "ROLE: PRODUCT DELIVERY, UX/UI"
 
 import { getImage, GatsbyImage } from 'gatsby-plugin-image';
 
-#### Creating the Next-Gen Dashboard
-
-Full case study coming soon.
-
-<div className="kg-card kg-image-card kg-width-med kg-desktop">
+<div className="mdx-file kg-card kg-image-card kg-width-wide kg-desktop">
 
 ![Config setup video](/images/site-dashboard-mid.gif)
 
 </div>
 
+#### The Setup
 
+Full case study coming soon.
 
 <div className="kg-card kg-image-card kg-width-full">
 

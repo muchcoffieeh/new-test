@@ -42,11 +42,25 @@ An instant replay during a live football game takes place when there is a close 
 
 The history of the NFL’s instant replay has always been filled with controversy and modifications that continue to this day. Play reviews delay an already lengthy football game. From 1999 to 2020, only 39% of the plays that required a review were reversed. Some were determined by the league to be incorrectly overturned, making the delay to the games even less warranted.
 
-Our design objectives were clear:
+Our app would initially focus on the NFL referees conducting their review on the field.
 
-- Enabling the most efficient review process
-- Enabling a more accurate review process
-  Our app would initially focus on the NFL referees conducting their review on the field.
+<div className="mdx-file bullet-box-container">
+  <div className="bullet-box business-perspective">
+    <h6>Accuracy</h6>
+    <p>Insufficient tools led to inaccurate determinations after the review process and angry fans </p>
+    <div className="tag">Business Perspective</div>
+  </div>
+  <div className="bullet-box business-perspective">
+    <h6>Engagement</h6>
+    <p>A shorter review process elevated the momentum of a game and drives revenue</p>
+    <div className="tag">Business Perspective</div>
+  </div>
+  <div className="bullet-box customer-perspective">
+    <h6>Efficiency</h6>
+    <p>Existing tools make the review process time-consuming and cumbersome – referees feel the heat from the fans </p>
+    <div className="tag">Customer Perspective</div>
+  </div>
+</div>
 
 ### Research
 

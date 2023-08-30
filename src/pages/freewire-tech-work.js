@@ -72,12 +72,21 @@ const SubpageA = ({ data }) => {
                   <li className="nav-home" role="menuitem">
                     <Link to={`/`}>Home</Link>
                   </li>
-                  <li className="nav-about" role="menuitem">
+                  <li className="nav-home" role="menuitem">
+                    <Link to={`/pantheon-work`}>Pantheon</Link>
+                  </li>
+              <li className="nav-current nav-home" role="menuitem">
+                <Link to={`/freewire-tech-work`}>FreeWire</Link>
+              </li>
+              <li className="nav-home" role="menuitem">
+                <Link to={`/txm-work`}>TXM</Link>
+              </li>
+                  {/* <li className="nav-about" role="menuitem">
                     <Link to={`#my-process`}>Process</Link>
                   </li>
                   <li className="nav-about" role="menuitem">
                     <Link to={`#case-studies`}>Work</Link>
-                  </li>
+                  </li> */}
                   
                   <li className="nav-elements" role="menuitem">
                     <Link to={`https://www.linkedin.com/in/serena-s-xu/`} target="_blank">About</Link>

@@ -34,13 +34,27 @@ Tempus Ex provides a data platform to serve real-time sports analytics, allowing
 
 Every NFL game employs a stats team of 10-20 people. The crew is situated in a suite in the press box high above the crowds and where each member views the game through binoculars. Their job is to determine the stats on each play and enter them into the GSIS system – the closer they can do this in real-time, the better. Any delays reporting stats or incorrect stats results in unhappy fans. Some stats are subjective and far more challenging to find consensus on. This is where relying on a rule-based AI system has an advantage. The objective of the pilot:
 
-- Bring stats reporting into real-time
-- Demonstrating the potential of having smaller stats teams with greater efficiency
-- More intuitive and engaging layout for play info consumption
+<div className="mdx-file bullet-box-container">
+  <div className="bullet-box business-perspective">
+    <h6>Real-Time</h6>
+    <p>Bring stats reporting into real-time to decrease the time between each play </p>
+    <div className="tag">Business Perspective</div>
+  </div>
+  <div className="bullet-box business-perspective">
+    <h6>Efficiency</h6>
+    <p>Increase operational efficiency of the league by empowering a smaller stats reporting crew</p>
+    <div className="tag">Business Perspective</div>
+  </div>
+  <div className="bullet-box customer-perspective">
+    <h6>Engagement</h6>
+    <p>A more intuitive UX with engaging visuals to increase time spent in-product</p>
+    <div className="tag">Customer Perspective</div>
+  </div>
+</div>
 
 ### Research
 
-Yes, I did spend some time at the Alliance of American Football, but I realized I still know very little about football. At first it was “what is GSIS?” I spent the 2 months attending games and exploring GSIS to understand the pain points from the league’s perspective. I made sketches of the user environment and took screenshots of the software in action.
+At the start, I knew very little about football. “What is GSIS?” I spent the 2 months attending games and exploring GSIS to understand the pain points from the league’s perspective. I made sketches of the user environment and took screenshots of the software in action.
 
 <div className="kg-card kg-image-card kg-width-wide">
 
