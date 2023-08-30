@@ -11,10 +11,7 @@ description: "ROLE: PRODUCT CONCEPTUALIZATION & DESIGN, UX RESEARCH"
 
 import { getImage, GatsbyImage } from 'gatsby-plugin-image';
 
-In today's digital landscape, high-traffic websites are increasingly leveraging not only content delivery networks (CDNs) but also custom edge logic. This plays a crucial role in enhancing website performance, security, and reliability, enabling seamless delivery to millions of daily visitors, and efficiently handling sudden spikes in traffic.
-Pantheon, a platform for managing high-performance websites, currently offers a suite of tools for customizing edge logic. 
-
-<div className="kg-card kg-image-card kg-width-full kg-desktop">
+<div className="mdx-file kg-card kg-image-card kg-width-wide kg-desktop" >
 
 ![Screenshots](/images/agcdn-hifi-demo-mid.gif)
 
@@ -32,20 +29,67 @@ Pantheon, a platform for managing high-performance websites, currently offers a 
 
 </div>
 
-However, this is all behind a curtain as it is a fully-managed service. The rendering above is from the self-service product we're moving towards. The current managed solution poses several significant issues.
+### The Setup
 
-**Business perspective**
+In today's digital landscape, high-traffic websites are increasingly leveraging not only content delivery networks (CDNs) but also custom edge logic. This plays a crucial role in enhancing website performance, security, and reliability, enabling seamless delivery to millions of daily visitors, and efficiently handling sudden spikes in traffic.
+Pantheon, a platform for managing high-performance websites, currently offers a suite of tools for customizing edge logic. 
 
-- High operational costs and inefficiencies from high-touch operations with manual components.
-- Inefficient communication. Without a point of reference, customers struggled to articulate their objectives clearly, leading to ambiguity in their requests and required additional conversations. 
+However, this is all behind a curtain as it is a fully-managed service. The demo above is from the self-service product we're moving towards. The current managed solution poses several significant issues.
 
-**Customer perspective**
-- Long lead-times. Every time customers needed to make changes, they were required to submit a ticket, leading to a time-consuming and resource-intensive process.
-- No visibility. The lack of transparency created inconvenience and made it challenging for customers to understand the impact and value of their requested changes.
+<div className="mdx-file bullet-box-container">
+  <div className="bullet-box business-perspective">
+    <h6>Not Scalable</h6>
+    <p>Operationally expensive with extreme inefficiencies resulted from nonstandard workflows with semi-manual components</p>
+    <div className="tag">Business Perspective</div>
+  </div>
+  <div className="bullet-box business-perspective">
+    <h6>Hidden Value</h6>
+    <p>Lacking transparency, it was challenging for customers to understand the impact of their implementations and they questioned the value</p>
+    <div className="tag">Business Perspective</div>
+  </div>
+  <div className="bullet-box customer-perspective">
+    <h6>Extremely Inconvenience</h6>
+    <p>High operational costs and inefficiencies from high-touch operations with manual components.</p>
+    <div className="tag">Customer Perspective</div>
+  </div>
+  <div className="bullet-box customer-perspective">
+    <h6>Disconnected</h6>
+    <p>Without a point of reference, customers struggled to articulate their objectives clearly, requiring additional interactions</p>
+    <div className="tag">Customer Perspective</div>
+  </div>
+</div>
 
-The tech lead, product leader, and I went to work to realize the vision of turning the fully-managed service into self-service product.
+### Unpacking The Needs
+After receiving the brief from our executives, I needed to better understand both the business and customer perspective to pinpoint where the inefficiencies are. I started by auditing recorded customer calls and support ticket chains. Key insights I found along the way
+- Certain features are harder to grasp than others where customers would conflate the functionality. Customers would submit requests asking for a feature by name where it would be later discovered by our implementation that they needed another feature.
+- Customers may submit tickets describing their end objective with little idea of the combination of features they needed to achieve the objectives. This leads to confusion among customers and the communication gap with our edge implementation team, resulting in extra interactions.
+- Straightforward features caused the most dissatisfaction, as customers felt insulted in needing to submit tickets for such basics.
+- Our implementation approach has evolved over time, resulting in numerous improved ways to handle each feature.
+- Repeated engagement with our edge implementation team provides an opportunity for them to educate customers on optimal feature use, leading to more efficient discussions.
 
-### Research - Priority Features
+Each feature would have to be untangled individually. To start synthesizing my insights, I organized the insights by feature and contextualized it against the stage of the conversation. Examining the interactions at every stage of the conversation allowed my team and I to catalog all the user stories beyond the ones revolving around achieving edge functionality.
+
+<div className="kg-card kg-image-card kg-width-full kg-desktop">
+
+![Screenshots](./features-stage.jpg)
+
+</div>
+
+<div className="mdx-file kg-card kg-image-card kg-width-wide kg-desktop">
+
+![Screenshots](./user-stories.jpg)
+
+</div>
+
+After this analysis, we found the mental models of our customers that led us to uncover the value proposition we could uniquely deliver.
+
+<div className="kg-card kg-image-card kg-width-med kg-desktop">
+
+![Screenshots](./edge-reframe.jpg)
+
+</div>
+
+### Priority Features
 
 Starting off the design process, we needed to prioritize the features to deliver. 
 > **What is the optimal combination of initial features that would effectively address our customers' needs?**
@@ -59,23 +103,10 @@ Recognizing the need for an alternative research method, I engaged in discussion
 
 </div>
 
-There were some discrepancies. For example, domain masking was a highly desired feature to our internal implementation experts but most participants didn’t not select it for any use at all. I had to figure out how to weigh the 2 survey results – err towards the internal experts or external participants. 
-
-> **Customers often do not know what they need – they will send a request for a simple redirect when they actually need some complex domain masking. It’s often up to us to decipher and translate their requests.**
-
-I wanted to capture more evidence to add more color on this matter for my team. I ran one more quick survey with the same group of external participants – a conjoint analysis that would surface the customer intent versus their intended implementation. 
-
-<div className="kg-card kg-image-card kg-width-med">
-
-![conjoint-analysis](./features-conjoined-analysis.jpg)
-
-</div>
-
-Indeed it was just as our implementation experts described it – customers are very clear on their desired performance outcomes but would then conflate and misunderstand the features that would help them achieve such outcomes. It was then confidently decided that the features to be offered as part of the initial product release would weigh heavily towards the recommendations of our internal experts.  
-
-### Architectural Decisions
+### Governing Architecture
 As we proceeded towards execution, we needed to lock down key architectural decisions. 
 > **How do we structure the relationship between our platform entities and edge entities?**
+
 I took a two-pronged in my research effort – a series of interviews with customers and a revealing workshop with our edge implementation team. In the workshop, I presented simulated customer scenarios ready for implementation and ask them to relate the entities accordingly.
 
 <div className="kg-card kg-image-card kg-width-xs">
@@ -122,7 +153,7 @@ I continued with roughly 7 deeper co-design sessions that included one key sales
 
 </div>
 
-### Design Process
+### Iterations
 
 I iterated on the designs in low fidelity, maintaining nearly daily check-ins with my product leader and tech lead for feedback to ensure alignment. At this point, we also began to test with customers and external participants.
 

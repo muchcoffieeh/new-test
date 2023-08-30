@@ -990,3 +990,62 @@ body {
   font-weight: 700;
   color: var(--color-primary);
 }
+
+/* mdx files */
+
+.bullet-box{
+  width: 200px;
+  height: 300px;
+  padding: 20px;
+  background-color: var(--container-corvid-background-color,rgba(var(--bg,var(--color_11)),var(--alpha-bg,1)));
+  border: var(--container-corvid-border-width,var(--brw,1px)) solid var(--container-corvid-border-color,rgba(var(--brd,var(--color_15)),var(--alpha-brd,1)));
+  border-radius: var(--rd,5px);
+  bottom: 0;
+  box-shadow: var(--shd,0 1px 4px rgba(26, 26, 26, 0.6));
+  flex: 1;
+  position: relative;
+  text-align: center;
+}
+
+.bullet-box h6{
+  margin: 0.5em 0;
+}
+
+.bullet-box-container{
+  width: 70vw;
+  display: flex; /* Use flex to make the bullet-boxes inline */
+  justify-content: center; /* Center the bullet-boxes horizontally */
+  gap: 20px;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  margin-top: 4em;
+  margin-bottom: 3em;
+  transform: translateX(calc(50vw - 50%));
+}
+
+.tag {
+  position: absolute;
+  bottom: 1em;
+  left: 50%;
+  width: 100%;
+  max-width: 150px;
+  transform: translateX(-50%);
+  padding: 4px 8px;
+  background-color: #ff9800; /* Adjust the color as needed */
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.business-perspective .tag {
+  background-color: #616161; /* Color for business perspective */
+}
+
+.customer-perspective .tag {
+  background-color: #4bd5ff; /* Color for customer perspective */
+}
+
+.mdx-file.kg-width-full, .mdx-file.kg-width-wide{
+  margin-bottom: 5em;
+}
