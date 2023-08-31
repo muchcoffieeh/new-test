@@ -236,6 +236,35 @@ body {
   position: relative;
 }
 
+.nav-div.white{
+  background-color: white; /* Set the background color to white */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  /* z-index: 1000; */
+  height: 50px;
+}
+
+.nav-div.black{
+  background-color: black; /* Set the background color to white */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  /* z-index: 1000; */
+  height: 50px;
+}
+
+.nav.white{
+  background-color: white;
+}
+
+.nav.black{
+  background-color: black;
+}
+
+
 .site-head-left {
   position: fixed;
   top: 5px;

@@ -67,6 +67,7 @@ const SubpageA = ({ data }) => {
                   </div>
                 </div>
               </a>
+              <div className="nav-div black">
               <nav id="swup" className="site-head-left light">
                 <ul className="nav" role="menu">
                   <li className="nav-home" role="menuitem">
@@ -93,6 +94,7 @@ const SubpageA = ({ data }) => {
                 </li>
                 </ul>
               </nav>
+              </div>
               <div className="site-head-center"></div>
             </div>
             

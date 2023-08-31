@@ -26,33 +26,35 @@ const Layout = props => {
               </div>
             </div>
           </a>
-          <nav id="swup" className="site-head-left">
-            <ul className="nav" role="menu">
-              <li className="nav-home" role="menuitem">
-                <Link to={`/`}>Home</Link>
-              </li>
-              <li className="nav-home" role="menuitem">
-                    <Link to={`/pantheon-work`}>Pantheon</Link>
-                  </li>
-              <li className="nav-home" role="menuitem">
-                <Link to={`/freewire-tech-work`}>FreeWire</Link>
-              </li>
-              <li className="nav-home" role="menuitem">
-                <Link to={`/txm-work`}>TXM</Link>
-              </li>
+          <div className="nav-div white">
+            <nav id="swup" className="site-head-left">
+              <ul className="nav white" role="menu">
+                <li className="nav-home" role="menuitem">
+                  <Link to={`/`}>Home</Link>
+                </li>
+                <li className="nav-home" role="menuitem">
+                      <Link to={`/pantheon-work`}>Pantheon</Link>
+                    </li>
+                <li className="nav-home" role="menuitem">
+                  <Link to={`/freewire-tech-work`}>FreeWire</Link>
+                </li>
+                <li className="nav-home" role="menuitem">
+                  <Link to={`/txm-work`}>TXM</Link>
+                </li>
 
-              {/* <li className="nav-about" role="menuitem">
-                <Link to={`#my-process`}>Process</Link>
+                {/* <li className="nav-about" role="menuitem">
+                  <Link to={`#my-process`}>Process</Link>
+                </li>
+                <li className="nav-about" role="menuitem">
+                  <Link to={`#case-studies`}>Work</Link>
+                </li> */}
+                
+                <li className="nav-elements" role="menuitem">
+                  <Link to={`https://www.linkedin.com/in/serena-s-xu/`} target="_blank">About</Link>
               </li>
-              <li className="nav-about" role="menuitem">
-                <Link to={`#case-studies`}>Work</Link>
-              </li> */}
-              
-              <li className="nav-elements" role="menuitem">
-                <Link to={`https://www.linkedin.com/in/serena-s-xu/`} target="_blank">About</Link>
-            </li>
-            </ul>
-          </nav>
+              </ul>
+            </nav>
+          </div>
           <div className="site-head-center"></div>
         </div>
       </header>
