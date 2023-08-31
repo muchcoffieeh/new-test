@@ -1035,6 +1035,10 @@ body {
   transform: translateX(calc(50vw - 50%));
 }
 
+.bullet-box-container.three{
+  width: 50vw;
+}
+
 .tag {
   position: absolute;
   bottom: 1em;
@@ -1048,6 +1052,18 @@ body {
   font-size: 12px;
   font-weight: bold;
   border-radius: 4px;
+}
+
+.tech-perspective .tag{
+  background-color: #d7d7d7;
+  color: var(--color-base);
+}
+
+.bullet-box hr{
+  background-color: #4bd5ff;
+    height: 5px;
+    margin: 1.5em auto;
+    width: 40%;
 }
 
 .business-perspective .tag {
@@ -1076,6 +1092,7 @@ body {
   border-bottom: 3px solid red;
   color: red;
 }
+
 
 .mdx-file.kg-width-full, .mdx-file.kg-width-wide{
   margin-bottom: 5em;

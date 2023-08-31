@@ -11,13 +11,13 @@ description: "ROLE: PRODUCT CONCEPTUALIZATION & DESIGN, UX RESEARCH"
 
 import { getImage, GatsbyImage } from 'gatsby-plugin-image';
 
-In today's digital landscape, high-traffic websites are increasingly leveraging not only content delivery networks (CDNs) but also custom logic to manipulate behavior at the edge. This plays a crucial role in enhancing website performance, security, and reliability, enabling seamless delivery to millions of daily visitors, and efficiently handling sudden spikes in traffic.
+<div className="kg-card kg-image-card kg-width-wide">
 
-<div className="kg-card kg-image-card kg-width-med">
-
-![sreenshot](./portal-entry.jpg)
+![sreenshot](/images/plugin-entry-720.gif)
 
 </div>
+
+In today's digital landscape, high-traffic websites are increasingly leveraging not only content delivery networks (CDNs) but also custom logic to manipulate behavior at the edge. This plays a crucial role in enhancing website performance, security, and reliability, enabling seamless delivery to millions of daily visitors, and efficiently handling sudden spikes in traffic.
 
 ### Setup
 
@@ -40,13 +40,31 @@ A critical blocker in addressing this challenge was the ongoing development of a
 
 ### Proposal
 Collaborating with the product leader and tech lead, we proposed building a WordPress/Drupal plugin to link with our CDN vendor's services to empower users to self-serve edge behavior changes. We discovered a pre-existing plugin, abandoned due to engineering resource limitations, serving as a perfect starting point.
-
-### Evaluation
-For building out the Advanced Global CDN Self-Service Plugin, we needed to determine both the feasibility and the approach for its implementation.
 <div className="kg-card kg-image-card kg-width-med">
 
 ![plugin-before](./old-plugin.jpg)
 
+</div>
+
+### Evaluation
+For building out the Advanced Global CDN Self-Service Plugin, we needed to determine both the feasibility and the approach for its implementation.
+
+<div className="mdx-file bullet-box-container three">
+  <div className="bullet-box tech-perspective">
+    <hr></hr>
+    <p>What functionality can be built into this plugin? Will it be sufficient?</p>
+    <div className="tag">Feasibility</div>
+  </div>
+  <div className="bullet-box business-perspective">
+    <hr></hr>
+    <p>What level of customer impact will the investment in the plugin have? </p>
+    <div className="tag">Customer Impact</div>
+  </div>
+  <div className="bullet-box customer-perspective">
+    <hr></hr>
+    <p>High operational costs and inefficiencies from high-touch operations with manual components.</p>
+    <div className="tag">Business Impact</div>
+  </div>
 </div>
 
 #### Functionality Selection
@@ -58,19 +76,22 @@ The first step was to identify the discrete functionalities to include in the pl
 
 </div>
 
-This narrowed our list down significantly
-- URL redirects
-- IP blocking/allowing
-- Geo blocking/allowing
-- Forwarding edge logs
+The potential list of features to be delivered was narrowed down significantly
+>- **URL redirects**
+>- **IP blocking/allowing**
+>- **Geo blocking/allowing**
+>- **Forwarding edge logs**
 
-#### Eligibility Criteria
-Next, we needed to determine which customers would be eligible to leverage the plugin. We focused on customers whose configurations utilized one of the four features we could reveal within the plugin. For some customers, while the feature is implemented in their configuration, the methodology was not through the dictionary/ACL format. To accommodate them, a standardization process was to be required, converting their features into the dictionary/ACL format compatible to be revealed in the plugin. Through this assessment, we identified a smaller but still substantial number of existing eligible customers, with additional potential customers attainable through light standardization.
+#### Customer and Business Impact
+Next, we needed to determine which customers would be eligible to leverage the plugin. We focused on customers whose configurations utilized one of the four features we could reveal within the plugin. For some customers, while the feature is implemented in their configuration, the methodology was not through the dictionary/ACL format. 
 <div className="kg-card kg-image-card kg-width-wide">
 
 ![standardization-diagram](./config-framework.jpg)
 
 </div>
+
+To accommodate them, a standardization process was to be required, converting their features into the dictionary/ACL format compatible to be revealed in the plugin. Through this assessment, we identified a smaller but still substantial number of existing eligible customers, with additional potential customers attainable through light standardization.
+
 
 ### Design Process
 For the plugin's design, we adopted a pragmatic approach, acknowledging its interim nature. We conducted UX comparative analysis to identify effective patterns utilized in similar solutions and relied heavily on those insights. (see image below - taken from our information architecture and UI interactions examination)
@@ -89,7 +110,7 @@ As the implementation phase approached, we encountered crucial challenges regard
 
 Additionally, we discovered that porting control into the plugin would eliminate the version control provided by our CDN vendor, potentially leading to misconfigurations and increased support tickets. This posed a significant risk to the project's primary objective of streamlining user interactions and minimizing reliance on support for Advanced Global CDN changes.
 
-### Decision and Way Forward
+### The Way Forward
 Given the identified challenges and their potential implications, my product leader, tech lead, and I transparently presented the benefits and risks associated with the AGCDN Self-Service Plugin to our executive team. After a comprehensive evaluation, it was determined that the risks outweighed the advantages for the proposed implementation. While not proceeding to build out the plugin, the valuable design thinking and interaction patterns developed during this project will not go to waste. Instead, they will serve as a foundational groundwork and provide a jumpstart for the future productized version, which will be seamlessly integrated into the dashboard once the two essential microservices are completed.
 <div className="kg-card kg-image-card kg-width-full">
 
