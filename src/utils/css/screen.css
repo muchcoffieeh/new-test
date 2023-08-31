@@ -995,7 +995,7 @@ body {
 
 .bullet-box{
   width: 200px;
-  height: 300px;
+  /* height: 300px; */
   padding: 20px;
   background-color: var(--container-corvid-background-color,rgba(var(--bg,var(--color_11)),var(--alpha-bg,1)));
   border: var(--container-corvid-border-width,var(--brw,1px)) solid var(--container-corvid-border-color,rgba(var(--brd,var(--color_15)),var(--alpha-brd,1)));
@@ -1079,13 +1079,14 @@ body {
   color: green;
   font-weight: 600;
   font-size: 16px;
-  margin: 1em 0;
+  margin: 1em auto;
   border: 2px solid rgb(202, 202, 202);
   border-bottom: 5px solid green;
   border-bottom-right-radius: 10px;
   border-top-left-radius: 10px;
   padding: 5px 10px;
-  display: inline-block;
+  display: block;
+  width: 70%;
 }
 
 .label-block.red{
