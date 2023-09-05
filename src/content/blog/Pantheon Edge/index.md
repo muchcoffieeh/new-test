@@ -39,22 +39,22 @@ However, this is all behind a curtain as it is a fully-managed service. The demo
 <div className="mdx-file bullet-box-container">
   <div className="bullet-box business-perspective">
     <h6>Not Scalable</h6>
-    <p>Operationally expensive with extreme inefficiencies resulted from nonstandard workflows with semi-manual components</p>
+    <p>Operationally expensive with extreme inefficiencies resulted from nonstandard workflows with manual components</p>
     <div className="tag">Business Perspective</div>
   </div>
   <div className="bullet-box business-perspective">
     <h6>Hidden Value</h6>
-    <p>Lacking transparency, it was challenging for customers to understand the impact of their implementations and they questioned the value</p>
+    <p>Lacking transparency, customers didn't understand the impact of their implementations and they questioned the value</p>
     <div className="tag">Business Perspective</div>
   </div>
   <div className="bullet-box customer-perspective">
     <h6>Extreme Inconvenience</h6>
-    <p>High operational costs and inefficiencies from high-touch operations with manual components.</p>
+    <p>Customers submitted tickets for all changes, regardless of the effort level</p>
     <div className="tag">Customer Perspective</div>
   </div>
   <div className="bullet-box customer-perspective">
     <h6>Disconnected</h6>
-    <p>Without a point of reference, customers struggled to articulate their objectives clearly, requiring additional interactions</p>
+    <p>With no reference point, customers struggled to articulate their objectives clearly, requiring additional interactions</p>
     <div className="tag">Customer Perspective</div>
   </div>
 </div>

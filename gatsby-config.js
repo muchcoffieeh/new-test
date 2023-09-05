@@ -95,7 +95,6 @@ module.exports = {
         {
           userAgent: "Googlebot",
           disallow: "/",
-          crawlDelay: 2,
         },
         {
           userAgent: "*",
