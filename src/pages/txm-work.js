@@ -15,39 +15,8 @@ const SubpageA = ({ data }) => {
 
   const isBrowser = typeof window !== "undefined";
 
-  // Use local storage to store the authentication status
-  const [isPasswordCorrect, setIsPasswordCorrect] = useState(
-    isBrowser && localStorage.getItem("isPasswordCorrect_txm") === "true"
-  );
-
-  const [password, setPassword] = useState("")
-
-  useEffect(() => {
-    // Save the authentication status to local storage when it changes
-    if (isBrowser) {
-      localStorage.setItem("isPasswordCorrect_txm", isPasswordCorrect);
-    }
-  }, [isPasswordCorrect, isBrowser]);
-
-  const handlePasswordChange = event => {
-    setPassword(event.target.value)
-  }
-
-  const handleSubmit = event => {
-    event.preventDefault()
-
-    // Check if the entered password is correct
-    if (password === "canoes10") {
-      setIsPasswordCorrect(true)
-    } else {
-      alert("Wrong password. Please try again.")
-      setIsPasswordCorrect(false)
-    }
-  }
-
   return (
     <div>
-      {isPasswordCorrect ? (
         <>
           <header className="page-head">
           <div className="site-head-container">
@@ -132,26 +101,10 @@ const SubpageA = ({ data }) => {
             </Link>
           </div>
         </>
-      ) : (
-        <div className="pw-form">
-          <div className="form-contain">
-            <h2>Just a bit of security. &#128274;</h2>
-            <form onSubmit={handleSubmit}>
-              <label>
-                Password:
-                <input
-                  type="password"
-                  value={password}
-                  onChange={handlePasswordChange}
-                />
-              </label>
-              <button className="pw-button" type="submit">
-                Submit
-              </button>
-            </form>
-          </div>
-        </div>
-      )}
+        <footer className="site-foot">
+            &copy; {new Date().getFullYear()} &mdash;
+            Designed By Serena{" "}
+          </footer>
     </div>
   );
 };

@@ -86,5 +86,23 @@ module.exports = {
       icon: 'src/images/sx-logo.png',
     },
   },
+  {
+    resolve: 'gatsby-plugin-robots-txt',
+    options: {
+      host: 'https://www.designedbyrena.com',
+      sitemap: 'https://www.designedbyrena.com/sitemap.xml',
+      policy: [
+        {
+          userAgent: "Googlebot",
+          disallow: "/",
+          crawlDelay: 2,
+        },
+        {
+          userAgent: "*",
+          disallow: "/",
+        },
+      ]
+    }
+  }
 ]
 };
