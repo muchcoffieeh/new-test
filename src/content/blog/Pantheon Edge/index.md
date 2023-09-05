@@ -208,7 +208,7 @@ During prototype testing, participants were asked to complete a series of tasks 
 </div>
 
 ### Results
-I distilled the results from the final prototype testing into a comprehensive report to inform my immediate team and cross-functional partners. Nobody likes long slide decks so I strategically crafted a slide deck that peeled back like an onion (or a good Twitter thread). The first section of just 8 slides covered the key insights, respective details and recommendations, and a quick context of the research methodology.
+I distilled the results from the final prototype testing into a comprehensive report to inform my immediate team and cross-functional partners. Nobody likes long slide decks so I strategically crafted a slide deck that peeled back like an onion (or a good Twitter thread). The first section of just 8 slides covered the key insights, respective details and recommendations, and a quick context of the research methodology. For anyone with the bandwidth to dive in, the details of the study were pulled into the appendix.
 
 <div className="mdx-file bullet-box-container">
   <div className="bullet-box">
@@ -226,45 +226,6 @@ I distilled the results from the final prototype testing into a comprehensive re
     <div className="label-block red">Prioritized Features</div>
     <p>60% of participants noted they need more features and functionality for the edge suite to be usable. However, specific requests were wide-ranging.</p>
   </div>
-</div>
-
-Respective details and recommendations + quick context of the research methodology: 
-
-<div className="kg-card kg-image-card kg-width-full kg-desktop">
-
-![report](./presentation-main2.jpg)
-
-</div>
-
-### Supporting Details
-
-For anyone with the bandwidth to dive in, the details of the study were pulled into the appendix of 17 slides. I wanted to be transparent that our team was fishing for invalidation or validation for specific hypotheses and a plan of action for each:
-<div className="kg-card kg-image-card kg-width-med">
-
-![report](./presentation-append1.jpg)
-
-</div>
-
-I also wanted to shed light on feedback and insights given by individual customers and provide visibility into the customer participant recruitment process – enable teammates reviewing my report to better qualify the feedback and insights.
-
-<div className="kg-card kg-image-card kg-width-full kg-desktop">
-
-![report](./presentation-append2.jpg)
-
-</div>
-
-<div className="kg-card kg-image-card kg-width-full kg-mobile">
-
-![report](./presentation-append2.jpg)
-
-</div>
-
-And finally, I closed the appendix with a hierarchy chart of documentation on this work for all my cross-functional partners to navigate to the ones they needed to progress their part.
-
-<div className="kg-card kg-image-card kg-width-med kg-desktop">
-
-![report](./presentation4.jpg)
-
 </div>
 
 Thank you for reading this super long case study.
