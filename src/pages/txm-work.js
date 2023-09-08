@@ -71,7 +71,7 @@ const SubpageA = ({ data }) => {
 
         <h4>
           Merging sports, video, and data with innovation and accessibility, Tempus Ex technology enables the creation of new interactive experiences around live events. Tempus Ex partners with the National Football League, premier global sports leagues, and broadcasters to deliver cutting-edge sports experience solutions.</h4>
-          
+          <span className="top"></span>
         <h4 style={{ fontWeight: "600" }}>
           Below are my selected case studies from my time at Tempus Ex. Click on any of them to view.
         </h4>
@@ -100,6 +100,7 @@ const SubpageA = ({ data }) => {
               Visit Tempus Ex Website
             </Link>
           </div>
+          <span className="bottom"></span>
         </>
         <footer className="site-foot">
             &copy; {new Date().getFullYear()} &mdash;

@@ -71,6 +71,7 @@ const SubpageA = ({ data }) => {
 
         <h4>
           FreeWire is an industry leader in battery-integrated ultrafast electric vehicle (EV) charging and energy management solutions solving grid infrastructure constraints by designing and manufacturing scalable clean power, driving the global transition to electrified transportation.</h4>
+          <span className="top"></span>
           <h4 style={{ fontWeight: "600" }}>
             Below are my selected case studies from my time at FreeWire Technologies. Click on any of them to view.
             </h4>
@@ -99,6 +100,7 @@ const SubpageA = ({ data }) => {
               Visit FreeWire Website
             </Link>
           </div>
+          <span className="bottom"></span>
         </>
         <footer className="site-foot">
             &copy; {new Date().getFullYear()} &mdash;

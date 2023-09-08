@@ -138,7 +138,7 @@ body {
   color: var(--color-primary);
 }
 
-hr.top, span.bottom{
+span.top, span.bottom{
   height: 2px;
   width: 20%;
   position: absolute;
@@ -146,10 +146,11 @@ hr.top, span.bottom{
   transition: margin-left 0.9s ease; 
 }
 
-hr.top{
+span.top{
   left: 0;
-  /* transform: translateY(-36.5%); */
-  top: 26.5%;
+  position: unset;
+  /* transform: translateY(-46.5%); */
+  /* top: 27%; */
 }
 
 span.bottom{
