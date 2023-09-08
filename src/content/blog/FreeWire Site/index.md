@@ -3,7 +3,7 @@ title: FreeWire Technologies Site & Branding
 slug: "/fw-branding-site"
 date: "2017-12-05"
 category: "freewire-tech-work"
-description: "ROLE: CREATIVE DIRECTION, MESSAGING, WEB DEVELOPMENT, VISUALS"
+description: "CREATIVE DIRECTION, WEB DEVELOPMENT, PRODUCT MARKETING"
 thumbnail: ./thumbnail.jpg
 ---
 

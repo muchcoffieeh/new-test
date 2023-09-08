@@ -6,7 +6,7 @@ tags: [All, Applications]
 category: "pantheon-work"
 templateKey: "public-post"
 thumbnail: ./thumb.jpg
-description: "ROLE: PRODUCT CONCEPTUALIZATION & DESIGN, UX RESEARCH"
+description: "0-1 PRODUCT DESIGN, UX RESEARCH"
 ---
 
 import { getImage, GatsbyImage } from 'gatsby-plugin-image';

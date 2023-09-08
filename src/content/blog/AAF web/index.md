@@ -5,7 +5,7 @@ date: "2019-05-08"
 tags: [All, Applications]
 category: "aaf-work"
 thumbnail: ./game-time_web.jpg
-description: "ROLE: UX/UI DESIGN, MANAGED DEVELOPMENT"
+description: "PRODUCT DESIGN, UX RESEARCH"
 ---
 
 import { getImage, GatsbyImage } from 'gatsby-plugin-image';

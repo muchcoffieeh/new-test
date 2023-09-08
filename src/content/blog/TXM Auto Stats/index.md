@@ -4,7 +4,7 @@ slug: /txm-auto-stats
 date: "2019-04-08"
 tags: [All, Applications]
 category: "txm-work"
-description: "ROLE: SOLE DESIGNER, MANAGED DEVELOPMENT"
+description: "0-1 PRODUCT DESIGN, UX RESEARCH"
 thumbnail: ./TXM_auto_thumb.jpg
 ---
 

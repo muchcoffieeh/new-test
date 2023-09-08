@@ -4,7 +4,7 @@ slug: /mobi-interface
 date: "2019-04-02"
 category: "freewire-tech-work"
 thumbnail: ./HMI-thumb.jpg
-description: "ROLE: UX/UI DESIGN, DESIGN AND PROJECT MANAGEMENT"
+description: "PRODUCT DESIGN, UX RESEARCH, PROJECT MANAGEMENT"
 ---
 
 import { getImage, GatsbyImage } from 'gatsby-plugin-image';

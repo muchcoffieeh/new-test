@@ -73,6 +73,8 @@ const SubpageA = ({ data }) => {
               Pantheon powers the open web, running sites in the cloud for customers including Stitch Fix, Okta, Home Depot, Pernod Ricard, and The Barack Obama Foundation. Pantheon’s cloud native software makes it easy to securely manage a single website or thousands of websites across multiple teams in one platform.
             </h4>
 
+            <hr className="top"></hr>
+
             <h4 style={{ fontWeight: "600" }}>
             Below are my selected case studies from my tenure at Pantheon so far. Click on any of them to view.
             </h4>
@@ -102,7 +104,7 @@ const SubpageA = ({ data }) => {
               Visit Pantheon Website
             </Link>
           </div>
-          <hr></hr>
+          <span className="bottom"></span>
           <footer className="site-foot">
             &copy; {new Date().getFullYear()} &mdash;
             Designed By Serena{" "}
