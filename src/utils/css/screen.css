@@ -526,6 +526,8 @@ body {
 
 .post-feed.three{
   padding: 0 3%;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 .post-card {
@@ -534,6 +536,8 @@ body {
   flex: 1 1 25%;
   display: flex;
   height: 25vw;
+  max-height: 370px;
+  max-width: 450px;
   /* background: linear-gradient(135deg, #1f1f1f 0%, #111 100%) center center; */
   /* based #1d1d1f */
   background: linear-gradient(135deg, #242426 0%, #161618 100%) center center;
