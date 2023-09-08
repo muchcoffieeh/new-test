@@ -1,7 +1,9 @@
-import React, { Component } from "react";
-import { Link } from "gatsby"
+import React from "react";
+import { Link } from "gatsby";
 
-export default ({post, postClass}) => (
+import "../utils/css/components/postCard.css"
+
+export default ({ post, postClass }) => (
   <article
     className={`post-card ${
       postClass
@@ -14,40 +16,26 @@ export default ({post, postClass}) => (
       }
     }
   >
-  <ContentWithImage title={post.frontmatter.title} slug={post.frontmatter.slug}/>
-      {/* {
-        props.node.frontmatter.thumbnail
-          ?(<ContentWithImage props={props}/>)
-          :(<ContentNoImage props={props}/>)
-          props.node.frontmatter.thumbnail <ContentWithImage props={props}/>
-      } */}
+    <ContentWithImage
+      title={post.frontmatter.title}
+      slug={post.frontmatter.slug}
+      description={post.frontmatter.description} // Pass the description
+    />
   </article>
-)
+);
 
-const ContentWithImage = ({slug, title}) => {
+const ContentWithImage = ({ slug, title, description }) => {
   return (
     <Link to={`content${slug}`} className="post-card-link">
       <div className="post-card-content">
         <div className="post-card-overlay">
-          <h3 className="post-card-title">
-            {title || slug}
-          </h3>
+          <div className="circle-overlay">
+            <p className="view-project-text">View Project</p>
+          </div>
+          <h3 className="post-card-title">{title || slug}</h3>
+          <p className="post-card-description">{description}</p> {/* Description */}
         </div>
       </div>
     </Link>
   );
-}
-
-// DESTRUCTURING
-// const post = {
-//   frontmatter: {
-//     title: "sometitle",
-//     slug: "/slug"
-//   }
-// }
-
-// console.log(post.frontmatter.title)
-
-// const { frontmatter: { title, slug } } = post
-
-// console.log(title, slug)
+};
