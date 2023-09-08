@@ -157,7 +157,7 @@ const IndexPage = () => {
             alt=""
             style={{ marginBottom: `var(--space-3)` }}
           />
-          <hr className="main-hr"></hr>
+          <hr className={`main-hr ${isHovering ? "recede" : ""}`}></hr>
         </div>
       </div>
 

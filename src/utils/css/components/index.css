@@ -185,6 +185,11 @@ html, body, div, main {
     left: 0;
     bottom: 10vw;
     background-color: var(--color-primary);
+    transition: margin-left 0.9s ease; 
+  }
+
+  .recede {
+    margin-left: -100%; /* Adjust this value as needed to move the <hr> off the screen */
   }
 
   @media (max-width: 850px) {
