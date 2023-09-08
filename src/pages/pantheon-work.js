@@ -16,7 +16,7 @@ const SubpageA = ({ data }) => {
   const isBrowser = typeof window !== "undefined";
 
   return (
-    <div>
+    <div style={{ backgroundColor: "#000000" }}>
         <>
           <header className="page-head">
             <div className="site-head-container">

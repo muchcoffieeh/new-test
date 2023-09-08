@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import "../utils/css/components/index.css"
 
-import defaultBackgroundGray from "../images/gray-comp.jpg"; // Update the path to your default background image
+import defaultBackgroundBlack from "../images/black-comp.jpg"; // Update the path to your default background image
 
 const sections = [
   {
@@ -91,11 +91,13 @@ const IndexPage = () => {
     // Disable scrolling on the index page
     document.documentElement.style.overflowY = "hidden";
     document.body.style.overflowY = "hidden";
+    document.body.style.backgroundColor = "#000000"; 
 
     // Re-enable scrolling when the component unmounts
     return () => {
       document.documentElement.style.overflowY = "auto";
       document.body.style.overflowY = "auto";
+      document.body.style.backgroundColor = "";
     };
   }, []);
 
@@ -111,7 +113,7 @@ const IndexPage = () => {
     };
   }, []);
 
-  const [backgroundImage, setBackgroundImage] = useState(defaultBackgroundGray);
+  const [backgroundImage, setBackgroundImage] = useState(defaultBackgroundBlack);
   const [heroText, setHeroText] = useState(sections[0].text);
   const [isHovering, setIsHovering] = useState(false);
   const defaultText = {
@@ -136,7 +138,7 @@ const IndexPage = () => {
   };
 
   const handleMouseLeave = () => {
-    setBackgroundImage(defaultBackgroundGray); // Reset background image to empty string
+    setBackgroundImage(defaultBackgroundBlack); // Reset background image to empty string
     setHeroText(defaultText);
     setIsHovering(false);
   };
@@ -155,6 +157,7 @@ const IndexPage = () => {
             alt=""
             style={{ marginBottom: `var(--space-3)` }}
           />
+          <hr className="main-hr"></hr>
         </div>
       </div>
 
@@ -185,6 +188,7 @@ const IndexPage = () => {
             <h2>{isHovering ? heroText.title : defaultText.title}</h2>
             <p>{isHovering ? heroText.content : defaultText.content}</p>
             <p className="p-2">{isHovering ? heroText.desc : defaultText.desc}</p>
+            
 
             <p className="mobile-disc">
               Still working on mobile-friendly. Come back to <span className="highlight-word">visit me on your desktop</span>. <span>&#128517;</span>

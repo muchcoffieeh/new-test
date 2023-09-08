@@ -33,7 +33,7 @@ html, body, div, main {
     justify-content: center;
     width: 75%;
     height: 100vh;
-    --bg-color: #616161; /* Default background color for .right-div */
+    --bg-color: #000000; 
     background-color: var(--bg-color);
     background-image: var(--bg-image); /* Use CSS variable to set the background image */
     background-size: cover;
@@ -176,6 +176,15 @@ html, body, div, main {
 
   .mobile-disc{
     display: none;
+  }
+
+  .main-hr{
+    height: 2px;
+    width: 50%;
+    position: fixed;
+    left: 0;
+    bottom: 10vw;
+    background-color: var(--color-primary);
   }
 
   @media (max-width: 850px) {
