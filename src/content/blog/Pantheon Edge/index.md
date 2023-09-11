@@ -13,7 +13,7 @@ import { getImage, GatsbyImage } from 'gatsby-plugin-image';
 
 <div className="mdx-file kg-card kg-image-card kg-width-wide kg-desktop" >
 
-![Screenshots](/images/agcdn-hifi-demo-mid.gif)
+![Screenshots](/images/agcdn-verify-med.gif)
 
 </div>
 
