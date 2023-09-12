@@ -9,7 +9,7 @@ const sections = [
   {
   title: "Pantheon Platform",
     image: "../images/pantheon-comp.jpg",
-    link: "/pantheon-work/content/pantheon-edge/",
+    link: "/pantheon-work",
     text: {
       title: "WORK",
       content: (
