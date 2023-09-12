@@ -142,7 +142,7 @@ html, body, div, main {
   
   .hero-section{
       display: flex;
-      width: 90%;
+      width: 85%;
       min-height: 200px;
       margin-right: auto;
       margin-left: auto;
@@ -155,7 +155,7 @@ html, body, div, main {
       z-index: 1;
       width: 636px;
       align-self: flex-start;
-      padding-top: 200px;;
+      padding-top: 220px;;
   }
 
   .hero-left h2{
