@@ -164,7 +164,7 @@ const IndexPage = () => {
       {/* <div className="right-div" style={{ backgroundImage: `url(${backgroundImage})` }}> */}
       <div className="right-div" style={{ backgroundImage: `url(${backgroundImage})` }}>
         <div className="navigation-container">
-          <h2 className="navigation-heading">MY WORK</h2>
+          {/* <h2 className="navigation-heading">MY WORK</h2> */}
           <nav className="vertical-nav">
             <ul>
               {sections.map((section, index) => (
@@ -185,7 +185,7 @@ const IndexPage = () => {
 
       <div className="hero-section">
           <div className={`hero-left ${isHovering ? "smooth-fade" : ""}`}>
-            <h2>{isHovering ? heroText.title : defaultText.title}</h2>
+            {/* <h2>{isHovering ? heroText.title : defaultText.title}</h2> */}
             <p>{isHovering ? heroText.content : defaultText.content}</p>
             <p className="p-2">{isHovering ? heroText.desc : defaultText.desc}</p>
             

@@ -45,12 +45,13 @@ const SubpageA = ({ data }) => {
                   <li className="nav-home" role="menuitem">
                     <Link to={`/pantheon-work`}>Pantheon</Link>
                   </li>
+                  <li className="nav-current nav-home" role="menuitem">
+                <Link to={`/txm-work`}>TXM</Link>
+              </li>
               <li className="nav-home" role="menuitem">
                 <Link to={`/freewire-tech-work`}>FreeWire</Link>
               </li>
-              <li className="nav-current nav-home" role="menuitem">
-                <Link to={`/txm-work`}>TXM</Link>
-              </li>
+              
                   {/* <li className="nav-about" role="menuitem">
                     <Link to={`#my-process`}>Process</Link>
                   </li>
