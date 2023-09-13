@@ -320,8 +320,9 @@ span.bottom{
 }
 
 .post-foot{
-  padding: 2em 1em 0 0;
-  text-align: right;
+  padding: 2em 0 0 2em;
+  text-align: left;
+  color: var(--color-sub-base);
 }
 
 

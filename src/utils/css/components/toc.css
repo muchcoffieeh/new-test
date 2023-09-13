@@ -8,7 +8,7 @@ nav {
   }
   
   ul.toc-list {
-    border-left: 1px solid #363636;
+    border-left: 2px solid var(--color-primary);
     padding-left: 1em;
   }
   
@@ -27,8 +27,8 @@ nav {
   }
   
   ul.toc-list > li.is-current > a {
-    color: var(--color-primary);
-    font-weight: 800;
+    color: var(--color-bg-dark);
+    font-weight: 700;
   }
   
   /* Hide Table of Content when screen is smaller than 1440px */

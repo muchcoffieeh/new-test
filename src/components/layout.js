@@ -32,22 +32,18 @@ const Layout = props => {
                 <li className="nav-home" role="menuitem">
                   <Link to={`/`}>Home</Link>
                 </li>
-                <li className="nav-home" role="menuitem">
-                      <Link to={`/pantheon-work`}>Pantheon</Link>
+                <li className="nav-pan" role="menuitem">
+                      <Link to={`/pantheon-work/content/pantheon-edge/`}>Pantheon</Link>
                     </li>
-                    <li className="nav-home" role="menuitem">
-                  <Link to={`/txm-work`}>TXM</Link>
+                    <li className="nav-txm" role="menuitem">
+                  <Link to={`/txm-work/content/txm-auto-stats/`}>Tempus</Link>
                 </li>
-                <li className="nav-home" role="menuitem">
-                  <Link to={`/freewire-tech-work`}>FreeWire</Link>
+                <li className="nav-txm" role="menuitem">
+                  <Link to={`/txm-work`}>AAF</Link>
                 </li>
-
-                {/* <li className="nav-about" role="menuitem">
-                  <Link to={`#my-process`}>Process</Link>
+                <li className="nav-fw" role="menuitem">
+                  <Link to={`/freewire-tech-work/content/mobi-gen-amp/`}>FreeWire</Link>
                 </li>
-                <li className="nav-about" role="menuitem">
-                  <Link to={`#case-studies`}>Work</Link>
-                </li> */}
                 
                 <li className="nav-elements" role="menuitem">
                   <Link to={`https://www.linkedin.com/in/serena-s-xu/`} target="_blank">About</Link>

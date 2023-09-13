@@ -9,9 +9,9 @@ const sections = [
   {
   title: "Pantheon Platform",
     image: "../images/pantheon-comp.jpg",
-    link: "/pantheon-work",
+    link: "/pantheon-work/content/pantheon-edge",
     text: {
-      title: "WORK",
+      title: "2023",
       content: (
         <>
           <span className="highlight-word">Pantheon</span> is enterprise SaaS for powering the open web – securely manage a single website or thousands of websites
@@ -29,9 +29,9 @@ const sections = [
   {
     title: "Tempus Ex",
     image: "../images/txm-comp.jpg",
-    link: "/txm-work",
+    link: "/txm-work/content/txm-auto-stats/",
       text: {
-        title: "WORK",
+        title: "2021",
         content: (
           <>
             Merging sports, video, and data with innovation,
@@ -47,11 +47,30 @@ const sections = [
       },
     },
     {
+      title: "Alliance of American Football",
+  image: "../images/aaf-comp.jpg",
+  link: "/aaf-work/content/aaf-web",
+        text: {
+          title: "2019",
+          content: (
+            <>
+              The <span className="highlight-word"> Alliance of American Football </span> 
+              left a legacy of pioneering advanced sport tech, including real-time fantasy app with interactive features that revolutionized the fan experience.
+            </>
+          ),
+          desc: (
+            <>
+              I focused on crafting interactive experiences and <span className="highlight-word">enhancing fan engagement</span> both during games and in-between.
+            </>
+          ),
+        },
+      },
+    {
       title: "FreeWire Technologies",
     image: "../images/freewire-comp.jpg",
-    link: "/freewire-tech-work",
+    link: "/freewire-tech-work/content/mobi-gen-amp/",
         text: {
-          title: "WORK",
+          title: "2018",
           content: (
             <>
             <span className="highlight-word">FreeWire </span>
@@ -65,25 +84,6 @@ const sections = [
           ),
         },
       },
-      {
-        title: "Alliance of American Football",
-    image: "../images/aaf-comp.jpg",
-    link: "/aaf-work/content/aaf-web",
-          text: {
-            title: "WERK",
-            content: (
-              <>
-                The <span className="highlight-word"> Alliance of American Football </span> 
-                left a legacy of pioneering advanced sport tech, including real-time fantasy app with interactive features that revolutionized the fan experience.
-              </>
-            ),
-            desc: (
-              <>
-                I focused on crafting interactive experiences and <span className="highlight-word">enhancing fan engagement</span> both during games and in-between.
-              </>
-            ),
-          },
-        },
 ];
 
 const IndexPage = () => {
@@ -117,7 +117,7 @@ const IndexPage = () => {
   const [heroText, setHeroText] = useState(sections[0].text);
   const [isHovering, setIsHovering] = useState(false);
   const defaultText = {
-    title: "INTRO",
+    title: "",
     content: (
       <>
         Hi there. I'm <span className="highlight-word">Serena</span>.
@@ -164,7 +164,7 @@ const IndexPage = () => {
       {/* <div className="right-div" style={{ backgroundImage: `url(${backgroundImage})` }}> */}
       <div className="right-div" style={{ backgroundImage: `url(${backgroundImage})` }}>
         <div className="navigation-container">
-          {/* <h2 className="navigation-heading">MY WORK</h2> */}
+          <h2 className="navigation-heading">MY WORK</h2>
           <nav className="vertical-nav">
             <ul>
               {sections.map((section, index) => (
@@ -185,7 +185,7 @@ const IndexPage = () => {
 
       <div className="hero-section">
           <div className={`hero-left ${isHovering ? "smooth-fade" : ""}`}>
-            {/* <h2>{isHovering ? heroText.title : defaultText.title}</h2> */}
+            <h2>{isHovering ? heroText.title : defaultText.title}</h2>
             <p>{isHovering ? heroText.content : defaultText.content}</p>
             <p className="p-2">{isHovering ? heroText.desc : defaultText.desc}</p>
             
