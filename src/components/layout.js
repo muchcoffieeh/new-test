@@ -38,8 +38,8 @@ const Layout = props => {
                     <li className="nav-txm" role="menuitem">
                   <Link to={`/txm-work/content/txm-auto-stats/`}>Tempus</Link>
                 </li>
-                <li className="nav-txm" role="menuitem">
-                  <Link to={`/txm-work`}>AAF</Link>
+                <li className="nav-aaf" role="menuitem">
+                  <Link to={`/txm-work/content/aaf-web`}>AAF</Link>
                 </li>
                 <li className="nav-fw" role="menuitem">
                   <Link to={`/freewire-tech-work/content/mobi-gen-amp/`}>FreeWire</Link>
