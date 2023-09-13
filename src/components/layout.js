@@ -35,11 +35,11 @@ const Layout = props => {
                 <li className="nav-home" role="menuitem">
                       <Link to={`/pantheon-work`}>Pantheon</Link>
                     </li>
-                <li className="nav-home" role="menuitem">
-                  <Link to={`/freewire-tech-work`}>FreeWire</Link>
+                    <li className="nav-home" role="menuitem">
+                  <Link to={`/txm-work`}>TXM</Link>
                 </li>
                 <li className="nav-home" role="menuitem">
-                  <Link to={`/txm-work`}>TXM</Link>
+                  <Link to={`/freewire-tech-work`}>FreeWire</Link>
                 </li>
 
                 {/* <li className="nav-about" role="menuitem">
@@ -63,9 +63,16 @@ const Layout = props => {
           {children}
         </div>
       </main>
+      
       <footer className="site-foot">
+      <div className="pre-footer">
+      <p className="p-more-work">  I'm happy to share many more case studies from my time at here. Just shoot me a quick note!</p>
+        <button><a href="mailto:serena.s.xu@gmail.com">Email Serena</a></button>
+        </div>
+        <div className="post-foot">
         &copy; {new Date().getFullYear()} <Link to={`/`}>{title}</Link> &mdash;
         Designed By Serena{" "}
+        </div>
       </footer>
     </div>
   )

@@ -229,3 +229,20 @@ I distilled the results from the final prototype testing into a comprehensive re
 </div>
 
 Thank you for reading this super long case study.
+
+
+<div className="video">
+    <iframe
+      src="https://www.youtube.com/embed/gV2XJbX-03k"
+      title="Advanced Global CDN Demo"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      frameBorder="0"
+      autoplay="1"
+      webkitallowfullscreen="true"
+      mozallowfullscreen="true"
+      allowFullScreen
+    />
+  </div>
+
+  <hr></hr>
+

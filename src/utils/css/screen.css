@@ -146,6 +146,18 @@ span.top, span.bottom{
   transition: margin-left 0.9s ease; 
 }
 
+iframe{
+  width: 960px;
+  height: 540px;
+}
+
+.video{
+  margin-left: calc(50% - 50vw); 
+  margin-right: calc(50% - 50vw);
+  text-align: center;
+  transform: translateX(calc(50vw - 50%));
+}
+
 span.top{
   left: 0;
   position: unset;
@@ -244,11 +256,74 @@ span.bottom{
   text-align: center;
   color: color(var(--color-border) l(-20%));
   font-size: 1.4rem;
+  position: absolute;
+  background-color: var(--color-bg-dark);
+  left: 0;
+  width: 100%;
+  padding-bottom: 3em;
 }
 
-.site-foot a {
-  color: var(--color-base);
+.site-foot button{ 
+    min-width: 130px;
+    width: 200px;
+    height: 45px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border: 1px solid #000;
+    color: #000;
+    background: transparent;
+    z-index: 0;
+  }
+
+  .site-foot a{
+    color: white;
+    font-size: 20px;
+   }
+
+  .site-foot button:hover:after {
+    top: 0;
+    left: 0;
+    color: var(--color-primary);
+  }
+  .site-foot button:after {
+    content: "";
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 5px;
+    left: 5px;
+    transition: 0.2s;
+    background-color: var(--color-bg-dark);
+    color: var(--color-primary);
+  }
+
+.pre-footer{
+  color: var(--color-bg-dark);
+  background-color: var(--color-primary);
+  padding: 2em 0 4em 0;
+  /* position: absolute;
+  left: 0;
+  width: 100%; */
 }
+
+.p-more-work{
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+
+.post-foot{
+  padding: 2em 1em 0 0;
+  text-align: right;
+}
+
 
 /* Site Navigation
 /* ---------------------------------------------------------- */
