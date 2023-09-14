@@ -233,11 +233,14 @@ Thank you for reading this super long case study.
 
 <div className="video">
     <iframe
-      src="https://www.youtube.com/embed/gV2XJbX-03k"
+      width="854" height="480"
+      src="https://www.youtube.com/embed/DTBuaNOrT3I"
       title="Advanced Global CDN Demo"
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
       frameBorder="0"
       autoplay="1"
+      loop="1"
+      rel="0"
       webkitallowfullscreen="true"
       mozallowfullscreen="true"
       allowFullScreen
