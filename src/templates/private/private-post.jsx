@@ -37,7 +37,7 @@ export default function PrivatePageTemplate({ data, children }) {
           <article className={`post-content ${post.frontmatter.thumbnail || `no-image`}`}>
             <div>
               <header className="post-content-header">
-                <h2 className="post-content-title">{data.mdx.frontmatter.title}</h2>
+                <h1 className="post-content-title">{data.mdx.frontmatter.title}</h1>
               </header>
             </div>
 

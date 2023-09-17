@@ -6,7 +6,7 @@ tags: [All, Applications]
 category: "pantheon-work"
 templateKey: "public-post"
 thumbnail: ./thumb.jpg
-description: "0-1 PRODUCT DESIGN, UX RESEARCH"
+description: "0-1 Product Design For Scaling Operations"
 ---
 
 import { getImage, GatsbyImage } from 'gatsby-plugin-image';
@@ -29,37 +29,59 @@ import { getImage, GatsbyImage } from 'gatsby-plugin-image';
 
 </div>
 
-### The Setup
+## Overview
 
-In today's digital landscape, high-traffic websites are increasingly leveraging not only content delivery networks (CDNs) but also custom edge logic. This plays a crucial role in enhancing website performance, security, and reliability, enabling seamless delivery to millions of daily visitors, and efficiently handling sudden spikes in traffic.
-Pantheon, a platform for managing high-performance websites, currently offers a suite of tools for customizing edge logic. 
+<div className="overview">
+  <div className="left">
+    <div className="label-w-desc">
+      <h3>Role</h3>
+      <p>Product Design</p>
+    </div>
 
-However, this is all behind a curtain as it is a fully-managed service. The demo above is from the self-service product we're moving towards. The current managed solution poses several significant issues.
+    <div className="label-w-desc">
+      <h3>Team</h3>
+      <p>Sr. Director of Product</p>
+      <p>Tech Lead</p>
+      <p>Edge Routing Engineering</p>
+    </div>
+  </div>
+
+  <div className="right">
+    <h3> Overview </h3>
+    <p>
+    High performance websites, serving millions of visitors a day utilize technologies at the edge for improved reliability and security.
+
+  Pantheon customers tap into the power of the edge is through our Advanced Global CDN. However, it’s a managed service that customers cannot access by themselves. The workflow is unsatisfactory as customers have the strong desire to configure features on their own. To solve this major pain point, our product team created a product suite, allowing customers to self-service edge capabilities.
+  </p>
+  </div>
+</div>
 
 <div className="mdx-file bullet-box-container">
   <div className="bullet-box business-perspective">
     <h6>Not Scalable</h6>
-    <p>Operationally expensive with extreme inefficiencies resulted from nonstandard workflows with manual components</p>
     <div className="tag">Business Perspective</div>
+    <p>Operationally expensive with extreme inefficiencies resulted from nonstandard workflows with manual components</p>
+    
   </div>
   <div className="bullet-box business-perspective">
     <h6>Hidden Value</h6>
-    <p>Lacking transparency, customers didn't understand the impact of their implementations and they questioned the value</p>
     <div className="tag">Business Perspective</div>
+    <p>Lacking transparency, customers didn't understand the impact of their implementations and they questioned the value</p>
   </div>
   <div className="bullet-box customer-perspective">
-    <h6>Extreme Inconvenience</h6>
-    <p>Customers submitted tickets for all changes, regardless of the effort level</p>
+    <h6>Inconvenience</h6>
     <div className="tag">Customer Perspective</div>
+    <p>Customers submitted tickets for all changes, often blocked on other work until the tickets are resolved</p>
+    
   </div>
   <div className="bullet-box customer-perspective">
-    <h6>Disconnected</h6>
-    <p>With no reference point, customers struggled to articulate their objectives clearly, requiring additional interactions</p>
+    <h6>Confusion</h6>
     <div className="tag">Customer Perspective</div>
+    <p>With no reference point, customers struggled to articulate their needs clearly, requiring additional conversations</p>
   </div>
 </div>
 
-### Unpacking The Needs
+## Unpacking The Needs
 After receiving the brief from our executives, I needed to better understand both the business and customer perspective to pinpoint where the inefficiencies are. I started by auditing recorded customer calls and support ticket chains. Key insights I found along the way
 - Certain features are harder to grasp than others where customers would conflate the functionality. Customers would submit requests asking for a feature by name where it would be later discovered by our implementation that they needed another feature.
 - Customers may submit tickets describing their end objective with little idea of the combination of features they needed to achieve the objectives. This leads to confusion among customers and the communication gap with our edge implementation team, resulting in extra interactions.
@@ -89,7 +111,7 @@ After this analysis, we found the mental models of our customers that led us to 
 
 </div>
 
-### Priority Features
+## Priority Features
 
 Starting off the design process, we needed to prioritize the features to deliver. 
 > **What is the optimal combination of initial features that would effectively address our customers' needs?**
@@ -108,7 +130,7 @@ Combining results from the workshop and a questionnaire sent to external partici
 > - **Header Modification**
 > - **Access Rules**
 
-### Governing Architecture
+## Governing Architecture
 As we proceeded towards execution, we needed to lock down key architectural decisions. 
 > How do we structure the relationship between our platform entities and edge entities?
 
@@ -121,7 +143,7 @@ I took a two-pronged in my research effort – a series of interviews with custo
 </div>
 
 The initial interviews with select customers confirmed their preference for individual site-level control of edge logic, which aligned with their immediate needs. However, interviews and the workshop with the edge implementation team revealed otherwise.
-They unveiled a more complex landscape – the preferred configuration involved a combination of governing multiple sites with a single edge configuration, while still allowing each site to have multiple configurations. I collaborated with my tech lead to assess this structural feasibility and other options. We weighed the pros and cons of each architectural structure
+They unveiled a more complex landscape – the preferred configuration involved a combination of governing multiple sites with a single edge configuration, while still allowing each site to have multiple configurations. I collaborated with my tech lead to assess this structural feasibility and other options. We weighed the pros and cons of each architectural structure.
 
 <div className="kg-card kg-image-card kg-width-full">
 
@@ -129,7 +151,7 @@ They unveiled a more complex landscape – the preferred configuration involved 
 
 </div>
 
-and explore the IA stemming from each
+We also explored the information architecture stemming from each structure.
 
 <div className="kg-card kg-image-card kg-width-wide">
 
@@ -139,7 +161,7 @@ and explore the IA stemming from each
 
 After careful consideration, we landed on an option that was initially straightforward but provided the flexibility for building into the more advanced structure later in the product roadmap. We made the decision to have edge configurations controlling multiple sites but each site can only be connected to one configuration.
 
-### Co-Design Workshops
+## Co-Design Workshops
 
 Following the results of the initial investigative sessions, it was time to delve into the user experience design. I facilitated a series of co-design sessions involving cross-functional teams – sales engineering, product engineering, and the edge implementation team. These sessions aimed to achieve a full 360-degree view of the product to obtain clarity on how we deliver the unique value proposition. I organized two sessions with the larger group of 15 participants, fostering collaborative discussions through hands-on exercises. 
 
@@ -157,7 +179,7 @@ I continued with roughly 7 deeper co-design sessions that included one key sales
 
 </div>
 
-### Iterations
+## Iterations
 
 I iterated on the designs in low fidelity, maintaining nearly daily check-ins with my product leader and tech lead for feedback to ensure alignment. At this point, we also began to test with customers and external participants.
 
@@ -207,7 +229,7 @@ During prototype testing, participants were asked to complete a series of tasks 
 
 </div>
 
-### Results
+## Results
 I distilled the results from the final prototype testing into a comprehensive report to inform my immediate team and cross-functional partners. Nobody likes long slide decks so I strategically crafted a slide deck that peeled back like an onion (or a good Twitter thread). The first section of just 8 slides covered the key insights, respective details and recommendations, and a quick context of the research methodology. For anyone with the bandwidth to dive in, the details of the study were pulled into the appendix.
 
 <div className="mdx-file bullet-box-container">

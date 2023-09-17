@@ -2,7 +2,7 @@
 /* ---------------------------------------------------------- */
 
 .kg-card {
-  margin: 1vw 0;
+  margin: 4.5vw 0;
 }
 
 .kg-embed-card {
@@ -92,7 +92,8 @@
   position: relative;
   width: 33%;
   float: left;
-  margin: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .kg-width-full {

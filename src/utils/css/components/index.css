@@ -2,7 +2,7 @@
 html, body, div, main {
     margin: 0;
     padding: 0;
-    font-family: "Yantramanav", Helvetica, Arial, sans-serif;;
+    font-family: "Yantramanav", Helvetica, Arial, sans-serif;
   }
 
   .left-div {
@@ -117,11 +117,11 @@ html, body, div, main {
   }
   
   .vertical-nav li:nth-child(3)::after {
-    width: 375px;
+    width: 475px;
   }
   
   .vertical-nav li:nth-child(4)::after {
-    width: 475px;
+    width: 375px;
   }
   
   /* Show the blue rectangle when hovering over the section link */

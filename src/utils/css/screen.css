@@ -29,7 +29,7 @@ body {
   /* background: var(--color-bg); */
   transition: background-color 0.3s ease-out;
   transition-delay: 0.25;
-  color: #6e6e6e;
+  color: var(--color-bg-dark);
 }
 
 .img {
@@ -868,11 +868,13 @@ span.bottom{
 
 .post-content-excerpt {
   margin: -2vw 0 3vw;
-  font-size: 2.2rem;
+  font-size: 22px;
   line-height: 1.6em;
   color: var(--color-base);
   text-align: center;
   opacity: 0.5;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 @media (max-width: 500px) {
   .post-content-excerpt {
@@ -1185,16 +1187,14 @@ span.bottom{
 }
 
 .tag {
-  position: absolute;
   bottom: 1em;
   left: 50%;
-  width: 100%;
-  max-width: 150px;
-  transform: translateX(-50%);
+  max-width: 200px;
+  margin: 1.2em auto;
   padding: 4px 8px;
-  background-color: #ff9800; /* Adjust the color as needed */
   color: white;
-  font-size: 12px;
+  font-size: 14px;
+  text-transform: uppercase;
   font-weight: bold;
   border-radius: 4px;
 }
@@ -1243,3 +1243,29 @@ span.bottom{
 .mdx-file.kg-width-full, .mdx-file.kg-width-wide{
   margin-bottom: 5em;
 }
+
+/******* on mdx files ******/
+.overview {
+  display: flex; /* Use flexbox to arrange children */
+}
+
+.left {
+  flex: 40%; /* Take up 40% of the available space */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.right {
+  flex: 60%; /* Take up 60% of the available space */
+  padding: 0 0 0 20px; /* Add some spacing */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+#overview{
+  opacity: 0;
+  font-size: 1px; /* hiding this so we just see the secion */
+}
+
+.label-w-desc{
+  margin-bottom: 1.2em;
+}
+

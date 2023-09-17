@@ -22,7 +22,7 @@ export default function PageTemplate({ data, children }) {
             data-sal-easing="ease-out-cubic"
           >
             <header className="post-content-header">
-              <h2 className="post-content-title">{data.mdx.frontmatter.title}</h2>
+              <h1 className="post-content-title">{data.mdx.frontmatter.title}</h1>
             </header>
           </div>
 

@@ -1,16 +1,14 @@
 ---
-title: Alliance of American Football Web Platform
+title: Alliance of American Football
 slug: /aaf-web
 date: "2019-05-08"
 tags: [All, Applications]
 category: "aaf-work"
 thumbnail: ./game-time_web.jpg
-description: "PRODUCT DESIGN, UX RESEARCH"
+description: "Design Sprint: Web Platform"
 ---
 
 import { getImage, GatsbyImage } from 'gatsby-plugin-image';
-
-The Alliance of American Football was a professional league founded by Charlie Ebersol and Bill Polian. The AAF began the inaugural season on February 9, 2019. The league was scheduled to have a 10-week regular season and conclude with a championship game on April 27. After eight weeks of play, however, the league's football operations were suspended by controlling owner Thomas Dundon on April 2. The league offered fans an immersive digital experience where they could interact with the game on a play-by-play level. During gametime, the web platform offered fans the ab ability to view the game from the camera of their choice as well as a digitally simulated top-down view to track each player. Between games, the web platform offered standard features such as stats for players, teams, league, standings, and allowed fans to purchase tickets and merchandise.
 
 <div className="kg-card kg-image-card kg-width-full kg-desktop">
 
@@ -24,41 +22,44 @@ The Alliance of American Football was a professional league founded by Charlie 
 
 </div>
 
-### The Setup
+## Overview
 
-The web team was assembled 2 weeks before the kickoff of the season. I was hired to design the end-to-end experience. The interactive platform had to be built out iteratively through the season.
+<div className="overview">
+  <div className="left">
+    <div className="label-w-desc">
+      <h3>Role</h3>
+      <p>Product Design</p>
+    </div>
 
-### Problem
+    <div className="label-w-desc">
+      <h3>Team</h3>
+      <p>Director of Product</p>
+      <p>Web Platform Engineering</p>
+    </div>
+  </div>
 
-The prompt was brought to me in a big, vague manner.
-“We need a new web platform. Right now there’s janky WP site that only sells tickets. It needs to also sell merchandise and broadcast the game. It also needs to host some player tracking that the fans can play with during the game. Also, team ops need to use the platform for their stuff. Let’s not worry about that yet.”
+  <div className="right">
+    <h3> Overview </h3>
+    <p>
+The Alliance of American Football was a professional league founded by Charlie Ebersol and Bill Polian in 2019. The league offered fans an immersive digital experience where they could interact on a play-by-play level through the mobile app and web platform. 
 
-My interpretation: the platform will have 2 modes, one for gametime and one in-between.
-
-<div className="kg-card kg-image-card kg-width-full kg-mobile">
-
-![modes](./modes.jpg)
-
+    The web platform team was assembled 2 weeks before the kickoff of the season. The platform had to launch at the start to be iterated on through the season. The web platform had 2 objectives: dominate viewership (away from broadcast TV) during games and sell tickets for the next game.  
+    
+  </p>
+  </div>
 </div>
 
-The success of the platform will be measured on
+## Research
 
-- Tickets sold per game
-- Merchandise sales per week
-- Average session length during games
+There was not a lot of time to run a full user research process. I digested prior research from the larger organization and filled in a few gaps by sitting in bars during NFL games, reading sports blogs, and speaking to my sports fanatic friends. I relied on references from existing sports platforms and looked for similarities in key areas:
 
-### Research
+- Features and functionality
+- Information architecture
+- Visual hierarchy
 
-There was not a lot of time to run a full user research process. I digested prior research from the larger organization and filled in a few gaps by sitting in bars during NFL games, reading sports blogs, and speaking to my sports fanatic friends. I relied on references from existing sports platforms on the assumption that they’ve dedicated significant efforts into user research. Looked for similarities in key areas:
+## Execution
 
-- Layouts, especially the use of above-the-fold real estate
-- Navigation
-- Common functionality and user flows of each
-- Call-to-action placement
-
-### Execution
-
-I mapped out the full user flow and created spreadsheets to detail the data from the back end. I worked with my PM to prioritize functionality and features based on:
+I mapped out the full user flow and created spreadsheets to detail the data from the back end. I worked with my PM to prioritize features and functionality based on:
 
 - User impact
 - Technical feasibility or readiness
@@ -78,7 +79,7 @@ From there, a pared-down user flow with just the information architecture was gi
 
 </div>
 
-There was no time for low-fidelity. I turned my focus to high fidelity right away. I synced up with the designers on the mobile team on what I could pull from the design system and which components I should look to be adding on the web side.
+I strategized with our 2 frontend engineers on how to tackle the design system. We had to set up the foundations in the 2 quick weeks to enable ourselves to work efficiently but ensure that it was solid enough to iterate upon after meeting the major launch milestone.
 
 <div className="kg-card kg-image-card kg-width-full">
 
@@ -120,11 +121,18 @@ The platform went through 3 main iterations. The first iteration (left) that equ
 
 </div>
 
-After the first 2 weeks of games, we noticed out traffic with the gametime data filtered out was coming largely through mobile web. We then shifted to a mobile-first design process for the in-between games mode.
+## Iterations
 
-### Results
+My product leader and I examined GA metrics week after week. 3 key insights helped my design thinking to iterate on the experience towards the platform goals.
+- Users were not buying tickets for upcoming games right after watching a game. Rather, the majority of tickets were sold when users returned on their mobile device.
+- The most common action preceding purchasing tickets was reviewing team standings. 
+- Users that viewed team standings and highlights were 67% more likely to complete the tickets purchase flow.
 
-From version 1 to 3, we saw roughly a 20% increase in ticket and merchandise sales. We knew there were other contributing factors – marketing initiatives, the popularity of the league growing from word-of-mouth, and fans developing allegiance with individual players or teams. For the web team, the next big push was to set up more granular tracking to find some separation so we could better measure our impact.
+We first turned our focus to mobile web. Rather than having the ticketing call-to-action as the first component after the hero image, I brought standings into the landing page and moved the CTA below that. When the 3rd insight surfaced, I converted the highlights section into a tab view with standings. 
+
+## Results
+
+After 3 major iterations, we saw roughly a **20% increase in ticket sales**. As for the viewership objective, we unfortunately didn't have accurate broadcast metrics to measure against. However, we were able to see an increase of viewers game after game – **8,565 in the 1st game** and reaching **22,875 by the 5th** (and last) game.
 
 <div className="kg-card kg-image-card kg-width-wide">
 
@@ -132,15 +140,9 @@ From version 1 to 3, we saw roughly a 20% increase in ticket and merchandise sal
 
 </div>
 
-<div className="kg-card kg-image-card kg-width-wide">
+## Roadmap
 
-![TICKETS](./serenaXu_aaf_mobileTicketCenterVerisons.jpg)
-
-</div>
-
-### Problem Addendum
-
-In my time at AAF, I was instructed to prioritize the in-between game mode since it was a revenue driver. However, we saw that our users wanted more interactivity with the game. The existing gametime mode is below. Users could either view the 3D telemetry field or the video feeds. The play stats were automatically generated into a long scrolling list.
+In analyzing metrics from GA and mining our social media threads, we saw that our users wanted more interactivity during games. The existing gametime mode is below. Users could either view the 3D telemetry field or the video feeds. The play stats were automatically generated into a long scrolling list.
 
 <div className="kg-card kg-image-card kg-width-wide kg-desktop">
 

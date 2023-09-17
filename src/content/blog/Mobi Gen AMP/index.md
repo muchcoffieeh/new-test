@@ -5,20 +5,65 @@ date: "2018-01-05"
 tags: [All, Applications]
 category: "freewire-tech-work"
 thumbnail: ./MobiGenAMP_thumb.jpg
-description: "PRODUCT DESIGN, UX RESEARCH, PROJECT MANAGEMENT"
+description: "Simplifying Asset Management"
 ---
 
 import { getImage, GatsbyImage } from 'gatsby-plugin-image';
 
-FreeWire Technologies builds cloud-connected battery systems for on-site power – the cleaner alternative to a traditional diesel generator. AMP (Asset Management Platform) compliments the battery systems and allows for remote control and monitoring. AMP was one of 4 critical touchpoints of the Mobi Gen product experience.
+FreeWire Technologies builds cloud-connected battery systems for on-site power – the cleaner alternative to a traditional diesel generator. AMP (Asset Management Platform) allows for remote control and monitoring with a mobile app and web platform. 
 
-### The Setup
+<div>
+<div className="kg-card kg-image-card kg-width-sm">
 
-When the power is on, everyone on the construction or event site is going about their job and no one notices. All hell breaks loose if the power does go down. For the fleet manager, an outage is simply not acceptable. They need to know the status of their fleet of power delivery units at all times and at a glance. AMP was created to do just that. Managers can geo-track units, view individual unit operating details, and remotely control the functions of each unit deployed in the field.
+![User Flow](./serenaXu_mobiGen_ampMobile_dashboard.jpg)
 
-### Business Case
+</div>
 
-A construction site is the most obvious place to find diesel generators, but they are actually used on sites in almost every industry. The first step was to understand how the usage differs across each industry. We needed to determine how the Mobi Gen fits into each and which use cases we wanted to serve. We analyzed setup logistics, power requirements, ease of recharging, and a host of other factors.
+<div className="kg-card kg-image-card kg-width-sm">
+
+![User Flow](./serenaXu_mobiGen_ampMobile_info.jpg)
+
+</div>
+
+<div className="kg-card kg-image-card kg-width-sm">
+
+![User Flow](./serenaXu_mobiGen_ampMobile_map.jpg)
+
+</div>
+</div>
+
+## Overview
+
+AMP was one of 4 critical touchpoints of the Mobi Gen product experience.
+
+<div className="overview">
+  <div className="left">
+    <div className="label-w-desc">
+      <h3>Role</h3>
+      <p>Product Design, Project Management</p>
+    </div>
+
+    <div className="label-w-desc">
+      <h3>Team</h3>
+      <p>VP of Product</p>
+      <p>App Development Agency</p>
+    </div>
+  </div>
+
+  <div className="right">
+    <h3> Overview </h3>
+    <p>
+    The power crew at the job site need to know the status of their power delivery units at all times. They also need to set up and power down quickly. Our existing version of AMP wasn't meeting their needs – rather than enabling efficiency, it added confusion in their workflow. The pain was severe enough that most of our pilot customers stop the units they purchased.
+
+    Our product team revamped the experience to address the problem.
+  </p>
+  </div>
+</div>
+
+
+## Business Case
+
+The first step was to understand how the power usage differs across discrete scenarios. We needed to determine how the Mobi Gen fits into each and which use cases we wanted to serve. We analyzed setup logistics, power requirements, ease of recharging, and a host of other factors.
 
 <div className="kg-card kg-image-card kg-width-full">
 
@@ -26,7 +71,7 @@ A construction site is the most obvious place to find diesel generators, but the
 
 </div>
 
-We created many living documents for reference by the product team and to deliver the insights to the rest of the company. I created presentations of diagrams, charts, and fully illustrated user stories of select hypothetical scenarios.
+I created many living documents for reference by the product team and to deliver the insights to other stakeholders. I created presentations of diagrams, charts, and fully illustrated user stories of select hypothetical scenarios.
 
 <div className="kg-card kg-image-card kg-width-full">
 
@@ -40,18 +85,29 @@ We created many living documents for reference by the product team and to delive
 
 </div>
 
-### Persona Analysis
+## Persona Analysis
 
 After the high-level examination of the use cases, we honed in on the key questions that would guide the design of the platform.
 
 - What personas would be using the platform and with what frequency?
 - What data is important to each of them?
-- How detailed should the data be?
 - What are their objectives and what order should the data be displayed to help them accomplish those quickly?
 
-<div className="kg-card kg-image-card kg-width-wide">
+12 interviews and 5 field observations later, we were able to identify 2 broad persona categories.
 
+<div className="mdx-file bullet-box-container three">
+    <div className="bullet-box tech-perspective">
+    <h6>Genny Operator</h6>
+    <hr></hr>
+    <p>Responsible for efficient setup and teardown of power units as well as ongoing monitoring. </p>
+  </div>
+  <div className="bullet-box tech-perspective">
+    <h6>Fleet Manager</h6>
+    <hr></hr>
+    <p>Views all assets on all active jobsites at a networks level to assist on-the-ground crew members. </p>
+  </div>
 </div>
+
 
 It was time to bring in the viewpoint from the firmware engineers.
 
@@ -66,7 +122,7 @@ We put together a spreadsheet of available values, lag time, and conditions to c
 
 </div>
 
-### User Flow Iteration
+## User Flow Iteration
 
 I created wireframes and clickable prototypes. I did a series of user testing and iterated on the user flow. The development of the app was to be done by our trusted offshore team. I packaged up the user flow, a styling guide, and a pdf summarizing our findings on user personas and use case scenarios.
 
@@ -92,7 +148,7 @@ After:
 
 </div>
 
-### Final Design
+## Design Solution
 
 <div className="kg-card kg-image-card kg-width-full">
 
@@ -107,24 +163,5 @@ After:
 
 </div>
 
-We considered building just web and web responsive (startups have to keep close tabs on their burn) but there were tradeoffs we couldn’t make. Having the ability to receive real-time alerts in the case of power emergencies made native mobile a critical feature.
-
-<div className="kg-card kg-image-card kg-width-sm">
-
-![User Flow](./serenaXu_mobiGen_ampMobile_dashboard.jpg)
-
-</div>
-
-<div className="kg-card kg-image-card kg-width-sm">
-
-![User Flow](./serenaXu_mobiGen_ampMobile_info.jpg)
-
-</div>
-
-<div className="kg-card kg-image-card kg-width-sm">
-
-![User Flow](./serenaXu_mobiGen_ampMobile_map.jpg)
-
-</div>
-
-Thanks for reading this long story :)
+## Results
+The revamped version of the mobile resulted in a **30% decrease in setup and teardown** time. With the boost in their workflow, the overall usage of our power units **increased 3x**.
