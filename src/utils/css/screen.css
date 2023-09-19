@@ -234,9 +234,6 @@ span.bottom{
   .page-head-title {
     font-size: 2rem;
   }
-  .highlight-word{
-    color: var(--color-spare1);
-  }
 }
 
 .page-head-description {
