@@ -11,21 +11,9 @@ description: "0-1 Product Design For Scaling Operations"
 
 import { getImage, GatsbyImage } from 'gatsby-plugin-image';
 
-<div className="mdx-file kg-card kg-image-card kg-width-wide kg-desktop" >
+<div className="mdx-file kg-card kg-image-card kg-width-wide" >
 
 ![Screenshots](/images/agcdn-verify-med.gif)
-
-</div>
-
-<div className="kg-card kg-image-card kg-width-full kg-mobile">
-
-![Screenshots](./AGCDN-config-details.jpg)
-
-</div>
-
-<div className="kg-card kg-image-card kg-width-full kg-mobile">
-
-![Screenshots](./Configs-dashboard.jpg)
 
 </div>
 

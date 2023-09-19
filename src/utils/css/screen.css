@@ -234,6 +234,10 @@ span.bottom{
   .page-head-title {
     font-size: 2rem;
   }
+  iframe{
+    width: 320px;
+    height: 240px;
+  }
 }
 
 .page-head-description {
@@ -549,6 +553,7 @@ span.bottom{
     margin: 3vw 0 0 0;
   }
   .site-head-left {
+    display: none;
     order: 2;
     margin: 0;
     width: 100%;
@@ -1239,6 +1244,17 @@ span.bottom{
 
 .mdx-file.kg-width-full, .mdx-file.kg-width-wide{
   margin-bottom: 5em;
+}
+
+@media (max-width: 850px) {
+  .bullet-box-container {
+    width: 100%;
+    display: inline-block;
+  }
+  .bullet-box {
+    width: 100%;
+    padding: 10px;
+  }
 }
 
 /******* on mdx files ******/
