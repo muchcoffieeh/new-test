@@ -258,6 +258,7 @@ html, body, div, main {
     }
     .hero-left p{
       font-size: 20px;
+      line-height: 34px;
     }
     .vertical-nav li {
       font-size: 25px;
