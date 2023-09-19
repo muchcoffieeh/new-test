@@ -193,6 +193,39 @@ html, body, div, main {
     margin-left: -100%; /* Adjust this value as needed to move the <hr> off the screen */
   }
 
+  /* case mobile buttons */
+  .case-button {
+    min-width: 130px;
+    width: 80%;
+    text-align: left;
+    height: 30px;
+    color: #fff;
+    height: 30px;
+    line-height: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 0;
+    border: 2px solid #41c9f3; 
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    box-shadow: 0 0 var(--color-bg-dark);
+  }
+  .case-button:hover {
+    box-shadow: 0 3px #adb5bd;
+    top: 1px;
+  }
+  .case-button:active {
+    box-shadow: 0 0 #adb5bd;
+    top: 5px;
+  }
+
   @media (max-width: 850px) {
     .left-div {
       float: none;
@@ -206,9 +239,15 @@ html, body, div, main {
       flex-direction: unset;
     } */
     .logo-container{
-      width: 140px;
-      height: auto;
+      width: 90px;
+      height: 60px;
     }
+    .right-div{
+      display: none;
+    }
+.main-hr{
+  display: none;}
+
     .hero-left{
       padding-top: 140px;
       width: auto;
@@ -228,6 +267,7 @@ html, body, div, main {
     }
     .mobile-disc{
       display: block;
+      margin: 10% 0;
     }
   }
   

@@ -190,9 +190,15 @@ const IndexPage = () => {
             <p className="p-2">{isHovering ? heroText.desc : defaultText.desc}</p>
             
 
-            <p className="mobile-disc">
-              Still working on mobile-friendly. Come back to <span className="highlight-word">visit me on your desktop</span>. <span>&#128517;</span>
-            </p>
+            <div className="mobile-disc">
+              <p>
+              Click to view <span className="highlight-word">my work</span>.
+              </p>
+              <button className="case-button"><Link to={`/pantheon-work/content/pantheon-edge/`}>Pantheon</Link></button>
+              <button className="case-button"><Link to={`/txm-work/content/txm-auto-stats/`}>Tempus Ex</Link></button>
+              <button className="case-button"><Link to={`/aaf-work/content/aaf-web`}>Alliance of American Football</Link></button>
+              <button className="case-button"><Link to={`/freewire-tech-work/content/mobi-gen-amp/`}>FreeWire Technologies</Link></button>
+            </div>
           </div>
         </div>
     </main>
