@@ -865,7 +865,7 @@ span.bottom{
   margin: 0 0 3vw;
   color: var(--color-bg-dark);
   text-align: center;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 .post-content-excerpt {
@@ -907,7 +907,6 @@ span.bottom{
 .post-content-body h1,
 .post-content-body h2,
 .post-content-body h3,
-.post-content-body h4,
 .post-content-body h5,
 .post-content-body h6 {
   color: var(--color-base);

@@ -44,6 +44,9 @@ import { getImage, GatsbyImage } from 'gatsby-plugin-image';
   </div>
 </div>
 
+## Unpacking The Needs
+#### Both sides of the workflow challenges
+
 <div className="mdx-file bullet-box-container">
   <div className="bullet-box business-perspective">
     <h6>Not Scalable</h6>
@@ -69,13 +72,15 @@ import { getImage, GatsbyImage } from 'gatsby-plugin-image';
   </div>
 </div>
 
-## Unpacking The Needs
+<hr></hr>
+
+#### Auditing customer interactions to spot the inefficiencies 
 After receiving the brief from our executives, I needed to better understand both the business and customer perspective to pinpoint where the inefficiencies are. I started by auditing recorded customer calls and support ticket chains. Key insights I found along the way
-- Certain features are harder to grasp than others where customers would conflate the functionality. Customers would submit requests asking for a feature by name where it would be later discovered by our implementation that they needed another feature.
-- Customers may submit tickets describing their end objective with little idea of the combination of features they needed to achieve the objectives. This leads to confusion among customers and the communication gap with our edge implementation team, resulting in extra interactions.
-- Straightforward features caused the most dissatisfaction, as customers felt insulted in needing to submit tickets for such basics.
-- Our implementation approach has evolved over time, resulting in numerous improved ways to handle each feature.
-- Repeated engagement with our edge implementation team provides an opportunity for them to educate customers on optimal feature use, leading to more efficient discussions.
+- **Customer Confusion:** Certain features are harder to grasp than others where customers would conflate the functionality, leading to customer requests asking for the wrong feature. 
+- **Vague Objectives:** Customers may submit tickets describing their end objective with little idea of the combination of features they needed to achieve the objectives, causing communication gaps and additional interactions. 
+- **Frustration:** Straightforward features caused the most customer frustration –  customers felt insulted in needing to submit tickets for tasks they could implement by themselves.
+- **High Variance:** Our implementation approach has evolved and improved over time. However, this result in numerous ways to handle each feature.
+- **Edifying:** Repeated engagement with our edge implementation team provided the opportunity for customers to be educated on proper feature use. Customers were grateful for the education and for discussions becoming more efficient.
 
 Each feature would have to be untangled individually. To start synthesizing my insights, I organized the insights by feature and contextualized it against the stage of the conversation. Examining the interactions at every stage of the conversation allowed my team and I to catalog all the user stories beyond the ones revolving around achieving edge functionality.
 
@@ -99,13 +104,15 @@ After this analysis, we found the mental models of our customers that led us to 
 
 </div>
 
-## Priority Features
+## Unraveling the Complexity
+#### Systematically deriving insights for priority features
 
-Starting off the design process, we needed to prioritize the features to deliver. 
-> **What is the optimal combination of initial features that would effectively address our customers' needs?**
+Kicking off the design process, we needed to **prioritize the features** to deliver – the optimal combination of initial features to effectively address customers needs and encourage adoption of the self-service product.
 
-To identify the most suitable initial features for our self-service product, I considered various research approaches. While conducting an audit of our customers' existing edge configurations seemed like the choice to yield irrefutable results, we simply did not have the resources. The bespoke nature of the fully-managed service had resulted in diverse configurations across all our customers.Conducting a comprehensive audit would require significant effort and resources from our already stretched edge implementation team.
-Recognizing the need for an alternative research method, I engaged in discussions with our team of edge implementation specialists and discovered that they maintained a record to track the usage of individual features. It was not an immutable source of truth but provided a great starting point. I also discovered that each specialist had an exceptional memory of the customers they had helped implement. Leveraging this insight, I devised a workshop to capture their collective knowledge and insights. Each participant was asked to bundle lean packages of what they determined to be high-priority features based on their implementation experiences. They were then asked to provide descriptions of the customer implementation case for any other features. 
+1. **Audit** of existing customer edge configurations
+2. **Field study** to shadow our edge implementation team in live customer interactions
+3. **Workshop** to leverage the edge team's collective knowledge of customer insights
+4. **Synthesis** with my team to identify the highest priority features 
 
 <div className="kg-card kg-image-card kg-width-wide">
 
