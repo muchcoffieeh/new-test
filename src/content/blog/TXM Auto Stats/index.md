@@ -77,6 +77,7 @@ Tempus Ex provides a data platform to serve real-time sports analytics, allowing
 </div>
 
 ## Research
+#### Understanding pain points of the status quo
 
 At the start, I knew very little about football. “What is GSIS?” I spent the 2 months attending games and exploring GSIS to understand the pain points from the league’s perspective. I made sketches of the user environment and took screenshots of the software in action.
 
@@ -114,8 +115,7 @@ I created reference documents for the engineers to correlate my intention for th
 </div>
 
 ## Design Solution
-
-The default display console that was made for viewing
+#### A glanceable display console
 
 <div className="kg-card kg-image-card kg-width-full">
 

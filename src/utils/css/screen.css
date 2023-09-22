@@ -880,7 +880,8 @@ span.bottom{
 }
 @media (max-width: 500px) {
   .post-content-excerpt {
-    font-size: 1.8rem;
+    font-size: 20px;
+    font-weight: 800;
   }
 }
 
@@ -1249,6 +1250,7 @@ span.bottom{
   .bullet-box-container {
     width: 100%;
     display: inline-block;
+    margin-top: 1em;
   }
   .bullet-box {
     width: 100%;

@@ -16,10 +16,10 @@ export default function PageTemplate({ data, children }) {
           className={`post-content ${post.frontmatter.thumbnail || `no-image`}`}
         >
           <div
-            data-sal="slide-right"
-            data-sal-delay="100"
-            data-sal-duration="300000ms"
-            data-sal-easing="ease-out-cubic"
+            // data-sal="slide-right"
+            // data-sal-delay="100"
+            // data-sal-duration="300000ms"
+            // data-sal-easing="ease-out-cubic"
           >
             <header className="post-content-header">
               <h1 className="post-content-title">{data.mdx.frontmatter.title}</h1>
@@ -27,10 +27,10 @@ export default function PageTemplate({ data, children }) {
           </div>
 
           <div
-            data-sal="slide-left"
-            data-sal-delay="100"
-            data-sal-duration="300000ms"
-            data-sal-easing="ease-out-cubic"
+            // data-sal="slide-left"
+            // data-sal-delay="100"
+            // data-sal-duration="300000ms"
+            // data-sal-easing="ease-out-cubic"
           >
             {post.frontmatter.description && (
               <h4 class="post-content-excerpt">

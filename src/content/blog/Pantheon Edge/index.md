@@ -126,6 +126,7 @@ Combining results from the workshop and a questionnaire sent to external partici
 > - **Access Rules**
 
 ## Governing Architecture
+#### Ensuring user-centricity from the ground up
 As we proceeded towards execution, we needed to lock down key architectural decisions. 
 > How do we structure the relationship between our platform entities and edge entities?
 
