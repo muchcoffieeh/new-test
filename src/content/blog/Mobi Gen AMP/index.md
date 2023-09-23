@@ -6,6 +6,16 @@ tags: [All, Applications]
 category: "freewire-tech-work"
 thumbnail: ./MobiGenAMP_thumb.jpg
 description: "Simplifying Asset Management"
+role: Product Design, Project Management
+team:
+  - VP of Product
+  - App Development Agency
+overview: |
+  The power crew at the job site need to know the status of their power delivery units at all times. They also need to set up and power down quickly. Our existing version of AMP wasn't meeting their needs – rather than enabling efficiency, it added confusion in their workflow. The pain was severe enough that most of our pilot customers stop the units they purchased.
+
+  Our product team revamped the experience to address the problem.
+macbookImage: /images/amp-mac-desktop.png
+gifImage: /images/empty.png
 ---
 
 import { getImage, GatsbyImage } from 'gatsby-plugin-image';
@@ -30,34 +40,6 @@ FreeWire Technologies builds cloud-connected battery systems for on-site power �
 ![User Flow](./serenaXu_mobiGen_ampMobile_map.jpg)
 
 </div>
-</div>
-
-## Overview
-
-AMP was one of 4 critical touchpoints of the Mobi Gen product experience.
-
-<div className="overview">
-  <div className="left">
-    <div className="label-w-desc">
-      <h3>Role</h3>
-      <p>Product Design, Project Management</p>
-    </div>
-
-    <div className="label-w-desc">
-      <h3>Team</h3>
-      <p>VP of Product</p>
-      <p>App Development Agency</p>
-    </div>
-  </div>
-
-  <div className="right">
-    <h3> Overview </h3>
-    <p>
-    The power crew at the job site need to know the status of their power delivery units at all times. They also need to set up and power down quickly. Our existing version of AMP wasn't meeting their needs – rather than enabling efficiency, it added confusion in their workflow. The pain was severe enough that most of our pilot customers stop the units they purchased.
-
-    Our product team revamped the experience to address the problem.
-  </p>
-  </div>
 </div>
 
 

@@ -6,6 +6,16 @@ tags: [All, Applications]
 category: "aaf-work"
 thumbnail: ./game-time_web.jpg
 description: "Design Sprint: Web Platform"
+role: Product Design
+team:
+  - Director of Product
+  - Web Platform Engineering
+overview: |
+  The Alliance of American Football league offered fans an immersive digital experience where they could interact on a play-by-play level through the mobile app and web platform. The web platform team was assembled 2 weeks before the kickoff of the season. The platform had to launch at the start to be iterated on through the season. 
+  
+  The AAF was founded by Charlie Ebersol and Bill Polian in 2019. The league was scheduled to have a 10-week regular season and conclude with a championship game on April 27. After eight weeks of play, however, the league's football operations were suspended by controlling owner Thomas Dundon on April 2.
+macbookImage: /images/aaf-macbook.png
+gifImage: /images/empty.png
 ---
 
 import { getImage, GatsbyImage } from 'gatsby-plugin-image';
@@ -22,48 +32,35 @@ import { getImage, GatsbyImage } from 'gatsby-plugin-image';
 
 </div>
 
-## Overview
+## Research
 
-<div className="overview">
-  <div className="left">
-    <div className="label-w-desc">
-      <h3>Role</h3>
-      <p>Product Design</p>
-    </div>
+Given the tight delivery timeline of the project, I had to find the fastest approach to conduct just enough research – obtain the key insights for design execution towards the two large, but somewhat vague objectives communicated to me. 
 
-    <div className="label-w-desc">
-      <h3>Team</h3>
-      <p>Director of Product</p>
-      <p>Web Platform Engineering</p>
-    </div>
+<div className="mdx-file bullet-box-container">
+  <div className="bullet-box">
+    <h7>Boosting Viewership</h7>
+    <p>Our goal was to encourage fans to watch the games on our web platform instead of traditional broadcast TV. This strategic move allowed us to build a captive audience, setting the stage for future initiatives such as introducing additional in-game features and monetization options.</p>
   </div>
+  <div className="bullet-box">
+    <h7>Driving Ticket Sales </h7>
 
-  <div className="right">
-    <h3> Overview </h3>
-    <p>
-The Alliance of American Football was a professional league founded by Charlie Ebersol and Bill Polian in 2019. The league offered fans an immersive digital experience where they could interact on a play-by-play level through the mobile app and web platform. 
-
-    The web platform team was assembled 2 weeks before the kickoff of the season. The platform had to launch at the start to be iterated on through the season. The web platform had 2 objectives: dominate viewership (away from broadcast TV) during games and sell tickets for the next game.  
-    
-  </p>
+    <p>Ticket sales constituted a crucial source of revenue for us. Given that we were in the process of establishing a dedicated fanbase for the league, our primary objective was to encourage fans to purchase tickets for upcoming games, with the expectation that this would pave the way for season pass purchases in subsequent seasons.</p>
   </div>
 </div>
 
-## Research
+I digested prior research from the larger organization and filled in a few gaps by sitting in bars during NFL games, reading sports blogs, and speaking to my sports fanatic friends. I relied on references from existing sports platforms and looked for similarities in key areas:
 
-There was not a lot of time to run a full user research process. I digested prior research from the larger organization and filled in a few gaps by sitting in bars during NFL games, reading sports blogs, and speaking to my sports fanatic friends. I relied on references from existing sports platforms and looked for similarities in key areas:
-
-- Features and functionality
-- Information architecture
-- Visual hierarchy
+> - Features and functionality
+> - Information architecture
+> - Visual hierarchy
 
 ## Execution
 
 I mapped out the full user flow and created spreadsheets to detail the data from the back end. I worked with my PM to prioritize features and functionality based on:
 
-- User impact
-- Technical feasibility or readiness
-- Time required for implementation
+> - User impact
+> - Technical feasibility or readiness
+> - Time required for implementation
 
 <div className="kg-card kg-image-card kg-width-full">
 
