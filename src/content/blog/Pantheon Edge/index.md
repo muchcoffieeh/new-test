@@ -11,38 +11,26 @@ description: "0-1 Product Design For Scaling Operations"
 
 import { getImage, GatsbyImage } from 'gatsby-plugin-image';
 
-<div className="mdx-file kg-card kg-image-card kg-width-wide" >
 
-![Screenshots](/images/agcdn-verify-med.gif)
 
-</div>
-
-## Overview
-
-<div className="overview">
-  <div className="left">
-    <div className="label-w-desc">
-      <h3>Role</h3>
-      <p>Product Design</p>
-    </div>
-
-    <div className="label-w-desc">
-      <h3>Team</h3>
-      <p>Sr. Director of Product</p>
-      <p>Tech Lead</p>
-      <p>Edge Routing Engineering</p>
-    </div>
+<div className="video">
+    <iframe
+      width="854" height="480"
+      src="https://www.youtube.com/embed/DTBuaNOrT3I?start=4&rel=0&loop=1"
+      autoplay="1"
+      title="Advanced Global CDN Demo"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      frameBorder="0"
+      webkitallowfullscreen="true"
+      mozallowfullscreen="true"
+      allowFullScreen
+    />
   </div>
+  <hr style={{margin: "2vw 0"}}></hr>
 
-  <div className="right">
-    <h3> Overview </h3>
-    <p>
-    High performance websites, serving millions of visitors a day utilize technologies at the edge for improved reliability and security.
+The video above is a demo of the final solution. Let's rewind and discuss how we got there.
 
-  Pantheon customers tap into the power of the edge is through our Advanced Global CDN. However, it’s a managed service that customers cannot access by themselves. The workflow is unsatisfactory as customers have the strong desire to configure features on their own. To solve this major pain point, our product team created a product suite, allowing customers to self-service edge capabilities.
-  </p>
-  </div>
-</div>
+<hr style={{margin: "3vw 0"}}></hr>
 
 ## Unpacking The Needs
 #### Both sides of the workflow challenges
@@ -104,7 +92,7 @@ After this analysis, we found the mental models of our customers that led us to 
 
 </div>
 
-## Unraveling the Complexity
+## Unraveling Complexity
 #### Systematically deriving insights for priority features
 
 Kicking off the design process, we needed to **prioritize the features** to deliver – the optimal combination of initial features to effectively address customers needs and encourage adoption of the self-service product.
@@ -249,21 +237,7 @@ I distilled the results from the final prototype testing into a comprehensive re
 Thank you for reading this super long case study.
 
 
-<div className="video">
-    <iframe
-      width="854" height="480"
-      src="https://www.youtube.com/embed/DTBuaNOrT3I"
-      title="Advanced Global CDN Demo"
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-      frameBorder="0"
-      autoplay="1"
-      loop="1"
-      rel="0"
-      webkitallowfullscreen="true"
-      mozallowfullscreen="true"
-      allowFullScreen
-    />
-  </div>
+
 
   <hr></hr>
 

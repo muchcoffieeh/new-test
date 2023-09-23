@@ -404,7 +404,7 @@ span.bottom{
   display: block;
   margin: 0;
   padding: 10px 12px;
-  color: var(--color-base);
+  color: var(--color-sub-base);
   font-weight: 600;
   opacity: 0.4;
 }
@@ -855,6 +855,18 @@ span.bottom{
   padding: 6vw 0;
 }
 
+.post-main-head{
+  width: 100%;
+  color: var(--color-white);
+  height: 100vh;
+  background-color: var(--color-bg-dark);
+  padding: 10% 10% 4% 10%;
+}
+
+.post-main-head p{
+  font-size: 20px;
+}
+
 .post-content-header {
   display: flex;
   flex-direction: column;
@@ -863,7 +875,7 @@ span.bottom{
 
 .post-content-title {
   margin: 0 0 3vw;
-  color: var(--color-bg-dark);
+  color: var(--color-white);
   text-align: center;
   font-weight: 900;
 }
@@ -872,7 +884,7 @@ span.bottom{
   margin: -2vw 0 3vw;
   font-size: 22px;
   line-height: 1.6em;
-  color: var(--color-base);
+  color: var(--color-sub-base);
   text-align: center;
   opacity: 0.5;
   font-weight: 400;
@@ -1150,7 +1162,7 @@ span.bottom{
   border: var(--container-corvid-border-width,var(--brw,1px)) solid var(--container-corvid-border-color,rgba(var(--brd,var(--color_15)),var(--alpha-brd,1)));
   border-radius: var(--rd,5px);
   bottom: 0;
-  box-shadow: var(--shd,0 3px 8px rgba(26, 26, 26, 0.35));
+  box-shadow: var(--shd,8px 8px 15px rgba(26, 26, 26, 0.25));
   flex: 1;
   position: relative;
   text-align: center;
@@ -1280,6 +1292,44 @@ span.bottom{
 }
 
 .label-w-desc{
-  margin-bottom: 1.2em;
+  display: flex;
+  justify-content: space-between; /* Distribute space between the two child elements */
+}
+
+.roles {
+  width: 50%; /* Each role takes up 50% of the width */
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.head-image {
+  position: relative;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.head-image img {
+  position: absolute;
+  
+}
+
+.macbook {
+  top: 0; /* Adjust this value to position the GIF vertically */
+  left: 0; /* Adjust this value to position the GIF horizontally */
+  z-index: 1; /* Ensure the GIF is above the MacBook image */
+  width: 600px;
+}
+
+.mock-screen {
+  z-index: 2; /* Ensure the MacBook image is below the GIF */
+  width: 540px;
+    top: 28px;
+    left: 30px;
 }
 
