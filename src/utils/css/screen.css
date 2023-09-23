@@ -1353,3 +1353,12 @@ span.bottom{
   }
 }
 
+@media (max-width: 500px) {
+  .overview {
+    display: block;
+  }
+  .post-main-head {
+    height: 150vh;
+  }
+}
+
