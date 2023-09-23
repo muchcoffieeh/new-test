@@ -6,6 +6,16 @@ tags: [All, Applications]
 category: "txm-work"
 description: "Streamlining Game Stats Operations"
 thumbnail: ./TXM_auto_thumb.jpg
+role: Product Design
+team:
+  - VP of Product
+  - Engineering
+overview: |
+  Every NFL game employs a stats team of 10-20 people. The crew is situated in a suite in the press box with each member views the game through binoculars. Stats are manually determined and entered into the GSIS system. Delays in reporting stats or incorrect stats results in angry fans.
+
+    Our product team solved for this problem by creating a real-time automatic stats reporting system.  
+macbookImage: /images/auditor-view-mac.png
+gifImage: /images/empty.png
 ---
 
 import { getImage, GatsbyImage } from 'gatsby-plugin-image';
@@ -28,32 +38,6 @@ Tempus Ex provides a data platform to serve real-time sports analytics, allowing
 
 ![Screenshots](./first-view-2.jpg)
 
-</div>
-
-## Overview
-
-<div className="overview">
-  <div className="left">
-    <div className="label-w-desc">
-      <h3>Role</h3>
-      <p>Product Design</p>
-    </div>
-
-    <div className="label-w-desc">
-      <h3>Team</h3>
-      <p>VP of Product</p>
-      <p>Engineering</p>
-    </div>
-  </div>
-
-  <div className="right">
-    <h3> Overview </h3>
-    <p>
-    Every NFL game employs a stats team of 10-20 people. The crew is situated in a suite in the press box with each member views the game through binoculars. Stats are manually determined and entered into the GSIS system. Delays in reporting stats or incorrect stats results in angry fans.
-
-    Our product team solved for this problem by creating a real-time automatic stats reporting system.  
-  </p>
-  </div>
 </div>
 
 <div className="mdx-file bullet-box-container">
@@ -95,6 +79,9 @@ Understanding that our pilot product would be part of a proposal for a larger co
 ![WHITEBOARD](./whiteboard.jpg)
 
 </div>
+
+## Execution
+#### Aligning engineering with executives
 
 Then I organized a series of meetings with our team of engineers to learn the sources of data, how we’re ingesting each, layers of inference, and where the computation was taking place. I had a good idea of what we were capable of displaying after the meetings.
 
@@ -174,8 +161,9 @@ In the event that a call on a play is contested, a manual override would be perf
 </div>
 
 ## Constraints
+#### On-time delivery despite the limitations
 
-The 5 weeks leading up to the ProBowl was crunch time. It came time to pare down the design. Not the first time it happened to me at a startup – can’t say I didn’t expect it.
+The 5 weeks leading up to the ProBowl was crunch time. Amid many constraints, the biggest one was the lack of engineering bandwidth. It came time to pare down the design. Not the first time it happened to me at a startup – can’t say I didn’t expect it.
 
 <div className="kg-card kg-image-card kg-width-full">
 
@@ -185,9 +173,14 @@ The 5 weeks leading up to the ProBowl was crunch time. It came time to pare down
 
 In addition to creating videos for simulated product action, guide documents were also made for the developers to have easy reference to the intended interaction of the product during a live game.
 
-## Buy-In
+## Client Buy-In
 
-Amid the product development, we needed to continue the engagement with our clients. I animated a video simulation of a live game and created a guide to help them better understand the elements on the console. Below are some select pages from the guide document.
+Recognizing that we couldn't build the full product vision in time for the ProBowl, we devised an alternative strategy to secure approval from our client, the NFL. We divided the project into two distinct components:
+
+- A streamlined product version to demonstrate the **essential functional requirements** for a successful ProBowl demonstration.
+- A **comprehensive simulation** that showcased the complete vision of the product, utilizing a recording of a previous game.
+
+I personally animated a video to replicate a live game scenario. Additionally, I created a detailed guide to facilitate the NFL's understanding of the console's features and functionality. Below, you'll find a selection of pages from the guide document.
 
 <div className="kg-card kg-image-card kg-width-full">
 

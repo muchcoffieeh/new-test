@@ -37,7 +37,8 @@ export default function PageTemplate({ data, children }) {
   }, []);
 
   const post = data.mdx
-  console.log(data)
+  const { title, description, role, team, overview, macbookImage, gifImage } = post.frontmatter;
+
   return (
     <div>
       <div className="post-main-head">
@@ -69,31 +70,27 @@ export default function PageTemplate({ data, children }) {
           <div className="label-w-desc">
             <div className="roles left">          
               <h3>Role</h3>
-              <p>Product Design</p>
+              <p>{role}</p>
             </div>
             <div className="roles right">
               <h3>Team</h3>
-              <p>Sr. Director of Product</p>
-              <p>Tech Lead</p>
-              <p>Edge Routing Engineering</p>
+              {team.map((member, index) => (
+                <p key={index}>{member}</p>
+              ))}
             </div>
           </div>
           <div className="label-w-desc">
             <div>
             <h3> Overview </h3>
-            <p>
-            High performance websites, serving millions of visitors a day utilize technologies at the edge for improved reliability and security.
-
-            Pantheon customers tap into the power of the edge is through our Advanced Global CDN. However, it’s a managed service that customers cannot access by themselves. The workflow is unsatisfactory as customers have the strong desire to configure features on their own. To solve this major pain point, our product team created a product suite, allowing customers to self-service edge capabilities.
-            </p>
+            <p>{overview}</p>
             </div>
           </div>
       </div>
 
     <div className="right">
       <div className="head-image">
-        <img className="mock-screen" src="/images/agcdn-verify-med.gif"></img>
-        <img className="macbook" src="/images/mac-desktop.png"></img>
+      <img className="mock-screen" src={gifImage}/>
+            <img className="macbook" src={macbookImage}/>
         
       </div>
     </div>
@@ -131,6 +128,11 @@ export const query = graphql`
         slug
         date
         description
+        role
+        team
+        overview
+        macbookImage
+        gifImage
       }
     }
   }

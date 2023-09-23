@@ -7,6 +7,17 @@ category: "pantheon-work"
 templateKey: "public-post"
 thumbnail: ./thumb.jpg
 description: "0-1 Product Design For Scaling Operations"
+role: Product Design
+team:
+  - Sr. Director of Product
+  - Tech Lead
+  - Edge Routing Engineering
+overview: |
+  High performance websites, serving millions of visitors a day utilize technologies at the edge for improved reliability and security.
+
+  Pantheon customers tap into the power of the edge is through our Advanced Global CDN. However, it’s a managed service that customers cannot access by themselves. The workflow is unsatisfactory as customers have the strong desire to configure features on their own. To solve this major pain point, our product team created a product suite, allowing customers to self-service edge capabilities.
+macbookImage: /images/mac-desktop.png
+gifImage: /images/agcdn-verify-med.gif
 ---
 
 import { getImage, GatsbyImage } from 'gatsby-plugin-image';
