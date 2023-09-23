@@ -1333,3 +1333,23 @@ span.bottom{
     left: 30px;
 }
 
+@media (max-width: 1200px) {
+  .overview {
+    display: block;
+  }
+  .post-main-head {
+    height: 115vh;
+  }
+}
+
+@media (max-width: 900px) {
+  .head-image {
+    width: 500px;
+    margin-top: 50px;
+  }
+  
+  .mock-screen {
+    width: 440px;
+  }
+}
+
